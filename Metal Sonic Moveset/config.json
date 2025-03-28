@@ -639,7 +639,10 @@
             "sound/bank/fighter_voice/vc_wolf_cheer_c64.nus3bank",
             "sound/bank/fighter_voice/vc_wolf_cheer_c64.tonelabel",
             "fighter/wolf/model/body/c64/metal_sonic.marker",
-            "fighter/wolf/motion/body/c64/a01turn.nuanmb.001.nuanmb"
+            "fighter/wolf/model/body/c64/msonic.marker",
+            "fighter/wolf/motion/body/c64/a01turn.nuanmb.001.nuanmb",
+            "fighter/wolf/motion/plasmapulse/c64/motion_list.bin",
+            "fighter/wolf/motion/plasmapulsefullcharge/c64/motion_list.bin"
         ],
         "fighter/wolf/movie/c64": [],
         "fighter/wolf/result/c64": [],

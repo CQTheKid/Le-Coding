@@ -5,14 +5,12 @@ use csk::*;
 use param_config::*;
 use smash::hash40;
 use smash::lib::lua_const::FIGHTER_KIND_WOLF;
-use smash::lib::lua_const::WEAPON_KIND_FALCO_BLASTER_BULLET;
 use std::collections::HashMap;
 
 mod wolf;
 
 pub static mut MARKED_COLORS: [bool; 256] = [false; 256];
 pub static mut LAST_COLOR: i32 = -1;
-pub static mut FIGHTER_WOLF_GENERATE_ARTICLE_PLASMAPULSE: i32 = 6;
 
 extern "C" fn mods_mounted(_ev: arcropolis_api::Event) {
     const FIGHTER_NAME: &str = "wolf";
@@ -191,12 +189,7 @@ extern "C" fn mods_mounted(_ev: arcropolis_api::Event) {
             25.0,
         ),
     );
-    //PlasmaPulse
-    update_float_2(
-        *FIGHTER_KIND_WOLF,
-        marked_slots.clone(),
-        (hash40("param_blaster_bullet"), hash40("life"), 27.0),
-    );
+
     // 3 Jabs params
     update_int_2(
         *FIGHTER_KIND_WOLF,
@@ -286,13 +279,4 @@ pub fn main() {
         arcrop_register_event_callback(arcropolis_api::Event::ModFilesystemMounted, mods_mounted);
     }
     wolf::install();
-    unsafe {
-        FIGHTER_WOLF_GENERATE_ARTICLE_PLASMAPULSE += smashline::clone_weapon(
-            "falco",
-            *WEAPON_KIND_FALCO_BLASTER_BULLET,
-            "wolf",
-            "plasmapulse",
-            true,
-        )
-    }
 }

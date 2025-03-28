@@ -1,5 +1,4 @@
 use {
-    crate::FIGHTER_WOLF_GENERATE_ARTICLE_PLASMAPULSE,
     smash::{
         app::{lua_bind::*, sv_animcmd::*, *},
         hash40,
@@ -12,8 +11,16 @@ use {
 };
 
 use smashline::Priority::*;
-
 //Fighter Frame
+
+pub static mut FIGHTER_WOLF_GENERATE_ARTICLE_PLASMAPULSE: i32 = 5; // Needs to be equal to your character's number of articles
+const WEAPON_WOLF_PLASMAPULSE_STATUS_KIND_SHOOT: i32 = 0x0;
+
+pub static mut FIGHTER_WOLF_GENERATE_ARTICLE_PLASMAPULSEFULLCHARGE: i32 = 5; // Needs to be equal to your character's number of articles
+const WEAPON_WOLF_PLASMAPULSEFULLCHARGE_STATUS_KIND_SHOOT: i32 = 0x0;
+
+pub static mut FIGHTER_WOLF_GENERATE_ARTICLE_BLACKSHIELD: i32 = 5; // Needs to be equal to your character's number of articles
+const WEAPON_WOLF_BLACKSHIELD_STATUS_KIND_SHOOT: i32 = 0x0;
 
 unsafe extern "C" fn wolf_frame(fighter: &mut L2CFighterCommon) {
     unsafe {
@@ -22,6 +29,124 @@ unsafe extern "C" fn wolf_frame(fighter: &mut L2CFighterCommon) {
 
         if crate::MARKED_COLORS[color as usize] {}
     }
+}
+
+// Status Scripts
+unsafe extern "C" fn shoot_pre(weapon: &mut L2CWeaponCommon) -> L2CValue {
+    StatusModule::init_settings(
+        weapon.module_accessor,
+        SituationKind(*SITUATION_KIND_NONE),
+        *WEAPON_KINETIC_TYPE_NORMAL,
+        *GROUND_CORRECT_KIND_AIR as u32,
+        GroundCliffCheckKind(*GROUND_CORRECT_KIND_NONE),
+        false,
+        0,
+        0,
+        0,
+        0,
+    );
+    0.into()
+}
+unsafe extern "C" fn shoot_main(weapon: &mut L2CWeaponCommon) -> L2CValue {
+    let owner_id = WorkModule::get_int(
+        weapon.module_accessor,
+        *WEAPON_INSTANCE_WORK_ID_INT_LINK_OWNER,
+    );
+    let owner_boma = sv_battle_object::module_accessor(owner_id as u32);
+    let owner_lr = PostureModule::lr(owner_boma);
+
+    PostureModule::set_lr(weapon.module_accessor, owner_lr);
+
+    MotionModule::change_motion(
+        weapon.module_accessor,
+        Hash40::new("shoot"),
+        0.0,
+        1.0,
+        false,
+        0.0,
+        false,
+        false,
+    );
+    // This is just for positioning the article, you can do whatever you want
+    PostureModule::add_pos_2d(weapon.module_accessor, &Vector2f { x: 5.0, y: 5.0 });
+    // Speed stuff
+    // In case you're cloning an article and it doesn't move,
+    // you may delete/comment the lines below, EXCEPT the weapon.fastshift.
+    // Then do what the comment says in shoot_main_loop
+
+    let lr = PostureModule::lr(weapon.module_accessor);
+    sv_kinetic_energy!(
+        set_speed,
+        weapon,
+        WEAPON_KINETIC_ENERGY_RESERVE_ID_NORMAL,
+        2.0 * lr
+    );
+    weapon.fastshift(L2CValue::Ptr(shoot_main_loop as *const () as _))
+}
+unsafe extern "C" fn shoot_main_loop(weapon: &mut L2CWeaponCommon) -> L2CValue {
+    if AttackModule::is_infliction_status(
+        weapon.module_accessor,
+        *COLLISION_KIND_MASK_HIT | *COLLISION_KIND_MASK_SHIELD,
+    ) {
+        AttackModule::set_add_reaction_frame(weapon.module_accessor, 0, 5.0, false);
+    }
+    0.into()
+}
+unsafe extern "C" fn shoot_end(weapon: &mut L2CWeaponCommon) -> L2CValue {
+    0.into()
+}
+
+unsafe extern "C" fn shoot_pre_fullcharge(weapon: &mut L2CWeaponCommon) -> L2CValue {
+    StatusModule::init_settings(
+        weapon.module_accessor,
+        SituationKind(*SITUATION_KIND_NONE),
+        *WEAPON_KINETIC_TYPE_NORMAL,
+        *GROUND_CORRECT_KIND_AIR as u32,
+        GroundCliffCheckKind(*GROUND_CORRECT_KIND_NONE),
+        false,
+        0,
+        0,
+        0,
+        0,
+    );
+    0.into()
+}
+unsafe extern "C" fn shoot_main_fullcharge(weapon: &mut L2CWeaponCommon) -> L2CValue {
+    let owner_id = WorkModule::get_int(
+        weapon.module_accessor,
+        *WEAPON_INSTANCE_WORK_ID_INT_LINK_OWNER,
+    );
+    let owner_boma = sv_battle_object::module_accessor(owner_id as u32);
+    let owner_lr = PostureModule::lr(owner_boma);
+
+    PostureModule::set_lr(weapon.module_accessor, owner_lr);
+
+    MotionModule::change_motion(
+        weapon.module_accessor,
+        Hash40::new("shoot"),
+        0.0,
+        1.0,
+        false,
+        0.0,
+        false,
+        false,
+    );
+    // This is just for positioning the article, you can do whatever you want
+    PostureModule::add_pos_2d(weapon.module_accessor, &Vector2f { x: 5.0, y: 5.0 });
+
+    weapon.fastshift(L2CValue::Ptr(shoot_main_loop_fullcharge as *const () as _))
+}
+unsafe extern "C" fn shoot_main_loop_fullcharge(weapon: &mut L2CWeaponCommon) -> L2CValue {
+    if AttackModule::is_infliction_status(
+        weapon.module_accessor,
+        *COLLISION_KIND_MASK_HIT | *COLLISION_KIND_MASK_SHIELD,
+    ) {
+        AttackModule::set_add_reaction_frame(weapon.module_accessor, 0, 12.0, false);
+    }
+    0.into()
+}
+unsafe extern "C" fn shoot_end_fullcharge(weapon: &mut L2CWeaponCommon) -> L2CValue {
+    0.into()
 }
 
 //Basic Attacks
@@ -1043,243 +1168,218 @@ unsafe extern "C" fn effect_specialhi_msonic(agent: &mut L2CAgentBase) {
 //Sensory Overload
 
 //-Animation Code
-unsafe extern "C" fn game_attackairn(agent: &mut L2CAgentBase) {
-    if macros::is_excute(agent) {
-        WorkModule::on_flag(
-            agent.module_accessor,
-            *FIGHTER_STATUS_ATTACK_AIR_FLAG_ENABLE_LANDING,
-        );
-    }
-    frame(agent.lua_state_agent, 7.0);
-    for _ in 0..5 {
-        if macros::is_excute(agent) {
-            macros::ATTACK(
-                agent,
-                0,
-                0,
-                Hash40::new("top"),
-                1.6,
-                185,
-                100,
-                30,
-                20,
-                2.5,
-                0.0,
-                11.0,
-                4.1,
-                None,
-                None,
-                None,
-                0.6,
-                1.0,
-                *ATTACK_SETOFF_KIND_ON,
-                *ATTACK_LR_CHECK_POS,
-                false,
-                0,
-                0.0,
-                0,
-                false,
-                false,
-                false,
-                false,
-                true,
-                *COLLISION_SITUATION_MASK_GA,
-                *COLLISION_CATEGORY_MASK_ALL,
-                *COLLISION_PART_MASK_ALL,
-                false,
-                Hash40::new("collision_attr_elec"),
-                *ATTACK_SOUND_LEVEL_M,
-                *COLLISION_SOUND_ATTR_ELEC,
-                *ATTACK_REGION_BODY,
-            );
-            macros::ATTACK(
-                agent,
-                1,
-                0,
-                Hash40::new("top"),
-                1.6,
-                185,
-                100,
-                30,
-                20,
-                2.5,
-                0.0,
-                11.0,
-                -6.1,
-                None,
-                None,
-                None,
-                0.6,
-                1.0,
-                *ATTACK_SETOFF_KIND_ON,
-                *ATTACK_LR_CHECK_POS,
-                false,
-                0,
-                0.0,
-                0,
-                false,
-                false,
-                false,
-                false,
-                true,
-                *COLLISION_SITUATION_MASK_GA,
-                *COLLISION_CATEGORY_MASK_ALL,
-                *COLLISION_PART_MASK_ALL,
-                false,
-                Hash40::new("collision_attr_elec"),
-                *ATTACK_SOUND_LEVEL_M,
-                *COLLISION_SOUND_ATTR_ELEC,
-                *ATTACK_REGION_BODY,
-            );
-            macros::ATTACK(
-                agent,
-                2,
-                0,
-                Hash40::new("top"),
-                1.6,
-                367,
-                100,
-                60,
-                20,
-                2.5,
-                0.0,
-                2.0,
-                4.1,
-                None,
-                None,
-                None,
-                0.6,
-                1.0,
-                *ATTACK_SETOFF_KIND_ON,
-                *ATTACK_LR_CHECK_POS,
-                false,
-                0,
-                0.0,
-                0,
-                false,
-                false,
-                false,
-                false,
-                true,
-                *COLLISION_SITUATION_MASK_GA,
-                *COLLISION_CATEGORY_MASK_ALL,
-                *COLLISION_PART_MASK_ALL,
-                false,
-                Hash40::new("collision_attr_elec"),
-                *ATTACK_SOUND_LEVEL_M,
-                *COLLISION_SOUND_ATTR_ELEC,
-                *ATTACK_REGION_BODY,
-            );
-            macros::ATTACK(
-                agent,
-                3,
-                0,
-                Hash40::new("top"),
-                1.6,
-                367,
-                100,
-                60,
-                20,
-                2.5,
-                0.0,
-                2.0,
-                -6.1,
-                None,
-                None,
-                None,
-                0.6,
-                1.0,
-                *ATTACK_SETOFF_KIND_ON,
-                *ATTACK_LR_CHECK_POS,
-                false,
-                0,
-                0.0,
-                0,
-                false,
-                false,
-                false,
-                false,
-                true,
-                *COLLISION_SITUATION_MASK_GA,
-                *COLLISION_CATEGORY_MASK_ALL,
-                *COLLISION_PART_MASK_ALL,
-                false,
-                Hash40::new("collision_attr_elec"),
-                *ATTACK_SOUND_LEVEL_M,
-                *COLLISION_SOUND_ATTR_ELEC,
-                *ATTACK_REGION_BODY,
-            );
-        }
-        wait(agent.lua_state_agent, 2.0);
-        if macros::is_excute(agent) {
-            AttackModule::clear_all(agent.module_accessor);
-        }
-        wait(agent.lua_state_agent, 2.0);
-    }
+
+//Plasma Pulse
+
+///Projectile
+
+// Projectile Scripts
+
+///No Charge Plasma Pulse
+unsafe extern "C" fn game_shoot(agent: &mut L2CAgentBase) {
     if macros::is_excute(agent) {
         macros::ATTACK(
             agent,
             0,
             0,
             Hash40::new("top"),
-            4.0,
-            361,
-            110,
-            0,
-            40,
-            13.5,
-            0.0,
             7.0,
-            -2.0,
+            361,
+            20,
+            0,
+            35,
+            2.4,
+            0.0,
+            0.0,
+            0.0,
             None,
             None,
             None,
-            1.2,
+            0.6,
             1.0,
             *ATTACK_SETOFF_KIND_ON,
-            *ATTACK_LR_CHECK_POS,
+            *ATTACK_LR_CHECK_SPEED,
             false,
-            0,
+            -2.5,
             0.0,
             0,
-            false,
-            false,
-            false,
-            false,
             true,
+            true,
+            false,
+            false,
+            false,
             *COLLISION_SITUATION_MASK_GA,
             *COLLISION_CATEGORY_MASK_ALL,
             *COLLISION_PART_MASK_ALL,
             false,
-            Hash40::new("collision_attr_elec"),
-            *ATTACK_SOUND_LEVEL_L,
-            *COLLISION_SOUND_ATTR_ELEC,
-            *ATTACK_REGION_BODY,
+            Hash40::new("collision_attr_aura"),
+            *ATTACK_SOUND_LEVEL_S,
+            *COLLISION_SOUND_ATTR_FIRE,
+            *ATTACK_REGION_NONE,
         );
     }
-    wait(agent.lua_state_agent, 2.0);
+    frame(agent.lua_state_agent, 45.0);
     if macros::is_excute(agent) {
-        AttackModule::clear_all(agent.module_accessor);
+        // This destroys the article
+        notify_event_msc_cmd!(agent, Hash40::new_raw(0x199c462b5d));
     }
-    frame(agent.lua_state_agent, 46.0);
+}
+unsafe extern "C" fn effect_shoot(agent: &mut L2CAgentBase) {
     if macros::is_excute(agent) {
-        WorkModule::off_flag(
-            agent.module_accessor,
-            *FIGHTER_STATUS_ATTACK_AIR_FLAG_ENABLE_LANDING,
+        macros::EFFECT_FOLLOW(
+            agent,
+            Hash40::new("sys_vector"),
+            Hash40::new("top"),
+            0,
+            0,
+            0,
+            180,
+            0,
+            0,
+            0.8,
+            false,
         );
+        macros::LAST_EFFECT_SET_COLOR(agent, 57, 109, 124);
+        macros::LAST_EFFECT_SET_ALPHA(agent, 9.0);
+    }
+}
+unsafe extern "C" fn sound_shoot(agent: &mut L2CAgentBase) {
+    frame(agent.lua_state_agent, 5.0);
+    if macros::is_excute(agent) {}
+}
+///Full Power Plasma Pulse
+unsafe extern "C" fn game_fullchargeshot(agent: &mut L2CAgentBase) {
+    if macros::is_excute(agent) {
+        macros::ATTACK(
+            agent,
+            0,
+            0,
+            Hash40::new("top"),
+            7.0,
+            361,
+            20,
+            0,
+            35,
+            2.4,
+            0.0,
+            0.0,
+            0.0,
+            None,
+            None,
+            None,
+            0.6,
+            1.0,
+            *ATTACK_SETOFF_KIND_ON,
+            *ATTACK_LR_CHECK_SPEED,
+            false,
+            -2.5,
+            0.0,
+            0,
+            true,
+            true,
+            false,
+            false,
+            false,
+            *COLLISION_SITUATION_MASK_GA,
+            *COLLISION_CATEGORY_MASK_ALL,
+            *COLLISION_PART_MASK_ALL,
+            false,
+            Hash40::new("collision_attr_aura"),
+            *ATTACK_SOUND_LEVEL_S,
+            *COLLISION_SOUND_ATTR_FIRE,
+            *ATTACK_REGION_NONE,
+        );
+    }
+    frame(agent.lua_state_agent, 45.0);
+    if macros::is_excute(agent) {
+        // This destroys the article
+        notify_event_msc_cmd!(agent, Hash40::new_raw(0x199c462b5d));
+    }
+}
+unsafe extern "C" fn effect_fullchargeshot(agent: &mut L2CAgentBase) {
+    if macros::is_excute(agent) {
+        macros::EFFECT_FOLLOW(
+            agent,
+            Hash40::new("sys_vector"),
+            Hash40::new("top"),
+            0,
+            0,
+            0,
+            180,
+            0,
+            0,
+            3.0,
+            false,
+        );
+        macros::LAST_EFFECT_SET_COLOR(agent, 57, 109, 124);
+        macros::LAST_EFFECT_SET_ALPHA(agent, 9.0);
+    }
+}
+unsafe extern "C" fn sound_fullchargeshot(agent: &mut L2CAgentBase) {
+    frame(agent.lua_state_agent, 5.0);
+    if macros::is_excute(agent) {}
+}
+//unsafe extern "C" fn game_specialn(agent: &mut L2CAgentBase) {
+//    macros::FT_MOTION_RATE(agent, 1.15);
+//    frame(agent.lua_state_agent, 14.0);
+//    if macros::is_excute(agent) {
+//        ArticleModule::generate_article(
+//            agent.module_accessor,
+//            FIGHTER_WOLF_GENERATE_ARTICLE_PLASMAPULSE,
+//            false,
+//            -1,
+//        );
+//    }
+//}
+
+unsafe extern "C" fn game_specialn(agent: &mut L2CAgentBase) {
+    frame(agent.lua_state_agent, 14.0);
+    if ControlModule::check_button_on(agent.module_accessor, *CONTROL_PAD_BUTTON_SPECIAL) {
+        macros::FT_MOTION_RATE(agent, 5.0);
+        frame(agent.lua_state_agent, 30.0);
+        if ControlModule::check_button_on(agent.module_accessor, *CONTROL_PAD_BUTTON_SPECIAL) {
+            macros::FT_MOTION_RATE(agent, 1.15);
+            DamageModule::add_damage(agent.module_accessor, 12.5, 0);
+            StatusModule::change_status_request_from_script(
+                agent.module_accessor,
+                *FIGHTER_STATUS_KIND_FURAFURA,
+                false,
+            );
+        } else {
+            frame(agent.lua_state_agent, 30.0);
+            macros::FT_MOTION_RATE(agent, 1.15);
+            if macros::is_excute(agent) {
+                ArticleModule::generate_article(
+                    agent.module_accessor,
+                    FIGHTER_WOLF_GENERATE_ARTICLE_PLASMAPULSEFULLCHARGE,
+                    false,
+                    -1,
+                );
+            }
+        }
+    } else {
+        frame(agent.lua_state_agent, 14.0);
+        macros::FT_MOTION_RATE(agent, 1.15);
+        if macros::is_excute(agent) {
+            ArticleModule::generate_article(
+                agent.module_accessor,
+                FIGHTER_WOLF_GENERATE_ARTICLE_PLASMAPULSEFULLCHARGE,
+                false,
+                -1,
+            );
+        }
     }
 }
 
-///Sensory Overload Effects
-unsafe extern "C" fn effect_attackairn_msonic(agent: &mut L2CAgentBase) {
-    frame(agent.lua_state_agent, 2.0);
+unsafe extern "C" fn effect_specialn_msonic(agent: &mut L2CAgentBase) {
+    frame(agent.lua_state_agent, 8.0);
     if macros::is_excute(agent) {
-        macros::EFFECT_FOLLOW_NO_STOP(
+        macros::EFFECT_FOLLOW(
             agent,
-            Hash40::new("pikachu_elec_spark"),
-            Hash40::new("top"),
+            Hash40::new("wolf_bayonet"),
+            Hash40::new("haver"),
             0,
-            2,
+            0,
             0,
             0,
             0,
@@ -1287,25 +1387,137 @@ unsafe extern "C" fn effect_attackairn_msonic(agent: &mut L2CAgentBase) {
             1,
             true,
         );
-        EffectModule::enable_sync_init_pos_last(agent.module_accessor);
+        macros::AFTER_IMAGE4_ON_arg29(
+            agent,
+            Hash40::new("tex_wolf_bayonet1"),
+            Hash40::new("tex_wolf_bayonet2"),
+            3,
+            Hash40::new("haver"),
+            0,
+            -0.3,
+            3,
+            Hash40::new("haver"),
+            0,
+            0.77,
+            6.2,
+            true,
+            Hash40::new("null"),
+            Hash40::new("haver"),
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            *EFFECT_AXIS_X,
+            0,
+            *TRAIL_BLEND_ALPHA,
+            101,
+            *TRAIL_CULL_NONE,
+            1.3,
+            0.1,
+        );
     }
-    for _ in 0..4 {
-        if macros::is_excute(agent) {
-            macros::BURN_COLOR(agent, 255, 69, 0, 1.0);
-        }
-        wait(agent.lua_state_agent, 1.0);
-        if macros::is_excute(agent) {
-            macros::BURN_COLOR_FRAME(agent, 2, 255, 69, 0, 0);
-        }
-        wait(agent.lua_state_agent, 2.0);
-        if macros::is_excute(agent) {
-            macros::BURN_COLOR_NORMAL(agent);
-        }
-        wait(agent.lua_state_agent, 2.0);
-    }
-    frame(agent.lua_state_agent, 21.0);
+    frame(agent.lua_state_agent, 13.0);
     if macros::is_excute(agent) {
-        macros::EFFECT_OFF_KIND(agent, Hash40::new("pikachu_elec_spark"), false, false);
+        macros::AFTER_IMAGE_OFF(agent, 4);
+        macros::EFFECT_OFF_KIND(agent, Hash40::new("wolf_bayonet"), false, false);
+        macros::EFFECT(
+            agent,
+            Hash40::new("wolf_blaster_shot"),
+            Hash40::new("top"),
+            0,
+            9.8,
+            13.2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            true,
+        );
+    }
+    frame(agent.lua_state_agent, 14.0);
+    if macros::is_excute(agent) {
+        macros::FOOT_EFFECT(
+            agent,
+            Hash40::new("sys_dash_smoke"),
+            Hash40::new("top"),
+            -8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            false,
+        );
+    }
+    frame(agent.lua_state_agent, 16.0);
+    if macros::is_excute(agent) {
+        macros::EFFECT_FOLLOW(
+            agent,
+            Hash40::new("wolf_bayonet"),
+            Hash40::new("haver"),
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            true,
+        );
+        macros::AFTER_IMAGE4_ON_arg29(
+            agent,
+            Hash40::new("tex_wolf_bayonet1"),
+            Hash40::new("tex_wolf_bayonet2"),
+            4,
+            Hash40::new("haver"),
+            0,
+            -0.3,
+            2.5,
+            Hash40::new("haver"),
+            0,
+            0.77,
+            6.3,
+            true,
+            Hash40::new("null"),
+            Hash40::new("haver"),
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            *EFFECT_AXIS_X,
+            0,
+            *TRAIL_BLEND_ALPHA,
+            101,
+            *TRAIL_CULL_NONE,
+            1.3,
+            0.1,
+        );
+    }
+    frame(agent.lua_state_agent, 19.0);
+    if macros::is_excute(agent) {
+        macros::AFTER_IMAGE_OFF(agent, 3);
+        macros::EFFECT_OFF_KIND(agent, Hash40::new("wolf_bayonet"), false, false);
     }
 }
 
@@ -1313,7 +1525,7 @@ unsafe extern "C" fn effect_attackairn_msonic(agent: &mut L2CAgentBase) {
 
 ////Electric Surge Attack (Grounded)
 
-unsafe extern "C" fn game_specialn(agent: &mut L2CAgentBase) {
+unsafe extern "C" fn game_attackdash(agent: &mut L2CAgentBase) {
     if macros::is_excute(agent) {
         WorkModule::on_flag(
             agent.module_accessor,
@@ -1530,239 +1742,6 @@ unsafe extern "C" fn game_specialn(agent: &mut L2CAgentBase) {
     wait(agent.lua_state_agent, 2.0);
     if macros::is_excute(agent) {
         AttackModule::clear_all(agent.module_accessor);
-    }
-    frame(agent.lua_state_agent, 46.0);
-    if macros::is_excute(agent) {
-        WorkModule::off_flag(
-            agent.module_accessor,
-            *FIGHTER_STATUS_ATTACK_AIR_FLAG_ENABLE_LANDING,
-        );
-    }
-}
-
-////Electric Surge Attack (Aerial)
-
-unsafe extern "C" fn game_specialairn(agent: &mut L2CAgentBase) {
-    if macros::is_excute(agent) {
-        WorkModule::on_flag(
-            agent.module_accessor,
-            *FIGHTER_STATUS_ATTACK_AIR_FLAG_ENABLE_LANDING,
-        );
-    }
-    frame(agent.lua_state_agent, 7.0);
-    for _ in 0..5 {
-        if macros::is_excute(agent) {
-            macros::ATTACK(
-                agent,
-                0,
-                0,
-                Hash40::new("top"),
-                1.6,
-                185,
-                100,
-                30,
-                20,
-                2.5,
-                0.0,
-                11.0,
-                4.1,
-                None,
-                None,
-                None,
-                0.6,
-                1.0,
-                *ATTACK_SETOFF_KIND_ON,
-                *ATTACK_LR_CHECK_POS,
-                false,
-                0,
-                0.0,
-                0,
-                false,
-                false,
-                false,
-                false,
-                true,
-                *COLLISION_SITUATION_MASK_GA,
-                *COLLISION_CATEGORY_MASK_ALL,
-                *COLLISION_PART_MASK_ALL,
-                false,
-                Hash40::new("collision_attr_elec"),
-                *ATTACK_SOUND_LEVEL_M,
-                *COLLISION_SOUND_ATTR_ELEC,
-                *ATTACK_REGION_BODY,
-            );
-            macros::ATTACK(
-                agent,
-                1,
-                0,
-                Hash40::new("top"),
-                1.6,
-                185,
-                100,
-                30,
-                20,
-                2.5,
-                0.0,
-                11.0,
-                -6.1,
-                None,
-                None,
-                None,
-                0.6,
-                1.0,
-                *ATTACK_SETOFF_KIND_ON,
-                *ATTACK_LR_CHECK_POS,
-                false,
-                0,
-                0.0,
-                0,
-                false,
-                false,
-                false,
-                false,
-                true,
-                *COLLISION_SITUATION_MASK_GA,
-                *COLLISION_CATEGORY_MASK_ALL,
-                *COLLISION_PART_MASK_ALL,
-                false,
-                Hash40::new("collision_attr_elec"),
-                *ATTACK_SOUND_LEVEL_M,
-                *COLLISION_SOUND_ATTR_ELEC,
-                *ATTACK_REGION_BODY,
-            );
-            macros::ATTACK(
-                agent,
-                2,
-                0,
-                Hash40::new("top"),
-                1.6,
-                367,
-                100,
-                60,
-                20,
-                2.5,
-                0.0,
-                2.0,
-                4.1,
-                None,
-                None,
-                None,
-                0.6,
-                1.0,
-                *ATTACK_SETOFF_KIND_ON,
-                *ATTACK_LR_CHECK_POS,
-                false,
-                0,
-                0.0,
-                0,
-                false,
-                false,
-                false,
-                false,
-                true,
-                *COLLISION_SITUATION_MASK_GA,
-                *COLLISION_CATEGORY_MASK_ALL,
-                *COLLISION_PART_MASK_ALL,
-                false,
-                Hash40::new("collision_attr_elec"),
-                *ATTACK_SOUND_LEVEL_M,
-                *COLLISION_SOUND_ATTR_ELEC,
-                *ATTACK_REGION_BODY,
-            );
-            macros::ATTACK(
-                agent,
-                3,
-                0,
-                Hash40::new("top"),
-                1.6,
-                367,
-                100,
-                60,
-                20,
-                2.5,
-                0.0,
-                2.0,
-                -6.1,
-                None,
-                None,
-                None,
-                0.6,
-                1.0,
-                *ATTACK_SETOFF_KIND_ON,
-                *ATTACK_LR_CHECK_POS,
-                false,
-                0,
-                0.0,
-                0,
-                false,
-                false,
-                false,
-                false,
-                true,
-                *COLLISION_SITUATION_MASK_GA,
-                *COLLISION_CATEGORY_MASK_ALL,
-                *COLLISION_PART_MASK_ALL,
-                false,
-                Hash40::new("collision_attr_elec"),
-                *ATTACK_SOUND_LEVEL_M,
-                *COLLISION_SOUND_ATTR_ELEC,
-                *ATTACK_REGION_BODY,
-            );
-        }
-        wait(agent.lua_state_agent, 2.0);
-        if macros::is_excute(agent) {
-            AttackModule::clear_all(agent.module_accessor);
-        }
-        wait(agent.lua_state_agent, 2.0);
-    }
-    if macros::is_excute(agent) {
-        macros::ATTACK(
-            agent,
-            0,
-            0,
-            Hash40::new("top"),
-            4.0,
-            361,
-            110,
-            0,
-            40,
-            13.5,
-            0.0,
-            7.0,
-            -2.0,
-            None,
-            None,
-            None,
-            1.2,
-            1.0,
-            *ATTACK_SETOFF_KIND_ON,
-            *ATTACK_LR_CHECK_POS,
-            false,
-            0,
-            0.0,
-            0,
-            false,
-            false,
-            false,
-            false,
-            true,
-            *COLLISION_SITUATION_MASK_GA,
-            *COLLISION_CATEGORY_MASK_ALL,
-            *COLLISION_PART_MASK_ALL,
-            false,
-            Hash40::new("collision_attr_elec"),
-            *ATTACK_SOUND_LEVEL_L,
-            *COLLISION_SOUND_ATTR_ELEC,
-            *ATTACK_REGION_BODY,
-        );
-    }
-    wait(agent.lua_state_agent, 2.0);
-    if macros::is_excute(agent) {
-        AttackModule::clear_all(agent.module_accessor);
-    }
-    {
-        frame(agent.lua_state_agent, 5.0);
-        macros::QUAKE(agent, *CAMERA_QUAKE_KIND_L);
     }
     frame(agent.lua_state_agent, 46.0);
     if macros::is_excute(agent) {
@@ -1774,7 +1753,7 @@ unsafe extern "C" fn game_specialairn(agent: &mut L2CAgentBase) {
 }
 
 ////Electric Surge Effects
-unsafe extern "C" fn effect_specialn_msonic(agent: &mut L2CAgentBase) {
+unsafe extern "C" fn effect_attackdash_msonic(agent: &mut L2CAgentBase) {
     frame(agent.lua_state_agent, 2.0);
     if macros::is_excute(agent) {
         macros::EFFECT_FOLLOW_NO_STOP(
@@ -1811,16 +1790,122 @@ unsafe extern "C" fn effect_specialn_msonic(agent: &mut L2CAgentBase) {
         macros::EFFECT_OFF_KIND(agent, Hash40::new("pikachu_elec_spark"), false, false);
     }
 }
+//Emerald Dive
 
-unsafe extern "C" fn effect_specialairn_msonic(agent: &mut L2CAgentBase) {
-    frame(agent.lua_state_agent, 2.0);
+unsafe extern "C" fn game_specialsstart(agent: &mut L2CAgentBase) {
+    frame(agent.lua_state_agent, 10.0);
+    if ControlModule::check_button_on(agent.module_accessor, *CONTROL_PAD_BUTTON_SPECIAL) {
+        frame(agent.lua_state_agent, 15.0);
+        if ControlModule::check_button_on(agent.module_accessor, *CONTROL_PAD_BUTTON_SPECIAL) {
+            macros::FT_MOTION_RATE(agent, 5.0);
+            DamageModule::add_damage(agent.module_accessor, 12.5, 0);
+        } else {
+            macros::FT_MOTION_RATE(agent, 3.0);
+            DamageModule::add_damage(agent.module_accessor, 7.0, 0);
+        }
+    } else {
+        macros::FT_MOTION_RATE(agent, 1.0);
+        DamageModule::add_damage(agent.module_accessor, 1.0, 0);
+    }
+}
+unsafe extern "C" fn game_specials(agent: &mut L2CAgentBase) {
     if macros::is_excute(agent) {
-        macros::EFFECT_FOLLOW_NO_STOP(
+        macros::ATTACK_ABS(
             agent,
-            Hash40::new("pikachu_elec_spark"),
-            Hash40::new("top"),
+            *FIGHTER_ATTACK_ABSOLUTE_KIND_THROW,
             0,
-            2,
+            12.0,
+            361,
+            90,
+            0,
+            60,
+            0.0,
+            1.0,
+            *ATTACK_LR_CHECK_F,
+            0.0,
+            true,
+            Hash40::new("collision_attr_purple"),
+            *ATTACK_SOUND_LEVEL_L,
+            *COLLISION_SOUND_ATTR_BOMB,
+            *ATTACK_REGION_NONE,
+        );
+        macros::ATTACK_ABS(
+            agent,
+            *FIGHTER_ATTACK_ABSOLUTE_KIND_CATCH,
+            0,
+            4.0,
+            0,
+            10,
+            0,
+            100,
+            0.0,
+            1.0,
+            *ATTACK_LR_CHECK_F,
+            0.0,
+            true,
+            Hash40::new("collision_attr_normal"),
+            *ATTACK_SOUND_LEVEL_S,
+            *COLLISION_SOUND_ATTR_KICK,
+            *ATTACK_REGION_NONE,
+        );
+    }
+    frame(agent.lua_state_agent, 17.0);
+    if macros::is_excute(agent) {
+        damage!(
+            agent,
+            *MA_MSC_DAMAGE_DAMAGE_NO_REACTION,
+            *DAMAGE_NO_REACTION_MODE_ALWAYS,
+            0
+        );
+    }
+    frame(agent.lua_state_agent, 31.0);
+    if macros::is_excute(agent) {
+        let target = WorkModule::get_int64(
+            agent.module_accessor,
+            *FIGHTER_STATUS_THROW_WORK_INT_TARGET_OBJECT,
+        );
+        let target_group = WorkModule::get_int64(
+            agent.module_accessor,
+            *FIGHTER_STATUS_THROW_WORK_INT_TARGET_HIT_GROUP,
+        );
+        let target_no = WorkModule::get_int64(
+            agent.module_accessor,
+            *FIGHTER_STATUS_THROW_WORK_INT_TARGET_HIT_NO,
+        );
+        macros::ATK_HIT_ABS(
+            agent,
+            *FIGHTER_ATTACK_ABSOLUTE_KIND_THROW,
+            Hash40::new("throw"),
+            target,
+            target_group,
+            target_no,
+        );
+    }
+    frame(agent.lua_state_agent, 39.0);
+    if macros::is_excute(agent) {
+        WorkModule::on_flag(
+            agent.module_accessor,
+            *FIGHTER_GANON_STATUS_WORK_ID_FLAG_EXPLOSION_SET_FALL,
+        );
+    }
+    frame(agent.lua_state_agent, 41.0);
+    if macros::is_excute(agent) {
+        damage!(
+            agent,
+            *MA_MSC_DAMAGE_DAMAGE_NO_REACTION,
+            *DAMAGE_NO_REACTION_MODE_NORMAL,
+            0
+        );
+    }
+}
+unsafe extern "C" fn effect_specials_msonic(agent: &mut L2CAgentBase) {
+    if macros::is_excute(agent) {
+        macros::EFFECT_FLW_POS(
+            agent,
+            Hash40::new("sys_catch"),
+            Hash40::new("throw"),
+            0,
+            0,
             0,
             0,
             0,
@@ -1828,53 +1913,122 @@ unsafe extern "C" fn effect_specialairn_msonic(agent: &mut L2CAgentBase) {
             1,
             true,
         );
-        EffectModule::enable_sync_init_pos_last(agent.module_accessor);
+        macros::EFFECT_FOLLOW(
+            agent,
+            Hash40::new("pikachu_elec2"),
+            Hash40::new("havel"),
+            -1,
+            0,
+            0.5,
+            0,
+            0,
+            0,
+            1,
+            true,
+        );
     }
-    for _ in 0..4 {
-        if macros::is_excute(agent) {
-            macros::BURN_COLOR(agent, 255, 69, 0, 1.0);
-        }
-        wait(agent.lua_state_agent, 1.0);
-        if macros::is_excute(agent) {
-            macros::BURN_COLOR_FRAME(agent, 2, 255, 69, 0, 0);
-        }
-        wait(agent.lua_state_agent, 2.0);
-        if macros::is_excute(agent) {
-            macros::BURN_COLOR_NORMAL(agent);
-        }
-        wait(agent.lua_state_agent, 2.0);
-    }
-    frame(agent.lua_state_agent, 21.0);
+    frame(agent.lua_state_agent, 31.0);
     if macros::is_excute(agent) {
-        macros::EFFECT_OFF_KIND(agent, Hash40::new("pikachu_elec_spark"), false, false);
+        macros::EFFECT(
+            agent,
+            Hash40::new("pikachu_elec2"),
+            Hash40::new("throw"),
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            true,
+        );
     }
 }
 pub fn install() {
-    Agent::new("wolf")
-        //fighter frame
-        .on_line(Main, wolf_frame)
-        //Misc.
-        //Jabs
-        .game_acmd("game_attack11_msonic", game_attack11, High)
-        .effect_acmd("effect_attack11_msonic", effect_attack11_msonic, High)
-        .game_acmd("game_attack13_msonic", game_attack13, High)
-        .effect_acmd("effect_attack13_msonic", effect_attack13_msonic, High)
-        //Dash Attack
-        //Tilts
-        .effect_acmd("effect_attacks3_msonic", effect_attacks3_msonic, High)
-        //Smashes
-        //Aerials
-        .game_acmd("game_attackairn_msonic", game_attackairn, High)
-        .effect_acmd("effect_attackairn_msonic", effect_attackairn_msonic, High)
-        //Specials
-        .game_acmd("game_specialn_msonic", game_specialn, High)
-        .game_acmd("game_specialairn_msonic", game_specialn, High)
-        .effect_acmd("effect_specialn_msonic", effect_specialn_msonic, High)
-        .effect_acmd("effect_specialairn_msonic", effect_specialairn_msonic, High)
-        .game_acmd("game_specialhi_msonic", game_specialhi, High)
-        .effect_acmd("effect_specialhi_msonic", effect_specialhi_msonic, High)
-        .game_acmd("game_specialhilanding_msonic", game_specialhilanding, High)
-        .install();
+    unsafe {
+        FIGHTER_WOLF_GENERATE_ARTICLE_PLASMAPULSE += smashline::clone_weapon(
+            "miiswordsman",
+            *WEAPON_KIND_MIISWORDSMAN_WAVE,
+            "wolf",
+            "plasmapulse",
+            false,
+        );
+        FIGHTER_WOLF_GENERATE_ARTICLE_PLASMAPULSEFULLCHARGE += smashline::clone_weapon(
+            "miiswordsman",
+            *WEAPON_KIND_MIISWORDSMAN_WAVE,
+            "wolf",
+            "plasmapulsefullcharge",
+            false,
+        );
+        Agent::new("wolf")
+            //fighter frame
+            .on_line(Main, wolf_frame)
+            //Misc.
+            //Jabs
+            .game_acmd("game_attack11_msonic", game_attack11, High)
+            .effect_acmd("effect_attack11_msonic", effect_attack11_msonic, High)
+            .game_acmd("game_attack13_msonic", game_attack13, High)
+            .effect_acmd("effect_attack13_msonic", effect_attack13_msonic, High)
+            //Dash Attack
+            .game_acmd("game_attackdash_msonic", game_attackdash, High)
+            .effect_acmd("effect_attackdash_msonic", effect_attackdash_msonic, High)
+            //Tilts
+            .effect_acmd("effect_attacks3_msonic", effect_attacks3_msonic, High)
+            //Smashes
+            //Aerials
+            //Specials
+            .game_acmd("game_specialn_msonic", game_specialn, High)
+            .effect_acmd("effect_specialn_msonic", effect_specialn_msonic, High)
+            .game_acmd("game_specialhi_msonic", game_specialhi, High)
+            .effect_acmd("effect_specialhi_msonic", effect_specialhi_msonic, High)
+            .game_acmd("game_specialhilanding_msonic", game_specialhilanding, High)
+            .game_acmd("game_specialsstart_msonic", game_specialsstart, High)
+            .game_acmd("game_specials_msonic", game_specials, High)
+            .effect_acmd("effect_specials_msonic", effect_specials_msonic, High)
+            .install();
+        //Normal Shot
+        Agent::new("wolf_plasmapulse")
+            .game_acmd("game_shoot", game_shoot, Priority::Default)
+            .effect_acmd("effect_shoot", effect_shoot, Priority::Default)
+            .status(Pre, WEAPON_WOLF_PLASMAPULSE_STATUS_KIND_SHOOT, shoot_pre)
+            .status(Main, WEAPON_WOLF_PLASMAPULSE_STATUS_KIND_SHOOT, shoot_main)
+            .status(End, WEAPON_WOLF_PLASMAPULSE_STATUS_KIND_SHOOT, shoot_end)
+            .install();
+        //Big Laser
+        Agent::new("wolf_plasmapulsefullcharge")
+            .game_acmd(
+                "game_fullchargeshot",
+                game_fullchargeshot,
+                Priority::Default,
+            )
+            .effect_acmd(
+                "effect_fullchargeshot",
+                effect_fullchargeshot,
+                Priority::Default,
+            )
+            .status(
+                Pre,
+                WEAPON_WOLF_PLASMAPULSEFULLCHARGE_STATUS_KIND_SHOOT,
+                shoot_pre_fullcharge,
+            )
+            .status(
+                Main,
+                WEAPON_WOLF_PLASMAPULSEFULLCHARGE_STATUS_KIND_SHOOT,
+                shoot_main_fullcharge,
+            )
+            .status(
+                End,
+                WEAPON_WOLF_PLASMAPULSEFULLCHARGE_STATUS_KIND_SHOOT,
+                shoot_end_fullcharge,
+            )
+            .install();
+    }
 }
 
 // ,

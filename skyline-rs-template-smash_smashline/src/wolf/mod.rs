@@ -1333,32 +1333,110 @@ unsafe extern "C" fn sound_fullchargeshot(agent: &mut L2CAgentBase) {
 //}
 
 unsafe extern "C" fn game_specialn(agent: &mut L2CAgentBase) {
-    frame(agent.lua_state_agent, 14.0);
+    frame(agent.lua_state_agent, 10.0);
     if ControlModule::check_button_on(agent.module_accessor, *CONTROL_PAD_BUTTON_SPECIAL) {
-        macros::FT_MOTION_RATE(agent, 5.0);
-        frame(agent.lua_state_agent, 30.0);
+        macros::FT_MOTION_RATE(agent, 2.0);
+        frame(agent.lua_state_agent, 20.0);
         if ControlModule::check_button_on(agent.module_accessor, *CONTROL_PAD_BUTTON_SPECIAL) {
             macros::FT_MOTION_RATE(agent, 1.15);
-            DamageModule::add_damage(agent.module_accessor, 12.5, 0);
-            StatusModule::change_status_request_from_script(
-                agent.module_accessor,
-                *FIGHTER_STATUS_KIND_FURAFURA,
-                false,
-            );
+            if macros::is_excute(agent) {
+                DamageModule::add_damage(agent.module_accessor, 12.5, 0);
+                StatusModule::change_status_request_from_script(
+                    agent.module_accessor,
+                    *FIGHTER_STATUS_KIND_FURAFURA,
+                    false,
+                );
+            }
         } else {
-            frame(agent.lua_state_agent, 30.0);
+            frame(agent.lua_state_agent, 22.0);
             macros::FT_MOTION_RATE(agent, 1.15);
             if macros::is_excute(agent) {
-                ArticleModule::generate_article(
-                    agent.module_accessor,
-                    FIGHTER_WOLF_GENERATE_ARTICLE_PLASMAPULSEFULLCHARGE,
+                macros::ATTACK(
+                    agent,
+                    0,
+                    0,
+                    Hash40::new("top"),
+                    10.0,
+                    361,
+                    80,
+                    0,
+                    60,
+                    5.0,
+                    0.0,
+                    7.0,
+                    3.0,
+                    Some(0.0),
+                    Some(7.0),
+                    Some(50.0),
+                    0.5,
+                    1.0,
+                    *ATTACK_SETOFF_KIND_ON,
+                    *ATTACK_LR_CHECK_F,
                     false,
-                    -1,
+                    0,
+                    0.0,
+                    0,
+                    false,
+                    false,
+                    false,
+                    false,
+                    true,
+                    *COLLISION_SITUATION_MASK_GA,
+                    *COLLISION_CATEGORY_MASK_ALL,
+                    *COLLISION_PART_MASK_ALL,
+                    false,
+                    Hash40::new("collision_attr_elec"),
+                    *ATTACK_SOUND_LEVEL_M,
+                    *COLLISION_SOUND_ATTR_ELEC,
+                    *ATTACK_REGION_ENERGY,
                 );
+                macros::ATTACK(
+                    agent,
+                    1,
+                    0,
+                    Hash40::new("top"),
+                    5.0,
+                    361,
+                    80,
+                    0,
+                    60,
+                    5.0,
+                    0.0,
+                    7.0,
+                    55.0,
+                    Some(0.0),
+                    Some(7.0),
+                    Some(70.0),
+                    0.5,
+                    1.0,
+                    *ATTACK_SETOFF_KIND_ON,
+                    *ATTACK_LR_CHECK_F,
+                    false,
+                    0,
+                    0.0,
+                    0,
+                    false,
+                    false,
+                    false,
+                    false,
+                    true,
+                    *COLLISION_SITUATION_MASK_GA,
+                    *COLLISION_CATEGORY_MASK_ALL,
+                    *COLLISION_PART_MASK_ALL,
+                    false,
+                    Hash40::new("collision_attr_elec"),
+                    *ATTACK_SOUND_LEVEL_M,
+                    *COLLISION_SOUND_ATTR_ELEC,
+                    *ATTACK_REGION_ENERGY,
+                );
+            }
+            frame(agent.lua_state_agent, 35.0);
+            if macros::is_excute(agent) {
+                AttackModule::clear_all(agent.module_accessor);
             }
         }
     } else {
-        frame(agent.lua_state_agent, 14.0);
+        frame(agent.lua_state_agent, 20.0);
         macros::FT_MOTION_RATE(agent, 1.15);
         if macros::is_excute(agent) {
             ArticleModule::generate_article(
@@ -1372,7 +1450,34 @@ unsafe extern "C" fn game_specialn(agent: &mut L2CAgentBase) {
 }
 
 unsafe extern "C" fn effect_specialn_msonic(agent: &mut L2CAgentBase) {
-    frame(agent.lua_state_agent, 8.0);
+    frame(agent.lua_state_agent, 10.0);
+    if ControlModule::check_button_on(agent.module_accessor, *CONTROL_PAD_BUTTON_SPECIAL) {
+        frame(agent.lua_state_agent, 20.0);
+        if ControlModule::check_button_on(agent.module_accessor, *CONTROL_PAD_BUTTON_SPECIAL) {
+            if macros::is_excute(agent) {}
+        } else {
+            if macros::is_excute(agent) {
+                macros::EFFECT_FOLLOW(
+                    agent,
+                    Hash40::new("palutena_pressure"),
+                    Hash40::new("top"),
+                    0,
+                    7,
+                    3,
+                    90,
+                    0,
+                    0,
+                    0.75,
+                    false,
+                );
+            }
+        }
+    } else {
+        frame(agent.lua_state_agent, 20.0);
+        if macros::is_excute(agent) {}
+    }
+
+    /*frame(agent.lua_state_agent, 8.0);
     if macros::is_excute(agent) {
         macros::EFFECT_FOLLOW(
             agent,
@@ -1518,7 +1623,7 @@ unsafe extern "C" fn effect_specialn_msonic(agent: &mut L2CAgentBase) {
     if macros::is_excute(agent) {
         macros::AFTER_IMAGE_OFF(agent, 3);
         macros::EFFECT_OFF_KIND(agent, Hash40::new("wolf_bayonet"), false, false);
-    }
+    }*/
 }
 
 //Electric Surge

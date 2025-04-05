@@ -1,681 +1,2193 @@
 {
     "new-dir-infos": [
-        "fighter/wolf/c64",
-        "fighter/wolf/movie/c64",
-        "fighter/wolf/result/c64",
-        "fighter/wolf/camera/c64",
-        "fighter/wolf/kirbycopy/c64"
+        "fighter/sonic/c21",
+        "fighter/sonic/movie/c21",
+        "fighter/sonic/camera/c21",
+        "fighter/sonic/kirbycopy/c21",
+        "fighter/sonic/result/c21"
     ],
     "new-dir-infos-base": {
-        "fighter/wolf/c64/camera": "fighter/wolf/c00/camera",
-        "fighter/wolf/c64/cmn": "fighter/wolf/c00/cmn",
-        "fighter/wolf/kirbycopy/c64/bodymotion": "fighter/wolf/kirbycopy/c00/bodymotion",
-        "fighter/wolf/kirbycopy/c64/sound": "fighter/wolf/kirbycopy/c00/sound",
-        "fighter/wolf/kirbycopy/c64/cmn": "fighter/wolf/kirbycopy/c00/cmn"
+        "fighter/sonic/c21/camera": "fighter/sonic/c05/camera",
+        "fighter/sonic/c21/cmn": "fighter/sonic/c05/cmn",
+        "fighter/sonic/kirbycopy/c21/bodymotion": "fighter/sonic/kirbycopy/c05/bodymotion",
+        "fighter/sonic/kirbycopy/c21/sound": "fighter/sonic/kirbycopy/c05/sound",
+        "fighter/sonic/kirbycopy/c21/cmn": "fighter/sonic/kirbycopy/c05/cmn"
     },
     "share-to-vanilla": {
-        "fighter/kirby/model/copy_wolf_cap/c00/dark_model.numatb": [
-            "fighter/kirby/model/copy_wolf_cap/c64/dark_model.numatb"
+        "fighter/sonic/model/body/c05/dark_model.numatb": [
+            "fighter/sonic/model/body/c21/dark_model.numatb"
         ],
-        "fighter/kirby/model/copy_wolf_cap/c00/kirby_wolf_001_col.nutexb": [
-            "fighter/kirby/model/copy_wolf_cap/c64/kirby_wolf_001_col.nutexb"
+        "fighter/sonic/model/body/c05/def_sonic_001_col.nutexb": [
+            "fighter/sonic/model/body/c21/def_sonic_001_col.nutexb"
         ],
-        "fighter/kirby/model/copy_wolf_cap/c00/kirby_wolf_001_nor.nutexb": [
-            "fighter/kirby/model/copy_wolf_cap/c64/kirby_wolf_001_nor.nutexb"
+        "fighter/sonic/model/body/c05/def_sonic_001_nor.nutexb": [
+            "fighter/sonic/model/body/c21/def_sonic_001_nor.nutexb"
         ],
-        "fighter/kirby/model/copy_wolf_cap/c00/kirby_wolf_001_prm.nutexb": [
-            "fighter/kirby/model/copy_wolf_cap/c64/kirby_wolf_001_prm.nutexb"
+        "fighter/sonic/model/body/c05/def_sonic_001_prm.nutexb": [
+            "fighter/sonic/model/body/c21/def_sonic_001_prm.nutexb"
         ],
-        "fighter/kirby/model/copy_wolf_cap/c00/light_model.numatb": [
-            "fighter/kirby/model/copy_wolf_cap/c64/light_model.numatb"
+        "fighter/sonic/model/body/c05/def_sonic_006_col.nutexb": [
+            "fighter/sonic/model/body/c21/def_sonic_006_col.nutexb"
         ],
-        "fighter/kirby/model/copy_wolf_cap/c00/metamon_model.numatb": [
-            "fighter/kirby/model/copy_wolf_cap/c64/metamon_model.numatb"
+        "fighter/sonic/model/body/c05/def_sonic_006_nor.nutexb": [
+            "fighter/sonic/model/body/c21/def_sonic_006_nor.nutexb"
         ],
-        "fighter/kirby/model/copy_wolf_cap/c00/model.nuhlpb": [
-            "fighter/kirby/model/copy_wolf_cap/c64/model.nuhlpb"
+        "fighter/sonic/model/body/c05/def_sonic_006_prm.nutexb": [
+            "fighter/sonic/model/body/c21/def_sonic_006_prm.nutexb"
         ],
-        "fighter/kirby/model/copy_wolf_cap/c00/model.numatb": [
-            "fighter/kirby/model/copy_wolf_cap/c64/model.numatb"
+        "fighter/sonic/model/body/c05/def_sonicsphere_001_col.nutexb": [
+            "fighter/sonic/model/body/c21/def_sonicsphere_001_col.nutexb"
         ],
-        "fighter/kirby/model/copy_wolf_cap/c00/model.numdlb": [
-            "fighter/kirby/model/copy_wolf_cap/c64/model.numdlb"
+        "fighter/sonic/model/body/c05/def_sonicsphere_001_nor.nutexb": [
+            "fighter/sonic/model/body/c21/def_sonicsphere_001_nor.nutexb"
         ],
-        "fighter/kirby/model/copy_wolf_cap/c00/model.numshb": [
-            "fighter/kirby/model/copy_wolf_cap/c64/model.numshb"
+        "fighter/sonic/model/body/c05/def_sonicsphere_001_prm.nutexb": [
+            "fighter/sonic/model/body/c21/def_sonicsphere_001_prm.nutexb"
         ],
-        "fighter/kirby/model/copy_wolf_cap/c00/model.numshexb": [
-            "fighter/kirby/model/copy_wolf_cap/c64/model.numshexb"
+        "fighter/sonic/model/body/c05/deyes_eye_sonic2_wd_col.nutexb": [
+            "fighter/sonic/model/body/c21/deyes_eye_sonic2_wd_col.nutexb"
         ],
-        "fighter/kirby/model/copy_wolf_cap/c00/model.nusktb": [
-            "fighter/kirby/model/copy_wolf_cap/c64/model.nusktb"
+        "fighter/sonic/model/body/c05/deyes_eye_sonic_wd_col.nutexb": [
+            "fighter/sonic/model/body/c21/deyes_eye_sonic_wd_col.nutexb"
         ],
-        "fighter/kirby/model/copy_wolf_cap/c00/model.nusrcmdlb": [
-            "fighter/kirby/model/copy_wolf_cap/c64/model.nusrcmdlb"
+        "fighter/sonic/model/body/c05/deyes_sonic2_d_col.nutexb": [
+            "fighter/sonic/model/body/c21/deyes_sonic2_d_col.nutexb"
         ],
-        "fighter/kirby/model/copy_wolf_cap/c00/model.xmb": [
-            "fighter/kirby/model/copy_wolf_cap/c64/model.xmb"
+        "fighter/sonic/model/body/c05/deyes_sonic_d_col.nutexb": [
+            "fighter/sonic/model/body/c21/deyes_sonic_d_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/eye2_sonic_001_col.nutexb": [
+            "fighter/sonic/model/body/c21/eye2_sonic_001_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/eyel_sonic_001_col.nutexb": [
+            "fighter/sonic/model/body/c21/eyel_sonic_001_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/eyer_sonic_001_col.nutexb": [
+            "fighter/sonic/model/body/c21/eyer_sonic_001_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/eyew_sonic_001_col.nutexb": [
+            "fighter/sonic/model/body/c21/eyew_sonic_001_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/eyew_sonic_001_nor.nutexb": [
+            "fighter/sonic/model/body/c21/eyew_sonic_001_nor.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/eyew_sonic_001_prm.nutexb": [
+            "fighter/sonic/model/body/c21/eyew_sonic_001_prm.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/eyeyellow_sonic_001_col.nutexb": [
+            "fighter/sonic/model/body/c21/eyeyellow_sonic_001_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/leyes_sonic2_l_col.nutexb": [
+            "fighter/sonic/model/body/c21/leyes_sonic2_l_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/leyes_sonic_l_col.nutexb": [
+            "fighter/sonic/model/body/c21/leyes_sonic_l_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/light_model.numatb": [
+            "fighter/sonic/model/body/c21/light_model.numatb"
+        ],
+        "fighter/sonic/model/body/c05/metal_sonic_001_col.nutexb": [
+            "fighter/sonic/model/body/c21/metal_sonic_001_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/metal_sonic_001_nor.nutexb": [
+            "fighter/sonic/model/body/c21/metal_sonic_001_nor.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/metal_sonic_001_prm.nutexb": [
+            "fighter/sonic/model/body/c21/metal_sonic_001_prm.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/metamon_model.numatb": [
+            "fighter/sonic/model/body/c21/metamon_model.numatb"
+        ],
+        "fighter/sonic/model/body/c05/model.nuanmb": [
+            "fighter/sonic/model/body/c21/model.nuanmb"
+        ],
+        "fighter/sonic/model/body/c05/model.nusrcmdlb": [
+            "fighter/sonic/model/body/c21/model.nusrcmdlb"
+        ],
+        "fighter/sonic/model/body/c05/model.xmb": [
+            "fighter/sonic/model/body/c21/model.xmb"
+        ],
+        "fighter/sonic/model/body/c05/skin_sonic_001_col.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_001_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/skin_sonic_001_nor.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_001_nor.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/skin_sonic_001_prm.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_001_prm.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/skin_sonic_002_col.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_002_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/skin_sonic_002_nor.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_002_nor.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/skin_sonic_002_prm.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_002_prm.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/skin_sonic_003_col.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_003_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/skin_sonic_003_nor.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_003_nor.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/skin_sonic_003_prm.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_003_prm.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/skin_sonic_mouthd_001_col.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_mouthd_001_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/skin_sonic_mouthd_001_nor.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_mouthd_001_nor.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/skin_sonic_mouthd_001_prm.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_mouthd_001_prm.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/skin_sonic_mouthe_001_col.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_mouthe_001_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/skin_sonic_mouthe_001_nor.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_mouthe_001_nor.nutexb"
+        ],
+        "fighter/sonic/model/body/c05/skin_sonic_mouthe_001_prm.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_mouthe_001_prm.nutexb"
+        ],
+        "fighter/sonic/model/gimmickjump/c05/dark_model.numatb": [
+            "fighter/sonic/model/gimmickjump/c21/dark_model.numatb"
+        ],
+        "fighter/sonic/model/gimmickjump/c05/def_gimmickjump_00_col.nutexb": [
+            "fighter/sonic/model/gimmickjump/c21/def_gimmickjump_00_col.nutexb"
+        ],
+        "fighter/sonic/model/gimmickjump/c05/def_gimmickjump_00_nor.nutexb": [
+            "fighter/sonic/model/gimmickjump/c21/def_gimmickjump_00_nor.nutexb"
+        ],
+        "fighter/sonic/model/gimmickjump/c05/def_gimmickjump_00_prm.nutexb": [
+            "fighter/sonic/model/gimmickjump/c21/def_gimmickjump_00_prm.nutexb"
+        ],
+        "fighter/sonic/model/gimmickjump/c05/light_model.numatb": [
+            "fighter/sonic/model/gimmickjump/c21/light_model.numatb"
+        ],
+        "fighter/sonic/model/gimmickjump/c05/metamon_model.numatb": [
+            "fighter/sonic/model/gimmickjump/c21/metamon_model.numatb"
+        ],
+        "fighter/sonic/model/gimmickjump/c05/model.nuanmb": [
+            "fighter/sonic/model/gimmickjump/c21/model.nuanmb"
+        ],
+        "fighter/sonic/model/gimmickjump/c05/model.nuhlpb": [
+            "fighter/sonic/model/gimmickjump/c21/model.nuhlpb"
+        ],
+        "fighter/sonic/model/gimmickjump/c05/model.numatb": [
+            "fighter/sonic/model/gimmickjump/c21/model.numatb"
+        ],
+        "fighter/sonic/model/gimmickjump/c05/model.numdlb": [
+            "fighter/sonic/model/gimmickjump/c21/model.numdlb"
+        ],
+        "fighter/sonic/model/gimmickjump/c05/model.numshb": [
+            "fighter/sonic/model/gimmickjump/c21/model.numshb"
+        ],
+        "fighter/sonic/model/gimmickjump/c05/model.numshexb": [
+            "fighter/sonic/model/gimmickjump/c21/model.numshexb"
+        ],
+        "fighter/sonic/model/gimmickjump/c05/model.nusktb": [
+            "fighter/sonic/model/gimmickjump/c21/model.nusktb"
+        ],
+        "fighter/sonic/model/gimmickjump/c05/model.nusrcmdlb": [
+            "fighter/sonic/model/gimmickjump/c21/model.nusrcmdlb"
+        ],
+        "fighter/sonic/model/gimmickjump/c05/model.xmb": [
+            "fighter/sonic/model/gimmickjump/c21/model.xmb"
+        ],
+        "fighter/sonic/model/supersonic/c05/dark_model.numatb": [
+            "fighter/sonic/model/supersonic/c21/dark_model.numatb"
+        ],
+        "fighter/sonic/model/supersonic/c05/def_supersonic_001_col.nutexb": [
+            "fighter/sonic/model/supersonic/c21/def_supersonic_001_col.nutexb"
+        ],
+        "fighter/sonic/model/supersonic/c05/def_supersonic_001_emi.nutexb": [
+            "fighter/sonic/model/supersonic/c21/def_supersonic_001_emi.nutexb"
+        ],
+        "fighter/sonic/model/supersonic/c05/def_supersonic_001_nor.nutexb": [
+            "fighter/sonic/model/supersonic/c21/def_supersonic_001_nor.nutexb"
+        ],
+        "fighter/sonic/model/supersonic/c05/def_supersonic_001_prm.nutexb": [
+            "fighter/sonic/model/supersonic/c21/def_supersonic_001_prm.nutexb"
+        ],
+        "fighter/sonic/model/supersonic/c05/eye2_supersonic_001_col.nutexb": [
+            "fighter/sonic/model/supersonic/c21/eye2_supersonic_001_col.nutexb"
+        ],
+        "fighter/sonic/model/supersonic/c05/eyel_supersonic_001_col.nutexb": [
+            "fighter/sonic/model/supersonic/c21/eyel_supersonic_001_col.nutexb"
+        ],
+        "fighter/sonic/model/supersonic/c05/eyer_supersonic_001_col.nutexb": [
+            "fighter/sonic/model/supersonic/c21/eyer_supersonic_001_col.nutexb"
+        ],
+        "fighter/sonic/model/supersonic/c05/eyew_supersonic_001_col.nutexb": [
+            "fighter/sonic/model/supersonic/c21/eyew_supersonic_001_col.nutexb"
+        ],
+        "fighter/sonic/model/supersonic/c05/eyew_supersonic_001_nor.nutexb": [
+            "fighter/sonic/model/supersonic/c21/eyew_supersonic_001_nor.nutexb"
+        ],
+        "fighter/sonic/model/supersonic/c05/eyew_supersonic_001_prm.nutexb": [
+            "fighter/sonic/model/supersonic/c21/eyew_supersonic_001_prm.nutexb"
+        ],
+        "fighter/sonic/model/supersonic/c05/light_model.numatb": [
+            "fighter/sonic/model/supersonic/c21/light_model.numatb"
+        ],
+        "fighter/sonic/model/supersonic/c05/metal_supersonic_001_col.nutexb": [
+            "fighter/sonic/model/supersonic/c21/metal_supersonic_001_col.nutexb"
+        ],
+        "fighter/sonic/model/supersonic/c05/metal_supersonic_001_nor.nutexb": [
+            "fighter/sonic/model/supersonic/c21/metal_supersonic_001_nor.nutexb"
+        ],
+        "fighter/sonic/model/supersonic/c05/metal_supersonic_001_prm.nutexb": [
+            "fighter/sonic/model/supersonic/c21/metal_supersonic_001_prm.nutexb"
+        ],
+        "fighter/sonic/model/supersonic/c05/metamon_model.numatb": [
+            "fighter/sonic/model/supersonic/c21/metamon_model.numatb"
+        ],
+        "fighter/sonic/model/supersonic/c05/model.nuanmb": [
+            "fighter/sonic/model/supersonic/c21/model.nuanmb"
+        ],
+        "fighter/sonic/model/supersonic/c05/model.nuhlpb": [
+            "fighter/sonic/model/supersonic/c21/model.nuhlpb"
+        ],
+        "fighter/sonic/model/supersonic/c05/model.numatb": [
+            "fighter/sonic/model/supersonic/c21/model.numatb"
+        ],
+        "fighter/sonic/model/supersonic/c05/model.numdlb": [
+            "fighter/sonic/model/supersonic/c21/model.numdlb"
+        ],
+        "fighter/sonic/model/supersonic/c05/model.numshb": [
+            "fighter/sonic/model/supersonic/c21/model.numshb"
+        ],
+        "fighter/sonic/model/supersonic/c05/model.numshexb": [
+            "fighter/sonic/model/supersonic/c21/model.numshexb"
+        ],
+        "fighter/sonic/model/supersonic/c05/model.nusktb": [
+            "fighter/sonic/model/supersonic/c21/model.nusktb"
+        ],
+        "fighter/sonic/model/supersonic/c05/model.nusrcmdlb": [
+            "fighter/sonic/model/supersonic/c21/model.nusrcmdlb"
+        ],
+        "fighter/sonic/model/supersonic/c05/model.xmb": [
+            "fighter/sonic/model/supersonic/c21/model.xmb"
+        ],
+        "fighter/sonic/model/supersonic/c05/skin_supersonic_003_col.nutexb": [
+            "fighter/sonic/model/supersonic/c21/skin_supersonic_003_col.nutexb"
+        ],
+        "fighter/sonic/model/supersonic/c05/skin_supersonic_003_nor.nutexb": [
+            "fighter/sonic/model/supersonic/c21/skin_supersonic_003_nor.nutexb"
+        ],
+        "fighter/sonic/model/supersonic/c05/skin_supersonic_003_prm.nutexb": [
+            "fighter/sonic/model/supersonic/c21/skin_supersonic_003_prm.nutexb"
+        ],
+        "fighter/sonic/model/supersonic/c05/skin_supersonic_mouthe_001_col.nutexb": [
+            "fighter/sonic/model/supersonic/c21/skin_supersonic_mouthe_001_col.nutexb"
+        ],
+        "fighter/sonic/model/supersonic/c05/skin_supersonic_mouthe_001_nor.nutexb": [
+            "fighter/sonic/model/supersonic/c21/skin_supersonic_mouthe_001_nor.nutexb"
+        ],
+        "fighter/sonic/model/supersonic/c05/skin_supersonic_mouthe_001_prm.nutexb": [
+            "fighter/sonic/model/supersonic/c21/skin_supersonic_mouthe_001_prm.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/def_sonic_001_nor.nutexb": [
+            "fighter/sonic/model/body/c21/def_sonic_001_nor.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/def_sonic_001_prm.nutexb": [
+            "fighter/sonic/model/body/c21/def_sonic_001_prm.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/def_sonicsphere_001_nor.nutexb": [
+            "fighter/sonic/model/body/c21/def_sonicsphere_001_nor.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/def_sonicsphere_001_prm.nutexb": [
+            "fighter/sonic/model/body/c21/def_sonicsphere_001_prm.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/deyes_eye_sonic2_wd_col.nutexb": [
+            "fighter/sonic/model/body/c21/deyes_eye_sonic2_wd_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/deyes_eye_sonic_wd_col.nutexb": [
+            "fighter/sonic/model/body/c21/deyes_eye_sonic_wd_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/deyes_sonic2_d_col.nutexb": [
+            "fighter/sonic/model/body/c21/deyes_sonic2_d_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/deyes_sonic_d_col.nutexb": [
+            "fighter/sonic/model/body/c21/deyes_sonic_d_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/eye2_sonic_001_col.nutexb": [
+            "fighter/sonic/model/body/c21/eye2_sonic_001_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/eyel_sonic_001_col.nutexb": [
+            "fighter/sonic/model/body/c21/eyel_sonic_001_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/eyer_sonic_001_col.nutexb": [
+            "fighter/sonic/model/body/c21/eyer_sonic_001_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/eyew_sonic_001_col.nutexb": [
+            "fighter/sonic/model/body/c21/eyew_sonic_001_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/eyew_sonic_001_nor.nutexb": [
+            "fighter/sonic/model/body/c21/eyew_sonic_001_nor.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/eyew_sonic_001_prm.nutexb": [
+            "fighter/sonic/model/body/c21/eyew_sonic_001_prm.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/eyeyellow_sonic_001_col.nutexb": [
+            "fighter/sonic/model/body/c21/eyeyellow_sonic_001_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/leyes_sonic2_l_col.nutexb": [
+            "fighter/sonic/model/body/c21/leyes_sonic2_l_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/leyes_sonic_l_col.nutexb": [
+            "fighter/sonic/model/body/c21/leyes_sonic_l_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/metal_sonic_001_nor.nutexb": [
+            "fighter/sonic/model/body/c21/metal_sonic_001_nor.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/model.xmb": [
+            "fighter/sonic/model/body/c21/model.xmb"
+        ],
+        "fighter/sonic/model/body/c00/skin_sonic_001_col.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_001_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/skin_sonic_001_nor.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_001_nor.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/skin_sonic_001_prm.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_001_prm.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/skin_sonic_002_col.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_002_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/skin_sonic_002_nor.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_002_nor.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/skin_sonic_002_prm.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_002_prm.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/skin_sonic_003_col.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_003_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/skin_sonic_003_nor.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_003_nor.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/skin_sonic_003_prm.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_003_prm.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/skin_sonic_mouthd_001_col.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_mouthd_001_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/skin_sonic_mouthd_001_nor.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_mouthd_001_nor.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/skin_sonic_mouthd_001_prm.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_mouthd_001_prm.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/skin_sonic_mouthe_001_col.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_mouthe_001_col.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/skin_sonic_mouthe_001_nor.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_mouthe_001_nor.nutexb"
+        ],
+        "fighter/sonic/model/body/c00/skin_sonic_mouthe_001_prm.nutexb": [
+            "fighter/sonic/model/body/c21/skin_sonic_mouthe_001_prm.nutexb"
+        ],
+        "fighter/kirby/model/copy_sonic_cap/c05/dark_model.numatb": [
+            "fighter/kirby/model/copy_sonic_cap/c21/dark_model.numatb"
+        ],
+        "fighter/kirby/model/copy_sonic_cap/c05/def_sonic_001_col.nutexb": [
+            "fighter/kirby/model/copy_sonic_cap/c21/def_sonic_001_col.nutexb"
+        ],
+        "fighter/kirby/model/copy_sonic_cap/c05/def_sonic_001_nor.nutexb": [
+            "fighter/kirby/model/copy_sonic_cap/c21/def_sonic_001_nor.nutexb"
+        ],
+        "fighter/kirby/model/copy_sonic_cap/c05/def_sonic_001_prm.nutexb": [
+            "fighter/kirby/model/copy_sonic_cap/c21/def_sonic_001_prm.nutexb"
+        ],
+        "fighter/kirby/model/copy_sonic_cap/c05/light_model.numatb": [
+            "fighter/kirby/model/copy_sonic_cap/c21/light_model.numatb"
+        ],
+        "fighter/kirby/model/copy_sonic_cap/c05/metamon_model.numatb": [
+            "fighter/kirby/model/copy_sonic_cap/c21/metamon_model.numatb"
+        ],
+        "fighter/kirby/model/copy_sonic_cap/c05/model.nuanmb": [
+            "fighter/kirby/model/copy_sonic_cap/c21/model.nuanmb"
+        ],
+        "fighter/kirby/model/copy_sonic_cap/c05/model.nuhlpb": [
+            "fighter/kirby/model/copy_sonic_cap/c21/model.nuhlpb"
+        ],
+        "fighter/kirby/model/copy_sonic_cap/c05/model.numatb": [
+            "fighter/kirby/model/copy_sonic_cap/c21/model.numatb"
+        ],
+        "fighter/kirby/model/copy_sonic_cap/c05/model.numdlb": [
+            "fighter/kirby/model/copy_sonic_cap/c21/model.numdlb"
+        ],
+        "fighter/kirby/model/copy_sonic_cap/c05/model.numshb": [
+            "fighter/kirby/model/copy_sonic_cap/c21/model.numshb"
+        ],
+        "fighter/kirby/model/copy_sonic_cap/c05/model.numshexb": [
+            "fighter/kirby/model/copy_sonic_cap/c21/model.numshexb"
+        ],
+        "fighter/kirby/model/copy_sonic_cap/c05/model.nusktb": [
+            "fighter/kirby/model/copy_sonic_cap/c21/model.nusktb"
+        ],
+        "fighter/kirby/model/copy_sonic_cap/c05/model.nusrcmdlb": [
+            "fighter/kirby/model/copy_sonic_cap/c21/model.nusrcmdlb"
+        ],
+        "fighter/kirby/model/copy_sonic_cap/c05/model.xmb": [
+            "fighter/kirby/model/copy_sonic_cap/c21/model.xmb"
+        ],
+        "fighter/kirby/model/copy_sonic_sphere/c05/dark_model.numatb": [
+            "fighter/kirby/model/copy_sonic_sphere/c21/dark_model.numatb"
+        ],
+        "fighter/kirby/model/copy_sonic_sphere/c05/def_sonicsphere_001_col.nutexb": [
+            "fighter/kirby/model/copy_sonic_sphere/c21/def_sonicsphere_001_col.nutexb"
+        ],
+        "fighter/kirby/model/copy_sonic_sphere/c05/def_sonicsphere_001_nor.nutexb": [
+            "fighter/kirby/model/copy_sonic_sphere/c21/def_sonicsphere_001_nor.nutexb"
+        ],
+        "fighter/kirby/model/copy_sonic_sphere/c05/def_sonicsphere_001_prm.nutexb": [
+            "fighter/kirby/model/copy_sonic_sphere/c21/def_sonicsphere_001_prm.nutexb"
+        ],
+        "fighter/kirby/model/copy_sonic_sphere/c05/light_model.numatb": [
+            "fighter/kirby/model/copy_sonic_sphere/c21/light_model.numatb"
+        ],
+        "fighter/kirby/model/copy_sonic_sphere/c05/metamon_model.numatb": [
+            "fighter/kirby/model/copy_sonic_sphere/c21/metamon_model.numatb"
+        ],
+        "fighter/kirby/model/copy_sonic_sphere/c05/model.nuanmb": [
+            "fighter/kirby/model/copy_sonic_sphere/c21/model.nuanmb"
+        ],
+        "fighter/kirby/model/copy_sonic_sphere/c05/model.nuhlpb": [
+            "fighter/kirby/model/copy_sonic_sphere/c21/model.nuhlpb"
+        ],
+        "fighter/kirby/model/copy_sonic_sphere/c05/model.numatb": [
+            "fighter/kirby/model/copy_sonic_sphere/c21/model.numatb"
+        ],
+        "fighter/kirby/model/copy_sonic_sphere/c05/model.numdlb": [
+            "fighter/kirby/model/copy_sonic_sphere/c21/model.numdlb"
+        ],
+        "fighter/kirby/model/copy_sonic_sphere/c05/model.numshb": [
+            "fighter/kirby/model/copy_sonic_sphere/c21/model.numshb"
+        ],
+        "fighter/kirby/model/copy_sonic_sphere/c05/model.numshexb": [
+            "fighter/kirby/model/copy_sonic_sphere/c21/model.numshexb"
+        ],
+        "fighter/kirby/model/copy_sonic_sphere/c05/model.nusktb": [
+            "fighter/kirby/model/copy_sonic_sphere/c21/model.nusktb"
+        ],
+        "fighter/kirby/model/copy_sonic_sphere/c05/model.nusrcmdlb": [
+            "fighter/kirby/model/copy_sonic_sphere/c21/model.nusrcmdlb"
+        ],
+        "fighter/kirby/model/copy_sonic_sphere/c05/model.xmb": [
+            "fighter/kirby/model/copy_sonic_sphere/c21/model.xmb"
+        ],
+        "fighter/sonic/model/chaosemerald/c05/dark_model.numatb": [
+            "fighter/sonic/model/chaosemerald/c21/dark_model.numatb"
+        ],
+        "fighter/sonic/model/chaosemerald/c05/light_model.numatb": [
+            "fighter/sonic/model/chaosemerald/c21/light_model.numatb"
+        ],
+        "fighter/sonic/model/chaosemerald/c05/metamon_model.numatb": [
+            "fighter/sonic/model/chaosemerald/c21/metamon_model.numatb"
+        ],
+        "fighter/sonic/model/chaosemerald/c05/model.nuanmb": [
+            "fighter/sonic/model/chaosemerald/c21/model.nuanmb"
+        ],
+        "fighter/sonic/model/chaosemerald/c05/model.nuhlpb": [
+            "fighter/sonic/model/chaosemerald/c21/model.nuhlpb"
+        ],
+        "fighter/sonic/model/chaosemerald/c05/model.numatb": [
+            "fighter/sonic/model/chaosemerald/c21/model.numatb"
+        ],
+        "fighter/sonic/model/chaosemerald/c05/model.numdlb": [
+            "fighter/sonic/model/chaosemerald/c21/model.numdlb"
+        ],
+        "fighter/sonic/model/chaosemerald/c05/model.numshb": [
+            "fighter/sonic/model/chaosemerald/c21/model.numshb"
+        ],
+        "fighter/sonic/model/chaosemerald/c05/model.nusktb": [
+            "fighter/sonic/model/chaosemerald/c21/model.nusktb"
+        ],
+        "fighter/sonic/model/chaosemerald/c05/model.nusrcmdlb": [
+            "fighter/sonic/model/chaosemerald/c21/model.nusrcmdlb"
+        ],
+        "fighter/sonic/model/chaosemerald/c05/model.xmb": [
+            "fighter/sonic/model/chaosemerald/c21/model.xmb"
+        ],
+        "fighter/sonic/model/chaosemerald/c05/supersonic_blueemerald_00_col.nutexb": [
+            "fighter/sonic/model/chaosemerald/c21/supersonic_blueemerald_00_col.nutexb"
+        ],
+        "fighter/sonic/model/chaosemerald/c05/supersonic_cyanemerald_00_col.nutexb": [
+            "fighter/sonic/model/chaosemerald/c21/supersonic_cyanemerald_00_col.nutexb"
+        ],
+        "fighter/sonic/model/chaosemerald/c05/supersonic_emerald_all_00_nor.nutexb": [
+            "fighter/sonic/model/chaosemerald/c21/supersonic_emerald_all_00_nor.nutexb"
+        ],
+        "fighter/sonic/model/chaosemerald/c05/supersonic_greenemerald_00_col.nutexb": [
+            "fighter/sonic/model/chaosemerald/c21/supersonic_greenemerald_00_col.nutexb"
+        ],
+        "fighter/sonic/model/chaosemerald/c05/supersonic_jewelred_00_col.nutexb": [
+            "fighter/sonic/model/chaosemerald/c21/supersonic_jewelred_00_col.nutexb"
+        ],
+        "fighter/sonic/model/chaosemerald/c05/supersonic_magentaemerald_00_col.nutexb": [
+            "fighter/sonic/model/chaosemerald/c21/supersonic_magentaemerald_00_col.nutexb"
+        ],
+        "fighter/sonic/model/chaosemerald/c05/supersonic_whiteemerald_00_col.nutexb": [
+            "fighter/sonic/model/chaosemerald/c21/supersonic_whiteemerald_00_col.nutexb"
+        ],
+        "fighter/sonic/model/chaosemerald/c05/supersonic_yellowemerald_00_col.nutexb": [
+            "fighter/sonic/model/chaosemerald/c21/supersonic_yellowemerald_00_col.nutexb"
         ]
     },
     "share-to-added": {
-        "fighter/wolf/motion/blaster/c00/close.nuanmb": [
-            "fighter/wolf/motion/blaster/c64/close.nuanmb"
+        "fighter/sonic/motion/body/c05/a00defaulteyelid.nuanmb": [
+            "fighter/sonic/motion/body/c21/a00defaulteyelid.nuanmb"
         ],
-        "fighter/wolf/motion/blaster/c00/loop.nuanmb": [
-            "fighter/wolf/motion/blaster/c64/loop.nuanmb"
+        "fighter/sonic/motion/body/c05/a00itemhandgrip.nuanmb": [
+            "fighter/sonic/motion/body/c21/a00itemhandgrip.nuanmb"
         ],
-        "fighter/wolf/motion/blaster/c00/open.nuanmb": [
-            "fighter/wolf/motion/blaster/c64/open.nuanmb"
+        "fighter/sonic/motion/body/c05/a00itemhandhave.nuanmb": [
+            "fighter/sonic/motion/body/c21/a00itemhandhave.nuanmb"
         ],
-        "fighter/wolf/motion/blaster/c00/motion_list.bin": [
-            "fighter/wolf/motion/blaster/c64/motion_list.bin"
+        "fighter/sonic/motion/body/c05/a00itemhandpickup.nuanmb": [
+            "fighter/sonic/motion/body/c21/a00itemhandpickup.nuanmb"
         ],
-        "fighter/wolf/motion/illusion/c00/motion_list.bin": [
-            "fighter/wolf/motion/illusion/c64/motion_list.bin"
+        "fighter/sonic/motion/body/c05/a00itemhandsmash.nuanmb": [
+            "fighter/sonic/motion/body/c21/a00itemhandsmash.nuanmb"
         ],
-        "fighter/wolf/motion/reticle/c00/motion_list.bin": [
-            "fighter/wolf/motion/reticle/c64/motion_list.bin"
+        "fighter/sonic/motion/body/c05/a00wait1.nuanmb": [
+            "fighter/sonic/motion/body/c21/a00wait1.nuanmb"
         ],
-        "fighter/wolf/motion/wolfen/c00/d04finallockon01.nuanmb": [
-            "fighter/wolf/motion/wolfen/c64/d04finallockon01.nuanmb"
+        "fighter/sonic/motion/body/c05/a00wait2.nuanmb": [
+            "fighter/sonic/motion/body/c21/a00wait2.nuanmb"
         ],
-        "fighter/wolf/motion/wolfen/c00/d04finallockon02.nuanmb": [
-            "fighter/wolf/motion/wolfen/c64/d04finallockon02.nuanmb"
+        "fighter/sonic/motion/body/c05/a00wait3.nuanmb": [
+            "fighter/sonic/motion/body/c21/a00wait3.nuanmb"
         ],
-        "fighter/wolf/motion/wolfen/c00/d04finallockon03.nuanmb": [
-            "fighter/wolf/motion/wolfen/c64/d04finallockon03.nuanmb"
+        "fighter/sonic/motion/body/c05/a00waititem.nuanmb": [
+            "fighter/sonic/motion/body/c21/a00waititem.nuanmb"
         ],
-        "fighter/wolf/motion/wolfen/c00/d04visualscene.nuanmb": [
-            "fighter/wolf/motion/wolfen/c64/d04visualscene.nuanmb"
+        "fighter/sonic/motion/body/c05/a01turn.nuanmb": [
+            "fighter/sonic/motion/body/c21/a01turn.nuanmb"
         ],
-        "fighter/wolf/motion/wolfen/c00/d04visualscene01.nuanmb": [
-            "fighter/wolf/motion/wolfen/c64/d04visualscene01.nuanmb"
+        "fighter/sonic/motion/body/c05/a01walkbrakel.nuanmb": [
+            "fighter/sonic/motion/body/c21/a01walkbrakel.nuanmb"
         ],
-        "fighter/wolf/motion/wolfen/c00/d04visualscene02.nuanmb": [
-            "fighter/wolf/motion/wolfen/c64/d04visualscene02.nuanmb"
+        "fighter/sonic/motion/body/c05/a01walkbraker.nuanmb": [
+            "fighter/sonic/motion/body/c21/a01walkbraker.nuanmb"
         ],
-        "fighter/wolf/motion/wolfen/c00/d04visualscene03.nuanmb": [
-            "fighter/wolf/motion/wolfen/c64/d04visualscene03.nuanmb"
+        "fighter/sonic/motion/body/c05/a01walkfast.nuanmb": [
+            "fighter/sonic/motion/body/c21/a01walkfast.nuanmb"
         ],
-        "fighter/wolf/motion/wolfen/c00/j00entryl.nuanmb": [
-            "fighter/wolf/motion/wolfen/c64/j00entryl.nuanmb"
+        "fighter/sonic/motion/body/c05/a01walkmiddle.nuanmb": [
+            "fighter/sonic/motion/body/c21/a01walkmiddle.nuanmb"
         ],
-        "fighter/wolf/motion/wolfen/c00/j00entryr.nuanmb": [
-            "fighter/wolf/motion/wolfen/c64/j00entryr.nuanmb"
+        "fighter/sonic/motion/body/c05/a01walkslow.nuanmb": [
+            "fighter/sonic/motion/body/c21/a01walkslow.nuanmb"
         ],
-        "fighter/wolf/motion/wolfen/c00/motion_list.bin": [
-            "fighter/wolf/motion/wolfen/c64/motion_list.bin"
+        "fighter/sonic/motion/body/c05/a02dash.nuanmb": [
+            "fighter/sonic/motion/body/c21/a02dash.nuanmb"
         ],
-        "sound/bank/fighter/se_wolf_c00.nus3audio": [
-            "sound/bank/fighter/se_wolf_c64.nus3audio"
+        "fighter/sonic/motion/body/c05/a02run.nuanmb": [
+            "fighter/sonic/motion/body/c21/a02run.nuanmb"
         ],
-        "sound/bank/fighter/se_wolf_c00.nus3bank": [
-            "sound/bank/fighter/se_wolf_c64.nus3bank"
+        "fighter/sonic/motion/body/c05/a02runbrakel.nuanmb": [
+            "fighter/sonic/motion/body/c21/a02runbrakel.nuanmb"
         ],
-        "sound/bank/fighter/se_wolf_c00.tonelabel": [
-            "sound/bank/fighter/se_wolf_c64.tonelabel"
+        "fighter/sonic/motion/body/c05/a02runbraker.nuanmb": [
+            "fighter/sonic/motion/body/c21/a02runbraker.nuanmb"
         ],
-        "sound/bank/fighter_voice/vc_wolf_c00.nus3bank": [
-            "sound/bank/fighter_voice/vc_wolf_c64.nus3bank"
+        "fighter/sonic/motion/body/c05/a02turndash.nuanmb": [
+            "fighter/sonic/motion/body/c21/a02turndash.nuanmb"
         ],
-        "sound/bank/fighter_voice/vc_wolf_c00.tonelabel": [
-            "sound/bank/fighter_voice/vc_wolf_c64.tonelabel"
+        "fighter/sonic/motion/body/c05/a02turnrun.nuanmb": [
+            "fighter/sonic/motion/body/c21/a02turnrun.nuanmb"
         ],
-        "sound/bank/fighter_voice/vc_wolf_cheer_c00.nus3audio": [
-            "sound/bank/fighter_voice/vc_wolf_cheer_c64.nus3audio"
+        "fighter/sonic/motion/body/c05/a02turnrunbrake.nuanmb": [
+            "fighter/sonic/motion/body/c21/a02turnrunbrake.nuanmb"
         ],
-        "sound/bank/fighter_voice/vc_wolf_cheer_c00.nus3bank": [
-            "sound/bank/fighter_voice/vc_wolf_cheer_c64.nus3bank"
+        "fighter/sonic/motion/body/c05/a03jumpaerialb.nuanmb": [
+            "fighter/sonic/motion/body/c21/a03jumpaerialb.nuanmb"
         ],
-        "sound/bank/fighter_voice/vc_wolf_cheer_c00.tonelabel": [
-            "sound/bank/fighter_voice/vc_wolf_cheer_c64.tonelabel"
+        "fighter/sonic/motion/body/c05/a03jumpaerialf.nuanmb": [
+            "fighter/sonic/motion/body/c21/a03jumpaerialf.nuanmb"
         ],
-        "camera/fighter/wolf/c00/d04finalairlockon.nuanmb": [
-            "camera/fighter/wolf/c64/d04finalairlockon.nuanmb"
+        "fighter/sonic/motion/body/c05/a03jumpb.nuanmb": [
+            "fighter/sonic/motion/body/c21/a03jumpb.nuanmb"
         ],
-        "camera/fighter/wolf/c00/d04finalairlockon02.nuanmb": [
-            "camera/fighter/wolf/c64/d04finalairlockon02.nuanmb"
+        "fighter/sonic/motion/body/c05/a03jumpf.nuanmb": [
+            "fighter/sonic/motion/body/c21/a03jumpf.nuanmb"
         ],
-        "camera/fighter/wolf/c00/d04finallockon.nuanmb": [
-            "camera/fighter/wolf/c64/d04finallockon.nuanmb"
+        "fighter/sonic/motion/body/c05/a03jumpsquat.nuanmb": [
+            "fighter/sonic/motion/body/c21/a03jumpsquat.nuanmb"
         ],
-        "camera/fighter/wolf/c00/d04finallockon02.nuanmb": [
-            "camera/fighter/wolf/c64/d04finallockon02.nuanmb"
+        "fighter/sonic/motion/body/c05/a04damagefall.nuanmb": [
+            "fighter/sonic/motion/body/c21/a04damagefall.nuanmb"
         ],
-        "camera/fighter/wolf/c00/d04finalvisualscene.nuanmb": [
-            "camera/fighter/wolf/c64/d04finalvisualscene.nuanmb"
+        "fighter/sonic/motion/body/c05/a04fall.nuanmb": [
+            "fighter/sonic/motion/body/c21/a04fall.nuanmb"
         ],
-        "camera/fighter/wolf/c00/j02win1.nuanmb": [
-            "camera/fighter/wolf/c64/j02win1.nuanmb"
+        "fighter/sonic/motion/body/c05/a04fallaerial.nuanmb": [
+            "fighter/sonic/motion/body/c21/a04fallaerial.nuanmb"
         ],
-        "camera/fighter/wolf/c00/j02win2.nuanmb": [
-            "camera/fighter/wolf/c64/j02win2.nuanmb"
+        "fighter/sonic/motion/body/c05/a04fallaerialb.nuanmb": [
+            "fighter/sonic/motion/body/c21/a04fallaerialb.nuanmb"
         ],
-        "camera/fighter/wolf/c00/j02win3.nuanmb": [
-            "camera/fighter/wolf/c64/j02win3.nuanmb"
+        "fighter/sonic/motion/body/c05/a04fallaerialf.nuanmb": [
+            "fighter/sonic/motion/body/c21/a04fallaerialf.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/a04fallb.nuanmb": [
+            "fighter/sonic/motion/body/c21/a04fallb.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/a04fallf.nuanmb": [
+            "fighter/sonic/motion/body/c21/a04fallf.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/a04fallspecial.nuanmb": [
+            "fighter/sonic/motion/body/c21/a04fallspecial.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/a04fallspecialb.nuanmb": [
+            "fighter/sonic/motion/body/c21/a04fallspecialb.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/a04fallspecialf.nuanmb": [
+            "fighter/sonic/motion/body/c21/a04fallspecialf.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/a04landingfallspecial.nuanmb": [
+            "fighter/sonic/motion/body/c21/a04landingfallspecial.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/a04runfalll.nuanmb": [
+            "fighter/sonic/motion/body/c21/a04runfalll.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/a04runfallr.nuanmb": [
+            "fighter/sonic/motion/body/c21/a04runfallr.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/a04walkfalll.nuanmb": [
+            "fighter/sonic/motion/body/c21/a04walkfalll.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/a04walkfallr.nuanmb": [
+            "fighter/sonic/motion/body/c21/a04walkfallr.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/a05landingheavy.nuanmb": [
+            "fighter/sonic/motion/body/c21/a05landingheavy.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/a05landinglight.nuanmb": [
+            "fighter/sonic/motion/body/c21/a05landinglight.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/a05squat.nuanmb": [
+            "fighter/sonic/motion/body/c21/a05squat.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/a05squatrv.nuanmb": [
+            "fighter/sonic/motion/body/c21/a05squatrv.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/a05squatwait.nuanmb": [
+            "fighter/sonic/motion/body/c21/a05squatwait.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/a05squatwaititem.nuanmb": [
+            "fighter/sonic/motion/body/c21/a05squatwaititem.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/a06stepairpose.nuanmb": [
+            "fighter/sonic/motion/body/c21/a06stepairpose.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/a06stepback.nuanmb": [
+            "fighter/sonic/motion/body/c21/a06stepback.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/a06stepfall.nuanmb": [
+            "fighter/sonic/motion/body/c21/a06stepfall.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/a06stepjump.nuanmb": [
+            "fighter/sonic/motion/body/c21/a06stepjump.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/a06steppose.nuanmb": [
+            "fighter/sonic/motion/body/c21/a06steppose.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/b00guard.nuanmb": [
+            "fighter/sonic/motion/body/c21/b00guard.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/b00guardoff.nuanmb": [
+            "fighter/sonic/motion/body/c21/b00guardoff.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/b00guardon.nuanmb": [
+            "fighter/sonic/motion/body/c21/b00guardon.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/b00justshieldoff.nuanmb": [
+            "fighter/sonic/motion/body/c21/b00justshieldoff.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/b01guarddamage.nuanmb": [
+            "fighter/sonic/motion/body/c21/b01guarddamage.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/b02escapeair.nuanmb": [
+            "fighter/sonic/motion/body/c21/b02escapeair.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/b02escapeb.nuanmb": [
+            "fighter/sonic/motion/body/c21/b02escapeb.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/b02escapef.nuanmb": [
+            "fighter/sonic/motion/body/c21/b02escapef.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/b02escapen.nuanmb": [
+            "fighter/sonic/motion/body/c21/b02escapen.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/b02rebound.nuanmb": [
+            "fighter/sonic/motion/body/c21/b02rebound.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c00attack11.nuanmb": [
+            "fighter/sonic/motion/body/c21/c00attack11.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c00attack12.nuanmb": [
+            "fighter/sonic/motion/body/c21/c00attack12.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c00attack13.nuanmb": [
+            "fighter/sonic/motion/body/c21/c00attack13.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c00attackdash.nuanmb": [
+            "fighter/sonic/motion/body/c21/c00attackdash.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c01attacks3hi.nuanmb": [
+            "fighter/sonic/motion/body/c21/c01attacks3hi.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c01attacks3lw.nuanmb": [
+            "fighter/sonic/motion/body/c21/c01attacks3lw.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c01attacks3s.nuanmb": [
+            "fighter/sonic/motion/body/c21/c01attacks3s.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c02attackhi3.nuanmb": [
+            "fighter/sonic/motion/body/c21/c02attackhi3.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c02attacklw3.nuanmb": [
+            "fighter/sonic/motion/body/c21/c02attacklw3.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c03attacks4charge.nuanmb": [
+            "fighter/sonic/motion/body/c21/c03attacks4charge.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c03attacks4hi.nuanmb": [
+            "fighter/sonic/motion/body/c21/c03attacks4hi.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c03attacks4lw.nuanmb": [
+            "fighter/sonic/motion/body/c21/c03attacks4lw.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c03attacks4s.nuanmb": [
+            "fighter/sonic/motion/body/c21/c03attacks4s.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c04attackhi4.nuanmb": [
+            "fighter/sonic/motion/body/c21/c04attackhi4.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c04attackhi4charge.nuanmb": [
+            "fighter/sonic/motion/body/c21/c04attackhi4charge.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c04attacklw4.nuanmb": [
+            "fighter/sonic/motion/body/c21/c04attacklw4.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c04attacklw4charge.nuanmb": [
+            "fighter/sonic/motion/body/c21/c04attacklw4charge.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c05attackairb.nuanmb": [
+            "fighter/sonic/motion/body/c21/c05attackairb.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c05attackairf.nuanmb": [
+            "fighter/sonic/motion/body/c21/c05attackairf.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c05attackairhi.nuanmb": [
+            "fighter/sonic/motion/body/c21/c05attackairhi.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c05attackairlw.nuanmb": [
+            "fighter/sonic/motion/body/c21/c05attackairlw.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c05attackairn.nuanmb": [
+            "fighter/sonic/motion/body/c21/c05attackairn.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c05landingairb.nuanmb": [
+            "fighter/sonic/motion/body/c21/c05landingairb.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c05landingairf.nuanmb": [
+            "fighter/sonic/motion/body/c21/c05landingairf.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c05landingairhi.nuanmb": [
+            "fighter/sonic/motion/body/c21/c05landingairhi.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c05landingairlw.nuanmb": [
+            "fighter/sonic/motion/body/c21/c05landingairlw.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/c05landingairn.nuanmb": [
+            "fighter/sonic/motion/body/c21/c05landingairn.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d00specialairnstart.nuanmb": [
+            "fighter/sonic/motion/body/c21/d00specialairnstart.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d00specialncancel.nuanmb": [
+            "fighter/sonic/motion/body/c21/d00specialncancel.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d00specialnhit.nuanmb": [
+            "fighter/sonic/motion/body/c21/d00specialnhit.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d00specialnlanding.nuanmb": [
+            "fighter/sonic/motion/body/c21/d00specialnlanding.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d00specialnrebound.nuanmb": [
+            "fighter/sonic/motion/body/c21/d00specialnrebound.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d00specialnspin.nuanmb": [
+            "fighter/sonic/motion/body/c21/d00specialnspin.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d00specialnstart.nuanmb": [
+            "fighter/sonic/motion/body/c21/d00specialnstart.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d01specialairsend.nuanmb": [
+            "fighter/sonic/motion/body/c21/d01specialairsend.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d01specialairsendloop.nuanmb": [
+            "fighter/sonic/motion/body/c21/d01specialairsendloop.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d01specialairsendstart.nuanmb": [
+            "fighter/sonic/motion/body/c21/d01specialairsendstart.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d01specialsdashhi.nuanmb": [
+            "fighter/sonic/motion/body/c21/d01specialsdashhi.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d01specialsdashlw.nuanmb": [
+            "fighter/sonic/motion/body/c21/d01specialsdashlw.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d01specialsend.nuanmb": [
+            "fighter/sonic/motion/body/c21/d01specialsend.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d01specialsendloop.nuanmb": [
+            "fighter/sonic/motion/body/c21/d01specialsendloop.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d01specialsendstart.nuanmb": [
+            "fighter/sonic/motion/body/c21/d01specialsendstart.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d01specialshold.nuanmb": [
+            "fighter/sonic/motion/body/c21/d01specialshold.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d01specialsspin.nuanmb": [
+            "fighter/sonic/motion/body/c21/d01specialsspin.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d01specialsstart.nuanmb": [
+            "fighter/sonic/motion/body/c21/d01specialsstart.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d01specialsturn.nuanmb": [
+            "fighter/sonic/motion/body/c21/d01specialsturn.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d02specialhi.nuanmb": [
+            "fighter/sonic/motion/body/c21/d02specialhi.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d02specialhisquat.nuanmb": [
+            "fighter/sonic/motion/body/c21/d02specialhisquat.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d03specialairlwend.nuanmb": [
+            "fighter/sonic/motion/body/c21/d03specialairlwend.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d03specialairlwhold.nuanmb": [
+            "fighter/sonic/motion/body/c21/d03specialairlwhold.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d03specialairlwstart.nuanmb": [
+            "fighter/sonic/motion/body/c21/d03specialairlwstart.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d03speciallwend.nuanmb": [
+            "fighter/sonic/motion/body/c21/d03speciallwend.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d03speciallwhold.nuanmb": [
+            "fighter/sonic/motion/body/c21/d03speciallwhold.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d03speciallwstart.nuanmb": [
+            "fighter/sonic/motion/body/c21/d03speciallwstart.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d04finalairend.nuanmb": [
+            "fighter/sonic/motion/body/c21/d04finalairend.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d04finalairstart.nuanmb": [
+            "fighter/sonic/motion/body/c21/d04finalairstart.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d04finalend.nuanmb": [
+            "fighter/sonic/motion/body/c21/d04finalend.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/d04finalstart.nuanmb": [
+            "fighter/sonic/motion/body/c21/d04finalstart.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e00catch.nuanmb": [
+            "fighter/sonic/motion/body/c21/e00catch.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e00catchattack.nuanmb": [
+            "fighter/sonic/motion/body/c21/e00catchattack.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e00catchcut.nuanmb": [
+            "fighter/sonic/motion/body/c21/e00catchcut.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e00catchdash.nuanmb": [
+            "fighter/sonic/motion/body/c21/e00catchdash.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e00catchpull.nuanmb": [
+            "fighter/sonic/motion/body/c21/e00catchpull.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e00catchturn.nuanmb": [
+            "fighter/sonic/motion/body/c21/e00catchturn.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e00catchwait.nuanmb": [
+            "fighter/sonic/motion/body/c21/e00catchwait.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e01throwb.nuanmb": [
+            "fighter/sonic/motion/body/c21/e01throwb.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e01throwf.nuanmb": [
+            "fighter/sonic/motion/body/c21/e01throwf.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e01throwhi.nuanmb": [
+            "fighter/sonic/motion/body/c21/e01throwhi.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e01throwlw.nuanmb": [
+            "fighter/sonic/motion/body/c21/e01throwlw.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e01thrownb.nuanmb": [
+            "fighter/sonic/motion/body/c21/e01thrownb.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e01thrownbigb.nuanmb": [
+            "fighter/sonic/motion/body/c21/e01thrownbigb.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e01thrownbigf.nuanmb": [
+            "fighter/sonic/motion/body/c21/e01thrownbigf.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e01thrownbighi.nuanmb": [
+            "fighter/sonic/motion/body/c21/e01thrownbighi.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e01thrownbiglw.nuanmb": [
+            "fighter/sonic/motion/body/c21/e01thrownbiglw.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e01throwndxb.nuanmb": [
+            "fighter/sonic/motion/body/c21/e01throwndxb.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e01throwndxf.nuanmb": [
+            "fighter/sonic/motion/body/c21/e01throwndxf.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e01throwndxhi.nuanmb": [
+            "fighter/sonic/motion/body/c21/e01throwndxhi.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e01throwndxlw.nuanmb": [
+            "fighter/sonic/motion/body/c21/e01throwndxlw.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e01thrownf.nuanmb": [
+            "fighter/sonic/motion/body/c21/e01thrownf.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e01throwngirlb.nuanmb": [
+            "fighter/sonic/motion/body/c21/e01throwngirlb.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e01throwngirlf.nuanmb": [
+            "fighter/sonic/motion/body/c21/e01throwngirlf.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e01throwngirlhi.nuanmb": [
+            "fighter/sonic/motion/body/c21/e01throwngirlhi.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e01throwngirllw.nuanmb": [
+            "fighter/sonic/motion/body/c21/e01throwngirllw.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e01thrownhi.nuanmb": [
+            "fighter/sonic/motion/body/c21/e01thrownhi.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e01thrownlw.nuanmb": [
+            "fighter/sonic/motion/body/c21/e01thrownlw.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e02capturedamagehi.nuanmb": [
+            "fighter/sonic/motion/body/c21/e02capturedamagehi.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e02capturepulledhi.nuanmb": [
+            "fighter/sonic/motion/body/c21/e02capturepulledhi.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e02capturewaithi.nuanmb": [
+            "fighter/sonic/motion/body/c21/e02capturewaithi.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e03capturecut.nuanmb": [
+            "fighter/sonic/motion/body/c21/e03capturecut.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e03capturedamagelw.nuanmb": [
+            "fighter/sonic/motion/body/c21/e03capturedamagelw.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e03capturejump.nuanmb": [
+            "fighter/sonic/motion/body/c21/e03capturejump.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e03capturepulledlw.nuanmb": [
+            "fighter/sonic/motion/body/c21/e03capturepulledlw.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/e03capturewaitlw.nuanmb": [
+            "fighter/sonic/motion/body/c21/e03capturewaitlw.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f00damagehi1.nuanmb": [
+            "fighter/sonic/motion/body/c21/f00damagehi1.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f00damagehi2.nuanmb": [
+            "fighter/sonic/motion/body/c21/f00damagehi2.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f00damagehi3.nuanmb": [
+            "fighter/sonic/motion/body/c21/f00damagehi3.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f00damagelw1.nuanmb": [
+            "fighter/sonic/motion/body/c21/f00damagelw1.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f00damagelw2.nuanmb": [
+            "fighter/sonic/motion/body/c21/f00damagelw2.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f00damagelw3.nuanmb": [
+            "fighter/sonic/motion/body/c21/f00damagelw3.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f00damagen1.nuanmb": [
+            "fighter/sonic/motion/body/c21/f00damagen1.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f00damagen2.nuanmb": [
+            "fighter/sonic/motion/body/c21/f00damagen2.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f00damagen3.nuanmb": [
+            "fighter/sonic/motion/body/c21/f00damagen3.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f01damageair1.nuanmb": [
+            "fighter/sonic/motion/body/c21/f01damageair1.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f01damageair2.nuanmb": [
+            "fighter/sonic/motion/body/c21/f01damageair2.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f01damageair3.nuanmb": [
+            "fighter/sonic/motion/body/c21/f01damageair3.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f01damageflyhi.nuanmb": [
+            "fighter/sonic/motion/body/c21/f01damageflyhi.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f01damageflylw.nuanmb": [
+            "fighter/sonic/motion/body/c21/f01damageflylw.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f01damageflymeteor.nuanmb": [
+            "fighter/sonic/motion/body/c21/f01damageflymeteor.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f01damageflyn.nuanmb": [
+            "fighter/sonic/motion/body/c21/f01damageflyn.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f01damageflyroll.nuanmb": [
+            "fighter/sonic/motion/body/c21/f01damageflyroll.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f01damageflyrollend.nuanmb": [
+            "fighter/sonic/motion/body/c21/f01damageflyrollend.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f01damageflytop.nuanmb": [
+            "fighter/sonic/motion/body/c21/f01damageflytop.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f02damageelec.nuanmb": [
+            "fighter/sonic/motion/body/c21/f02damageelec.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f03downattacku.nuanmb": [
+            "fighter/sonic/motion/body/c21/f03downattacku.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f03downbacku.nuanmb": [
+            "fighter/sonic/motion/body/c21/f03downbacku.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f03downboundu.nuanmb": [
+            "fighter/sonic/motion/body/c21/f03downboundu.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f03downdamageu.nuanmb": [
+            "fighter/sonic/motion/body/c21/f03downdamageu.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f03downdamageu3.nuanmb": [
+            "fighter/sonic/motion/body/c21/f03downdamageu3.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f03downeatu.nuanmb": [
+            "fighter/sonic/motion/body/c21/f03downeatu.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f03downforwardu.nuanmb": [
+            "fighter/sonic/motion/body/c21/f03downforwardu.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f03downspotu.nuanmb": [
+            "fighter/sonic/motion/body/c21/f03downspotu.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f03downstandu.nuanmb": [
+            "fighter/sonic/motion/body/c21/f03downstandu.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f03downwaitu.nuanmb": [
+            "fighter/sonic/motion/body/c21/f03downwaitu.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f04downattackd.nuanmb": [
+            "fighter/sonic/motion/body/c21/f04downattackd.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f04downbackd.nuanmb": [
+            "fighter/sonic/motion/body/c21/f04downbackd.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f04downboundd.nuanmb": [
+            "fighter/sonic/motion/body/c21/f04downboundd.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f04downdamaged.nuanmb": [
+            "fighter/sonic/motion/body/c21/f04downdamaged.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f04downdamaged3.nuanmb": [
+            "fighter/sonic/motion/body/c21/f04downdamaged3.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f04downeatd.nuanmb": [
+            "fighter/sonic/motion/body/c21/f04downeatd.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f04downforwardd.nuanmb": [
+            "fighter/sonic/motion/body/c21/f04downforwardd.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f04downstandd.nuanmb": [
+            "fighter/sonic/motion/body/c21/f04downstandd.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f04downwaitd.nuanmb": [
+            "fighter/sonic/motion/body/c21/f04downwaitd.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f05passive.nuanmb": [
+            "fighter/sonic/motion/body/c21/f05passive.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f05passiveceil.nuanmb": [
+            "fighter/sonic/motion/body/c21/f05passiveceil.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f05passivestandb.nuanmb": [
+            "fighter/sonic/motion/body/c21/f05passivestandb.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f05passivestandf.nuanmb": [
+            "fighter/sonic/motion/body/c21/f05passivestandf.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f05passivewall.nuanmb": [
+            "fighter/sonic/motion/body/c21/f05passivewall.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f05passivewalljump.nuanmb": [
+            "fighter/sonic/motion/body/c21/f05passivewalljump.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f06furafura.nuanmb": [
+            "fighter/sonic/motion/body/c21/f06furafura.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f06furafuraend.nuanmb": [
+            "fighter/sonic/motion/body/c21/f06furafuraend.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f06furafurastartd.nuanmb": [
+            "fighter/sonic/motion/body/c21/f06furafurastartd.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f06furafurastartu.nuanmb": [
+            "fighter/sonic/motion/body/c21/f06furafurastartu.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f07sleepend.nuanmb": [
+            "fighter/sonic/motion/body/c21/f07sleepend.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f07sleeploop.nuanmb": [
+            "fighter/sonic/motion/body/c21/f07sleeploop.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f07sleepstart.nuanmb": [
+            "fighter/sonic/motion/body/c21/f07sleepstart.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f08swallowed.nuanmb": [
+            "fighter/sonic/motion/body/c21/f08swallowed.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/f09camerahit.nuanmb": [
+            "fighter/sonic/motion/body/c21/f09camerahit.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/g00ceildamage.nuanmb": [
+            "fighter/sonic/motion/body/c21/g00ceildamage.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/g00missfoot.nuanmb": [
+            "fighter/sonic/motion/body/c21/g00missfoot.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/g00ottotto.nuanmb": [
+            "fighter/sonic/motion/body/c21/g00ottotto.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/g00ottottowait.nuanmb": [
+            "fighter/sonic/motion/body/c21/g00ottottowait.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/g00pass.nuanmb": [
+            "fighter/sonic/motion/body/c21/g00pass.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/g00stopceil.nuanmb": [
+            "fighter/sonic/motion/body/c21/g00stopceil.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/g00stopwall.nuanmb": [
+            "fighter/sonic/motion/body/c21/g00stopwall.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/g00walldamage.nuanmb": [
+            "fighter/sonic/motion/body/c21/g00walldamage.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/g01cliffcatch.nuanmb": [
+            "fighter/sonic/motion/body/c21/g01cliffcatch.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/g01cliffwait.nuanmb": [
+            "fighter/sonic/motion/body/c21/g01cliffwait.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/g02cliffattack.nuanmb": [
+            "fighter/sonic/motion/body/c21/g02cliffattack.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/g02cliffclimb.nuanmb": [
+            "fighter/sonic/motion/body/c21/g02cliffclimb.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/g02cliffescape.nuanmb": [
+            "fighter/sonic/motion/body/c21/g02cliffescape.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/g02cliffjump1.nuanmb": [
+            "fighter/sonic/motion/body/c21/g02cliffjump1.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/g02cliffjump2.nuanmb": [
+            "fighter/sonic/motion/body/c21/g02cliffjump2.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/g03slip.nuanmb": [
+            "fighter/sonic/motion/body/c21/g03slip.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/g03slipattack.nuanmb": [
+            "fighter/sonic/motion/body/c21/g03slipattack.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/g03slipdown.nuanmb": [
+            "fighter/sonic/motion/body/c21/g03slipdown.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/g03slipescapeb.nuanmb": [
+            "fighter/sonic/motion/body/c21/g03slipescapeb.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/g03slipescapef.nuanmb": [
+            "fighter/sonic/motion/body/c21/g03slipescapef.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/g03slipstand.nuanmb": [
+            "fighter/sonic/motion/body/c21/g03slipstand.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/g03slipwait.nuanmb": [
+            "fighter/sonic/motion/body/c21/g03slipwait.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h00lighteat.nuanmb": [
+            "fighter/sonic/motion/body/c21/h00lighteat.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h00lightget.nuanmb": [
+            "fighter/sonic/motion/body/c21/h00lightget.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h00lightwalkeat.nuanmb": [
+            "fighter/sonic/motion/body/c21/h00lightwalkeat.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h00lightwalkget.nuanmb": [
+            "fighter/sonic/motion/body/c21/h00lightwalkget.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h01lightthrowb.nuanmb": [
+            "fighter/sonic/motion/body/c21/h01lightthrowb.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h01lightthrowdash.nuanmb": [
+            "fighter/sonic/motion/body/c21/h01lightthrowdash.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h01lightthrowdrop.nuanmb": [
+            "fighter/sonic/motion/body/c21/h01lightthrowdrop.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h01lightthrowf.nuanmb": [
+            "fighter/sonic/motion/body/c21/h01lightthrowf.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h01lightthrowhi.nuanmb": [
+            "fighter/sonic/motion/body/c21/h01lightthrowhi.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h01lightthrowlw.nuanmb": [
+            "fighter/sonic/motion/body/c21/h01lightthrowlw.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h02lightthrowairb.nuanmb": [
+            "fighter/sonic/motion/body/c21/h02lightthrowairb.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h02lightthrowairf.nuanmb": [
+            "fighter/sonic/motion/body/c21/h02lightthrowairf.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h02lightthrowairhi.nuanmb": [
+            "fighter/sonic/motion/body/c21/h02lightthrowairhi.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h02lightthrowairlw.nuanmb": [
+            "fighter/sonic/motion/body/c21/h02lightthrowairlw.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h03heavyget.nuanmb": [
+            "fighter/sonic/motion/body/c21/h03heavyget.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h03heavythrowb.nuanmb": [
+            "fighter/sonic/motion/body/c21/h03heavythrowb.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h03heavythrowf.nuanmb": [
+            "fighter/sonic/motion/body/c21/h03heavythrowf.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h03heavythrowhi.nuanmb": [
+            "fighter/sonic/motion/body/c21/h03heavythrowhi.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h03heavythrowlw.nuanmb": [
+            "fighter/sonic/motion/body/c21/h03heavythrowlw.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h03heavywalk.nuanmb": [
+            "fighter/sonic/motion/body/c21/h03heavywalk.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h04swing1.nuanmb": [
+            "fighter/sonic/motion/body/c21/h04swing1.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h04swing3.nuanmb": [
+            "fighter/sonic/motion/body/c21/h04swing3.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h04swing4.nuanmb": [
+            "fighter/sonic/motion/body/c21/h04swing4.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h04swing4charge.nuanmb": [
+            "fighter/sonic/motion/body/c21/h04swing4charge.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h04swingdash.nuanmb": [
+            "fighter/sonic/motion/body/c21/h04swingdash.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h05itemhammerair.nuanmb": [
+            "fighter/sonic/motion/body/c21/h05itemhammerair.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h05itemhammermove.nuanmb": [
+            "fighter/sonic/motion/body/c21/h05itemhammermove.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h05itemhammerwait.nuanmb": [
+            "fighter/sonic/motion/body/c21/h05itemhammerwait.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h06swing4bat.nuanmb": [
+            "fighter/sonic/motion/body/c21/h06swing4bat.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h07itemscrew.nuanmb": [
+            "fighter/sonic/motion/body/c21/h07itemscrew.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h07itemscrewfall.nuanmb": [
+            "fighter/sonic/motion/body/c21/h07itemscrewfall.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h08itemdragoonget.nuanmb": [
+            "fighter/sonic/motion/body/c21/h08itemdragoonget.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h08itemdragoonride.nuanmb": [
+            "fighter/sonic/motion/body/c21/h08itemdragoonride.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h10itemlegsjumpsquat.nuanmb": [
+            "fighter/sonic/motion/body/c21/h10itemlegsjumpsquat.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h10itemlegslanding.nuanmb": [
+            "fighter/sonic/motion/body/c21/h10itemlegslanding.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h10itemlegswalkb.nuanmb": [
+            "fighter/sonic/motion/body/c21/h10itemlegswalkb.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h10itemlegswalkf.nuanmb": [
+            "fighter/sonic/motion/body/c21/h10itemlegswalkf.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h11itemshoot.nuanmb": [
+            "fighter/sonic/motion/body/c21/h11itemshoot.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h11itemshootair.nuanmb": [
+            "fighter/sonic/motion/body/c21/h11itemshootair.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h11itemshootairloop.nuanmb": [
+            "fighter/sonic/motion/body/c21/h11itemshootairloop.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h11itemshootloop.nuanmb": [
+            "fighter/sonic/motion/body/c21/h11itemshootloop.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h11itemshootloopupper.nuanmb": [
+            "fighter/sonic/motion/body/c21/h11itemshootloopupper.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h11itemshootupper.nuanmb": [
+            "fighter/sonic/motion/body/c21/h11itemshootupper.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h12itemscopeairend.nuanmb": [
+            "fighter/sonic/motion/body/c21/h12itemscopeairend.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h12itemscopeairfire.nuanmb": [
+            "fighter/sonic/motion/body/c21/h12itemscopeairfire.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h12itemscopeairrapid.nuanmb": [
+            "fighter/sonic/motion/body/c21/h12itemscopeairrapid.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h12itemscopeairstart.nuanmb": [
+            "fighter/sonic/motion/body/c21/h12itemscopeairstart.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h12itemscopeend.nuanmb": [
+            "fighter/sonic/motion/body/c21/h12itemscopeend.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h12itemscopeendupper.nuanmb": [
+            "fighter/sonic/motion/body/c21/h12itemscopeendupper.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h12itemscopefall.nuanmb": [
+            "fighter/sonic/motion/body/c21/h12itemscopefall.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h12itemscopefire.nuanmb": [
+            "fighter/sonic/motion/body/c21/h12itemscopefire.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h12itemscopefireupper.nuanmb": [
+            "fighter/sonic/motion/body/c21/h12itemscopefireupper.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h12itemscoperapid.nuanmb": [
+            "fighter/sonic/motion/body/c21/h12itemscoperapid.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h12itemscoperapidupper.nuanmb": [
+            "fighter/sonic/motion/body/c21/h12itemscoperapidupper.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h12itemscopestart.nuanmb": [
+            "fighter/sonic/motion/body/c21/h12itemscopestart.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h12itemscopestartupper.nuanmb": [
+            "fighter/sonic/motion/body/c21/h12itemscopestartupper.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h12itemscopewait.nuanmb": [
+            "fighter/sonic/motion/body/c21/h12itemscopewait.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h12itemscopewaitupper.nuanmb": [
+            "fighter/sonic/motion/body/c21/h12itemscopewaitupper.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h13itemassist.nuanmb": [
+            "fighter/sonic/motion/body/c21/h13itemassist.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h14gekikarawait.nuanmb": [
+            "fighter/sonic/motion/body/c21/h14gekikarawait.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h14gekikarawaitface.nuanmb": [
+            "fighter/sonic/motion/body/c21/h14gekikarawaitface.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h15itemgrasspull.nuanmb": [
+            "fighter/sonic/motion/body/c21/h15itemgrasspull.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h16itemgenesisairend.nuanmb": [
+            "fighter/sonic/motion/body/c21/h16itemgenesisairend.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h16itemgenesisairfire.nuanmb": [
+            "fighter/sonic/motion/body/c21/h16itemgenesisairfire.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h16itemgenesisairloop.nuanmb": [
+            "fighter/sonic/motion/body/c21/h16itemgenesisairloop.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h16itemgenesisend.nuanmb": [
+            "fighter/sonic/motion/body/c21/h16itemgenesisend.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h16itemgenesisfall.nuanmb": [
+            "fighter/sonic/motion/body/c21/h16itemgenesisfall.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h16itemgenesisfire.nuanmb": [
+            "fighter/sonic/motion/body/c21/h16itemgenesisfire.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h16itemgenesisloop.nuanmb": [
+            "fighter/sonic/motion/body/c21/h16itemgenesisloop.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h16itemgenesisturn.nuanmb": [
+            "fighter/sonic/motion/body/c21/h16itemgenesisturn.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h16itemgenesiswait.nuanmb": [
+            "fighter/sonic/motion/body/c21/h16itemgenesiswait.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/h16itemgenesiswaitupper.nuanmb": [
+            "fighter/sonic/motion/body/c21/h16itemgenesiswaitupper.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/i00swim.nuanmb": [
+            "fighter/sonic/motion/body/c21/i00swim.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/i00swimrise.nuanmb": [
+            "fighter/sonic/motion/body/c21/i00swimrise.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/i00swimturn.nuanmb": [
+            "fighter/sonic/motion/body/c21/i00swimturn.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/i00swimup.nuanmb": [
+            "fighter/sonic/motion/body/c21/i00swimup.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/i00swimupdamage.nuanmb": [
+            "fighter/sonic/motion/body/c21/i00swimupdamage.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/i01swimdrown.nuanmb": [
+            "fighter/sonic/motion/body/c21/i01swimdrown.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/i01swimdrownout.nuanmb": [
+            "fighter/sonic/motion/body/c21/i01swimdrownout.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/j00entryr.nuanmb": [
+            "fighter/sonic/motion/body/c21/j00entryr.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/j01appealhir.nuanmb": [
+            "fighter/sonic/motion/body/c21/j01appealhir.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/j01appeallwr.nuanmb": [
+            "fighter/sonic/motion/body/c21/j01appeallwr.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/j01appealsr.nuanmb": [
+            "fighter/sonic/motion/body/c21/j01appealsr.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/j02lose.nuanmb": [
+            "fighter/sonic/motion/body/c21/j02lose.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/j02win1.nuanmb": [
+            "fighter/sonic/motion/body/c21/j02win1.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/j02win1wait.nuanmb": [
+            "fighter/sonic/motion/body/c21/j02win1wait.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/j02win2.nuanmb": [
+            "fighter/sonic/motion/body/c21/j02win2.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/j02win2wait.nuanmb": [
+            "fighter/sonic/motion/body/c21/j02win2wait.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/j02win3.nuanmb": [
+            "fighter/sonic/motion/body/c21/j02win3.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/j02win3wait.nuanmb": [
+            "fighter/sonic/motion/body/c21/j02win3wait.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/k00laddercatchairr.nuanmb": [
+            "fighter/sonic/motion/body/c21/k00laddercatchairr.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/k00laddercatchendr.nuanmb": [
+            "fighter/sonic/motion/body/c21/k00laddercatchendr.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/k00laddercatchr.nuanmb": [
+            "fighter/sonic/motion/body/c21/k00laddercatchr.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/k00ladderdown.nuanmb": [
+            "fighter/sonic/motion/body/c21/k00ladderdown.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/k00ladderup.nuanmb": [
+            "fighter/sonic/motion/body/c21/k00ladderup.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/k00ladderwait.nuanmb": [
+            "fighter/sonic/motion/body/c21/k00ladderwait.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/l00share.nuanmb": [
+            "fighter/sonic/motion/body/c21/l00share.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/l02share_cliff.nuanmb": [
+            "fighter/sonic/motion/body/c21/l02share_cliff.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/l02share_finish.nuanmb": [
+            "fighter/sonic/motion/body/c21/l02share_finish.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/l02share_fistdown.nuanmb": [
+            "fighter/sonic/motion/body/c21/l02share_fistdown.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/l02share_sleep.nuanmb": [
+            "fighter/sonic/motion/body/c21/l02share_sleep.nuanmb"
+        ],
+        "fighter/sonic/motion/body/c05/flip.prc": [
+            "fighter/sonic/motion/body/c21/flip.prc"
+        ],
+        "fighter/sonic/motion/body/c05/ik.prc": [
+            "fighter/sonic/motion/body/c21/ik.prc"
+        ],
+        "fighter/sonic/motion/body/c05/motion_list.bin": [
+            "fighter/sonic/motion/body/c21/motion_list.bin"
+        ],
+        "fighter/sonic/motion/body/c05/scharge.prc": [
+            "fighter/sonic/motion/body/c21/scharge.prc"
+        ],
+        "fighter/sonic/motion/body/c05/swing.prc": [
+            "fighter/sonic/motion/body/c21/swing.prc"
+        ],
+        "fighter/sonic/motion/body/c05/swingblend.prc": [
+            "fighter/sonic/motion/body/c21/swingblend.prc"
+        ],
+        "fighter/sonic/motion/body/c05/update.prc": [
+            "fighter/sonic/motion/body/c21/update.prc"
+        ],
+        "fighter/sonic/motion/gimmickjump/c05/spring.nuanmb": [
+            "fighter/sonic/motion/gimmickjump/c21/spring.nuanmb"
+        ],
+        "fighter/sonic/motion/gimmickjump/c05/springsquat.nuanmb": [
+            "fighter/sonic/motion/gimmickjump/c21/springsquat.nuanmb"
+        ],
+        "fighter/sonic/motion/gimmickjump/c05/flip.prc": [
+            "fighter/sonic/motion/gimmickjump/c21/flip.prc"
+        ],
+        "fighter/sonic/motion/gimmickjump/c05/motion_list.bin": [
+            "fighter/sonic/motion/gimmickjump/c21/motion_list.bin"
+        ],
+        "fighter/sonic/motion/homingtarget/c05/motion_list.bin": [
+            "fighter/sonic/motion/homingtarget/c21/motion_list.bin"
+        ],
+        "fighter/sonic/motion/supersonic/c05/d04finalairend.nuanmb": [
+            "fighter/sonic/motion/supersonic/c21/d04finalairend.nuanmb"
+        ],
+        "fighter/sonic/motion/supersonic/c05/d04finalairstart.nuanmb": [
+            "fighter/sonic/motion/supersonic/c21/d04finalairstart.nuanmb"
+        ],
+        "fighter/sonic/motion/supersonic/c05/d04finalcamera.nuanmb": [
+            "fighter/sonic/motion/supersonic/c21/d04finalcamera.nuanmb"
+        ],
+        "fighter/sonic/motion/supersonic/c05/d04finalend.nuanmb": [
+            "fighter/sonic/motion/supersonic/c21/d04finalend.nuanmb"
+        ],
+        "fighter/sonic/motion/supersonic/c05/d04finalmove.nuanmb": [
+            "fighter/sonic/motion/supersonic/c21/d04finalmove.nuanmb"
+        ],
+        "fighter/sonic/motion/supersonic/c05/d04finalmoveend.nuanmb": [
+            "fighter/sonic/motion/supersonic/c21/d04finalmoveend.nuanmb"
+        ],
+        "fighter/sonic/motion/supersonic/c05/d04finalmovestart.nuanmb": [
+            "fighter/sonic/motion/supersonic/c21/d04finalmovestart.nuanmb"
+        ],
+        "fighter/sonic/motion/supersonic/c05/d04finalrise.nuanmb": [
+            "fighter/sonic/motion/supersonic/c21/d04finalrise.nuanmb"
+        ],
+        "fighter/sonic/motion/supersonic/c05/d04finalstart.nuanmb": [
+            "fighter/sonic/motion/supersonic/c21/d04finalstart.nuanmb"
+        ],
+        "fighter/sonic/motion/supersonic/c05/flip.prc": [
+            "fighter/sonic/motion/supersonic/c21/flip.prc"
+        ],
+        "fighter/sonic/motion/supersonic/c05/motion_list.bin": [
+            "fighter/sonic/motion/supersonic/c21/motion_list.bin"
+        ],
+        "sound/bank/fighter/se_sonic_c05.nus3audio": [
+            "sound/bank/fighter/se_sonic_c21.nus3audio"
+        ],
+        "sound/bank/fighter/se_sonic_c05.nus3bank": [
+            "sound/bank/fighter/se_sonic_c21.nus3bank"
+        ],
+        "sound/bank/fighter/se_sonic_c05.tonelabel": [
+            "sound/bank/fighter/se_sonic_c21.tonelabel"
+        ],
+        "sound/bank/fighter_voice/vc_sonic_c05.nus3bank": [
+            "sound/bank/fighter_voice/vc_sonic_c21.nus3bank"
+        ],
+        "sound/bank/fighter_voice/vc_sonic_c05.tonelabel": [
+            "sound/bank/fighter_voice/vc_sonic_c21.tonelabel"
+        ],
+        "sound/bank/fighter_voice/vc_sonic_cheer_c05.nus3audio": [
+            "sound/bank/fighter_voice/vc_sonic_cheer_c21.nus3audio"
+        ],
+        "sound/bank/fighter_voice/vc_sonic_cheer_c05.nus3bank": [
+            "sound/bank/fighter_voice/vc_sonic_cheer_c21.nus3bank"
+        ],
+        "sound/bank/fighter_voice/vc_sonic_cheer_c05.tonelabel": [
+            "sound/bank/fighter_voice/vc_sonic_cheer_c21.tonelabel"
+        ],
+        "camera/fighter/sonic/c05/d04finalstart.nuanmb": [
+            "camera/fighter/sonic/c21/d04finalstart.nuanmb"
+        ],
+        "camera/fighter/sonic/c05/j02win1.nuanmb": [
+            "camera/fighter/sonic/c21/j02win1.nuanmb"
+        ],
+        "camera/fighter/sonic/c05/j02win2.nuanmb": [
+            "camera/fighter/sonic/c21/j02win2.nuanmb"
+        ],
+        "camera/fighter/sonic/c05/j02win3.nuanmb": [
+            "camera/fighter/sonic/c21/j02win3.nuanmb"
+        ],
+        "fighter/sonic/motion/chaosemerald/c05/j02win2.nuanmb": [
+            "fighter/sonic/motion/chaosemerald/c21/j02win2.nuanmb"
+        ],
+        "fighter/sonic/motion/chaosemerald/c05/j02win2wait.nuanmb": [
+            "fighter/sonic/motion/chaosemerald/c21/j02win2wait.nuanmb"
+        ],
+        "fighter/sonic/motion/chaosemerald/c05/flip.prc": [
+            "fighter/sonic/motion/chaosemerald/c21/flip.prc"
+        ],
+        "fighter/sonic/motion/chaosemerald/c05/motion_list.bin": [
+            "fighter/sonic/motion/chaosemerald/c21/motion_list.bin"
         ]
     },
     "new-dir-files": {
-        "fighter/wolf/c64": [
-            "fighter/wolf/model/blaster/c64/dark_model.numatb",
-            "fighter/wolf/model/blaster/c64/light_model.numatb",
-            "fighter/wolf/model/blaster/c64/metamon_model.numatb",
-            "fighter/wolf/model/blaster/c64/model.nuanmb",
-            "fighter/wolf/model/blaster/c64/model.nuhlpb",
-            "fighter/wolf/model/blaster/c64/model.numatb",
-            "fighter/wolf/model/blaster/c64/model.numdlb",
-            "fighter/wolf/model/blaster/c64/model.numshb",
-            "fighter/wolf/model/blaster/c64/model.nusktb",
-            "fighter/wolf/model/blaster/c64/model.nusrcmdlb",
-            "fighter/wolf/model/blaster/c64/model.xmb",
-            "fighter/wolf/model/blaster/c64/wolf_blaster_001_col.nutexb",
-            "fighter/wolf/model/blaster/c64/wolf_blaster_001_emi.nutexb",
-            "fighter/wolf/model/blaster/c64/wolf_blaster_001_nor.nutexb",
-            "fighter/wolf/model/blaster/c64/wolf_blaster_001_prm.nutexb",
-            "fighter/wolf/model/body/c64/alp_wolf_001_col.nutexb",
-            "fighter/wolf/model/body/c64/alp_wolf_001_nor.nutexb",
-            "fighter/wolf/model/body/c64/alp_wolf_001_prm.nutexb",
-            "fighter/wolf/model/body/c64/alp_wolf_002_col.nutexb",
-            "fighter/wolf/model/body/c64/alp_wolf_002_nor.nutexb",
-            "fighter/wolf/model/body/c64/alp_wolf_002_prm.nutexb",
-            "fighter/wolf/model/body/c64/dark_model.numatb",
-            "fighter/wolf/model/body/c64/def_wolf_001_col.nutexb",
-            "fighter/wolf/model/body/c64/def_wolf_001_nor.nutexb",
-            "fighter/wolf/model/body/c64/def_wolf_001_prm.nutexb",
-            "fighter/wolf/model/body/c64/deyes_wolf_eye_d_col.nutexb",
-            "fighter/wolf/model/body/c64/deyes_wolf_eye_wd_col.nutexb",
-            "fighter/wolf/model/body/c64/eye_mario_w_nor.nutexb",
-            "fighter/wolf/model/body/c64/leyes_wolf_eye_l_col.nutexb",
-            "fighter/wolf/model/body/c64/light_model.numatb",
-            "fighter/wolf/model/body/c64/metamon_model.numatb",
-            "fighter/wolf/model/body/c64/model.nuanmb",
-            "fighter/wolf/model/body/c64/model.nuhlpb",
-            "fighter/wolf/model/body/c64/model.numatb",
-            "fighter/wolf/model/body/c64/model.numdlb",
-            "fighter/wolf/model/body/c64/model.numshb",
-            "fighter/wolf/model/body/c64/model.numshexb",
-            "fighter/wolf/model/body/c64/model.nusktb",
-            "fighter/wolf/model/body/c64/model.nusrcmdlb",
-            "fighter/wolf/model/body/c64/model.xmb",
-            "fighter/wolf/model/body/c64/skin_wolf_001_col.nutexb",
-            "fighter/wolf/model/body/c64/skin_wolf_001_nor.nutexb",
-            "fighter/wolf/model/body/c64/skin_wolf_001_prm.nutexb",
-            "fighter/wolf/model/body/c64/wolf_blaster_001_col.nutexb",
-            "fighter/wolf/model/body/c64/wolf_blaster_001_nor.nutexb",
-            "fighter/wolf/model/body/c64/wolf_blaster_001_prm.nutexb",
-            "fighter/wolf/model/body/c64/wolf_eye_b_col.nutexb",
-            "fighter/wolf/model/body/c64/wolf_eye_g_col.nutexb",
-            "fighter/wolf/model/body/c64/wolf_eye_w_col.nutexb",
-            "fighter/wolf/model/body/c64/wolf_eye_w_nor.nutexb",
-            "fighter/wolf/model/body/c64/wolf_eye_w_prm.nutexb",
-            "fighter/wolf/model/body/c64/wolf_holster_001_col.nutexb",
-            "fighter/wolf/model/body/c64/wolf_holster_001_nor.nutexb",
-            "fighter/wolf/model/body/c64/wolf_holster_001_prm.nutexb",
-            "fighter/wolf/model/body/c64/wolf_reflector_001_col.nutexb",
-            "fighter/wolf/model/body/c64/wolf_reflector_001_emi.nutexb",
-            "fighter/wolf/model/body/c64/wolf_reflector_001_nor.nutexb",
-            "fighter/wolf/model/body/c64/wolf_reflector_001_prm.nutexb",
-            "fighter/wolf/model/reticle/c64/alp_reticle_001_col.nutexb",
-            "fighter/wolf/model/reticle/c64/dark_model.numatb",
-            "fighter/wolf/model/reticle/c64/light_model.numatb",
-            "fighter/wolf/model/reticle/c64/metamon_model.numatb",
-            "fighter/wolf/model/reticle/c64/model.nuhlpb",
-            "fighter/wolf/model/reticle/c64/model.numatb",
-            "fighter/wolf/model/reticle/c64/model.numdlb",
-            "fighter/wolf/model/reticle/c64/model.numshb",
-            "fighter/wolf/model/reticle/c64/model.numshexb",
-            "fighter/wolf/model/reticle/c64/model.nusktb",
-            "fighter/wolf/model/reticle/c64/model.nusrcmdlb",
-            "fighter/wolf/model/reticle/c64/model.xmb",
-            "fighter/wolf/model/wolfen/c64/dark_model.numatb",
-            "fighter/wolf/model/wolfen/c64/light_model.numatb",
-            "fighter/wolf/model/wolfen/c64/metal_wolfen_001_col.nutexb",
-            "fighter/wolf/model/wolfen/c64/metal_wolfen_001_emi.nutexb",
-            "fighter/wolf/model/wolfen/c64/metal_wolfen_001_nor.nutexb",
-            "fighter/wolf/model/wolfen/c64/metal_wolfen_001_prm.nutexb",
-            "fighter/wolf/model/wolfen/c64/metamon_model.numatb",
-            "fighter/wolf/model/wolfen/c64/model.nuanmb",
-            "fighter/wolf/model/wolfen/c64/model.nuhlpb",
-            "fighter/wolf/model/wolfen/c64/model.numatb",
-            "fighter/wolf/model/wolfen/c64/model.numdlb",
-            "fighter/wolf/model/wolfen/c64/model.numshb",
-            "fighter/wolf/model/wolfen/c64/model.numshexb",
-            "fighter/wolf/model/wolfen/c64/model.nusktb",
-            "fighter/wolf/model/wolfen/c64/model.nusrcmdlb",
-            "fighter/wolf/model/wolfen/c64/model.xmb",
-            "fighter/wolf/motion/blaster/c64/close.nuanmb",
-            "fighter/wolf/motion/blaster/c64/loop.nuanmb",
-            "fighter/wolf/motion/blaster/c64/open.nuanmb",
-            "fighter/wolf/motion/blaster/c64/motion_list.bin",
-            "fighter/wolf/motion/blaster_bullet/c64/motion_list.bin",
-            "fighter/wolf/motion/body/c64/a00defaulteyelid.nuanmb",
-            "fighter/wolf/motion/body/c64/a00itemhandgrip.nuanmb",
-            "fighter/wolf/motion/body/c64/a00itemhandhave.nuanmb",
-            "fighter/wolf/motion/body/c64/a00itemhandpickup.nuanmb",
-            "fighter/wolf/motion/body/c64/a00itemhandsmash.nuanmb",
-            "fighter/wolf/motion/body/c64/a00wait1.nuanmb",
-            "fighter/wolf/motion/body/c64/a00wait2.nuanmb",
-            "fighter/wolf/motion/body/c64/a00wait3.nuanmb",
-            "fighter/wolf/motion/body/c64/a00waititem.nuanmb",
-            "fighter/wolf/motion/body/c64/a01turn.nuanmb",
-            "fighter/wolf/motion/body/c64/a01walkbrakel.nuanmb",
-            "fighter/wolf/motion/body/c64/a01walkbraker.nuanmb",
-            "fighter/wolf/motion/body/c64/a01walkfast.nuanmb",
-            "fighter/wolf/motion/body/c64/a01walkmiddle.nuanmb",
-            "fighter/wolf/motion/body/c64/a01walkslow.nuanmb",
-            "fighter/wolf/motion/body/c64/a02dash.nuanmb",
-            "fighter/wolf/motion/body/c64/a02run.nuanmb",
-            "fighter/wolf/motion/body/c64/a02runbrakel.nuanmb",
-            "fighter/wolf/motion/body/c64/a02runbraker.nuanmb",
-            "fighter/wolf/motion/body/c64/a02turndash.nuanmb",
-            "fighter/wolf/motion/body/c64/a02turnrun.nuanmb",
-            "fighter/wolf/motion/body/c64/a02turnrunbrake.nuanmb",
-            "fighter/wolf/motion/body/c64/a03jumpaerialb.nuanmb",
-            "fighter/wolf/motion/body/c64/a03jumpaerialf.nuanmb",
-            "fighter/wolf/motion/body/c64/a03jumpb.nuanmb",
-            "fighter/wolf/motion/body/c64/a03jumpf.nuanmb",
-            "fighter/wolf/motion/body/c64/a03jumpsquat.nuanmb",
-            "fighter/wolf/motion/body/c64/a04damagefall.nuanmb",
-            "fighter/wolf/motion/body/c64/a04fall.nuanmb",
-            "fighter/wolf/motion/body/c64/a04fallaerial.nuanmb",
-            "fighter/wolf/motion/body/c64/a04fallaerialb.nuanmb",
-            "fighter/wolf/motion/body/c64/a04fallaerialf.nuanmb",
-            "fighter/wolf/motion/body/c64/a04fallb.nuanmb",
-            "fighter/wolf/motion/body/c64/a04fallf.nuanmb",
-            "fighter/wolf/motion/body/c64/a04fallspecial.nuanmb",
-            "fighter/wolf/motion/body/c64/a04fallspecialb.nuanmb",
-            "fighter/wolf/motion/body/c64/a04fallspecialf.nuanmb",
-            "fighter/wolf/motion/body/c64/a04landingfallspecial.nuanmb",
-            "fighter/wolf/motion/body/c64/a04runfalll.nuanmb",
-            "fighter/wolf/motion/body/c64/a04runfallr.nuanmb",
-            "fighter/wolf/motion/body/c64/a04walkfalll.nuanmb",
-            "fighter/wolf/motion/body/c64/a04walkfallr.nuanmb",
-            "fighter/wolf/motion/body/c64/a05landingheavy.nuanmb",
-            "fighter/wolf/motion/body/c64/a05landinglight.nuanmb",
-            "fighter/wolf/motion/body/c64/a05squat.nuanmb",
-            "fighter/wolf/motion/body/c64/a05squatrv.nuanmb",
-            "fighter/wolf/motion/body/c64/a05squatwait.nuanmb",
-            "fighter/wolf/motion/body/c64/a05squatwaititem.nuanmb",
-            "fighter/wolf/motion/body/c64/a06stepairpose.nuanmb",
-            "fighter/wolf/motion/body/c64/a06stepback.nuanmb",
-            "fighter/wolf/motion/body/c64/a06stepfall.nuanmb",
-            "fighter/wolf/motion/body/c64/a06stepjump.nuanmb",
-            "fighter/wolf/motion/body/c64/a06steppose.nuanmb",
-            "fighter/wolf/motion/body/c64/b00guard.nuanmb",
-            "fighter/wolf/motion/body/c64/b00guardoff.nuanmb",
-            "fighter/wolf/motion/body/c64/b00guardon.nuanmb",
-            "fighter/wolf/motion/body/c64/b00justshieldoff.nuanmb",
-            "fighter/wolf/motion/body/c64/b01guarddamage.nuanmb",
-            "fighter/wolf/motion/body/c64/b02escapeair.nuanmb",
-            "fighter/wolf/motion/body/c64/b02escapeb.nuanmb",
-            "fighter/wolf/motion/body/c64/b02escapef.nuanmb",
-            "fighter/wolf/motion/body/c64/b02escapen.nuanmb",
-            "fighter/wolf/motion/body/c64/b02rebound.nuanmb",
-            "fighter/wolf/motion/body/c64/c00attack11.nuanmb",
-            "fighter/wolf/motion/body/c64/c00attack12.nuanmb",
-            "fighter/wolf/motion/body/c64/c00attack13.nuanmb",
-            "fighter/wolf/motion/body/c64/c00attackdash.nuanmb",
-            "fighter/wolf/motion/body/c64/c01attacks3hi.nuanmb",
-            "fighter/wolf/motion/body/c64/c01attacks3lw.nuanmb",
-            "fighter/wolf/motion/body/c64/c01attacks3s.nuanmb",
-            "fighter/wolf/motion/body/c64/c02attackhi3.nuanmb",
-            "fighter/wolf/motion/body/c64/c02attacklw3.nuanmb",
-            "fighter/wolf/motion/body/c64/c03attacks4charge.nuanmb",
-            "fighter/wolf/motion/body/c64/c03attacks4s.nuanmb",
-            "fighter/wolf/motion/body/c64/c04attackhi4.nuanmb",
-            "fighter/wolf/motion/body/c64/c04attackhi4charge.nuanmb",
-            "fighter/wolf/motion/body/c64/c04attacklw4.nuanmb",
-            "fighter/wolf/motion/body/c64/c04attacklw4charge.nuanmb",
-            "fighter/wolf/motion/body/c64/c05attackairb.nuanmb",
-            "fighter/wolf/motion/body/c64/c05attackairf.nuanmb",
-            "fighter/wolf/motion/body/c64/c05attackairhi.nuanmb",
-            "fighter/wolf/motion/body/c64/c05attackairlw.nuanmb",
-            "fighter/wolf/motion/body/c64/c05attackairn.nuanmb",
-            "fighter/wolf/motion/body/c64/c05landingairb.nuanmb",
-            "fighter/wolf/motion/body/c64/c05landingairf.nuanmb",
-            "fighter/wolf/motion/body/c64/c05landingairhi.nuanmb",
-            "fighter/wolf/motion/body/c64/c05landingairlw.nuanmb",
-            "fighter/wolf/motion/body/c64/c05landingairn.nuanmb",
-            "fighter/wolf/motion/body/c64/d00specialairn.nuanmb",
-            "fighter/wolf/motion/body/c64/d00specialn.nuanmb",
-            "fighter/wolf/motion/body/c64/d01specialairs.nuanmb",
-            "fighter/wolf/motion/body/c64/d01specialairsend.nuanmb",
-            "fighter/wolf/motion/body/c64/d01specialairsstart.nuanmb",
-            "fighter/wolf/motion/body/c64/d01specials.nuanmb",
-            "fighter/wolf/motion/body/c64/d01specialsstart.nuanmb",
-            "fighter/wolf/motion/body/c64/d02specialhi.nuanmb",
-            "fighter/wolf/motion/body/c64/d02specialhibound.nuanmb",
-            "fighter/wolf/motion/body/c64/d02specialhifall.nuanmb",
-            "fighter/wolf/motion/body/c64/d02specialhihold.nuanmb",
-            "fighter/wolf/motion/body/c64/d02specialhiholdair.nuanmb",
-            "fighter/wolf/motion/body/c64/d02specialhilanding.nuanmb",
-            "fighter/wolf/motion/body/c64/d03specialairlwend.nuanmb",
-            "fighter/wolf/motion/body/c64/d03specialairlwendl.nuanmb",
-            "fighter/wolf/motion/body/c64/d03specialairlwhit.nuanmb",
-            "fighter/wolf/motion/body/c64/d03specialairlwhitl.nuanmb",
-            "fighter/wolf/motion/body/c64/d03specialairlwloop.nuanmb",
-            "fighter/wolf/motion/body/c64/d03specialairlwloopl.nuanmb",
-            "fighter/wolf/motion/body/c64/d03specialairlwstart.nuanmb",
-            "fighter/wolf/motion/body/c64/d03specialairlwstartl.nuanmb",
-            "fighter/wolf/motion/body/c64/d03speciallwend.nuanmb",
-            "fighter/wolf/motion/body/c64/d03speciallwendl.nuanmb",
-            "fighter/wolf/motion/body/c64/d03speciallwhit.nuanmb",
-            "fighter/wolf/motion/body/c64/d03speciallwhitl.nuanmb",
-            "fighter/wolf/motion/body/c64/d03speciallwloop.nuanmb",
-            "fighter/wolf/motion/body/c64/d03speciallwloopl.nuanmb",
-            "fighter/wolf/motion/body/c64/d03speciallwstart.nuanmb",
-            "fighter/wolf/motion/body/c64/d03speciallwstartl.nuanmb",
-            "fighter/wolf/motion/body/c64/d04finalairend.nuanmb",
-            "fighter/wolf/motion/body/c64/d04finalairlockon.nuanmb",
-            "fighter/wolf/motion/body/c64/d04finalairstart.nuanmb",
-            "fighter/wolf/motion/body/c64/d04finalend.nuanmb",
-            "fighter/wolf/motion/body/c64/d04finallockon.nuanmb",
-            "fighter/wolf/motion/body/c64/d04finalstart.nuanmb",
-            "fighter/wolf/motion/body/c64/d04visualscene.nuanmb",
-            "fighter/wolf/motion/body/c64/e00catch.nuanmb",
-            "fighter/wolf/motion/body/c64/e00catchattack.nuanmb",
-            "fighter/wolf/motion/body/c64/e00catchcut.nuanmb",
-            "fighter/wolf/motion/body/c64/e00catchdash.nuanmb",
-            "fighter/wolf/motion/body/c64/e00catchpull.nuanmb",
-            "fighter/wolf/motion/body/c64/e00catchturn.nuanmb",
-            "fighter/wolf/motion/body/c64/e00catchwait.nuanmb",
-            "fighter/wolf/motion/body/c64/e01throwb.nuanmb",
-            "fighter/wolf/motion/body/c64/e01throwf.nuanmb",
-            "fighter/wolf/motion/body/c64/e01throwhi.nuanmb",
-            "fighter/wolf/motion/body/c64/e01throwlw.nuanmb",
-            "fighter/wolf/motion/body/c64/e01thrownb.nuanmb",
-            "fighter/wolf/motion/body/c64/e01thrownbigb.nuanmb",
-            "fighter/wolf/motion/body/c64/e01thrownbigf.nuanmb",
-            "fighter/wolf/motion/body/c64/e01thrownbighi.nuanmb",
-            "fighter/wolf/motion/body/c64/e01thrownbiglw.nuanmb",
-            "fighter/wolf/motion/body/c64/e01throwndxb.nuanmb",
-            "fighter/wolf/motion/body/c64/e01throwndxf.nuanmb",
-            "fighter/wolf/motion/body/c64/e01throwndxhi.nuanmb",
-            "fighter/wolf/motion/body/c64/e01throwndxlw.nuanmb",
-            "fighter/wolf/motion/body/c64/e01thrownf.nuanmb",
-            "fighter/wolf/motion/body/c64/e01throwngirlb.nuanmb",
-            "fighter/wolf/motion/body/c64/e01throwngirlf.nuanmb",
-            "fighter/wolf/motion/body/c64/e01throwngirlhi.nuanmb",
-            "fighter/wolf/motion/body/c64/e01throwngirllw.nuanmb",
-            "fighter/wolf/motion/body/c64/e01thrownhi.nuanmb",
-            "fighter/wolf/motion/body/c64/e01thrownlw.nuanmb",
-            "fighter/wolf/motion/body/c64/e02capturedamagehi.nuanmb",
-            "fighter/wolf/motion/body/c64/e02capturepulledhi.nuanmb",
-            "fighter/wolf/motion/body/c64/e02capturewaithi.nuanmb",
-            "fighter/wolf/motion/body/c64/e03capturecut.nuanmb",
-            "fighter/wolf/motion/body/c64/e03capturedamagelw.nuanmb",
-            "fighter/wolf/motion/body/c64/e03capturejump.nuanmb",
-            "fighter/wolf/motion/body/c64/e03capturepulledlw.nuanmb",
-            "fighter/wolf/motion/body/c64/e03capturewaitlw.nuanmb",
-            "fighter/wolf/motion/body/c64/f00damagehi1.nuanmb",
-            "fighter/wolf/motion/body/c64/f00damagehi2.nuanmb",
-            "fighter/wolf/motion/body/c64/f00damagehi3.nuanmb",
-            "fighter/wolf/motion/body/c64/f00damagelw1.nuanmb",
-            "fighter/wolf/motion/body/c64/f00damagelw2.nuanmb",
-            "fighter/wolf/motion/body/c64/f00damagelw3.nuanmb",
-            "fighter/wolf/motion/body/c64/f00damagen1.nuanmb",
-            "fighter/wolf/motion/body/c64/f00damagen2.nuanmb",
-            "fighter/wolf/motion/body/c64/f00damagen3.nuanmb",
-            "fighter/wolf/motion/body/c64/f01damageair1.nuanmb",
-            "fighter/wolf/motion/body/c64/f01damageair2.nuanmb",
-            "fighter/wolf/motion/body/c64/f01damageair3.nuanmb",
-            "fighter/wolf/motion/body/c64/f01damageflyhi.nuanmb",
-            "fighter/wolf/motion/body/c64/f01damageflylw.nuanmb",
-            "fighter/wolf/motion/body/c64/f01damageflymeteor.nuanmb",
-            "fighter/wolf/motion/body/c64/f01damageflyn.nuanmb",
-            "fighter/wolf/motion/body/c64/f01damageflyroll.nuanmb",
-            "fighter/wolf/motion/body/c64/f01damageflyrollend.nuanmb",
-            "fighter/wolf/motion/body/c64/f01damageflytop.nuanmb",
-            "fighter/wolf/motion/body/c64/f02damageelec.nuanmb",
-            "fighter/wolf/motion/body/c64/f03downattacku.nuanmb",
-            "fighter/wolf/motion/body/c64/f03downbacku.nuanmb",
-            "fighter/wolf/motion/body/c64/f03downboundu.nuanmb",
-            "fighter/wolf/motion/body/c64/f03downdamageu.nuanmb",
-            "fighter/wolf/motion/body/c64/f03downdamageu3.nuanmb",
-            "fighter/wolf/motion/body/c64/f03downeatu.nuanmb",
-            "fighter/wolf/motion/body/c64/f03downforwardu.nuanmb",
-            "fighter/wolf/motion/body/c64/f03downstandu.nuanmb",
-            "fighter/wolf/motion/body/c64/f03downwaitu.nuanmb",
-            "fighter/wolf/motion/body/c64/f04downattackd.nuanmb",
-            "fighter/wolf/motion/body/c64/f04downbackd.nuanmb",
-            "fighter/wolf/motion/body/c64/f04downboundd.nuanmb",
-            "fighter/wolf/motion/body/c64/f04downdamaged.nuanmb",
-            "fighter/wolf/motion/body/c64/f04downdamaged3.nuanmb",
-            "fighter/wolf/motion/body/c64/f04downeatd.nuanmb",
-            "fighter/wolf/motion/body/c64/f04downforwardd.nuanmb",
-            "fighter/wolf/motion/body/c64/f04downspotd.nuanmb",
-            "fighter/wolf/motion/body/c64/f04downstandd.nuanmb",
-            "fighter/wolf/motion/body/c64/f04downwaitd.nuanmb",
-            "fighter/wolf/motion/body/c64/f05passive.nuanmb",
-            "fighter/wolf/motion/body/c64/f05passiveceil.nuanmb",
-            "fighter/wolf/motion/body/c64/f05passivestandb.nuanmb",
-            "fighter/wolf/motion/body/c64/f05passivestandf.nuanmb",
-            "fighter/wolf/motion/body/c64/f05passivewall.nuanmb",
-            "fighter/wolf/motion/body/c64/f05passivewalljump.nuanmb",
-            "fighter/wolf/motion/body/c64/f06furafura.nuanmb",
-            "fighter/wolf/motion/body/c64/f06furafuraend.nuanmb",
-            "fighter/wolf/motion/body/c64/f06furafurastartd.nuanmb",
-            "fighter/wolf/motion/body/c64/f06furafurastartu.nuanmb",
-            "fighter/wolf/motion/body/c64/f07sleepend.nuanmb",
-            "fighter/wolf/motion/body/c64/f07sleeploop.nuanmb",
-            "fighter/wolf/motion/body/c64/f07sleepstart.nuanmb",
-            "fighter/wolf/motion/body/c64/f08swallowed.nuanmb",
-            "fighter/wolf/motion/body/c64/f09camerahit.nuanmb",
-            "fighter/wolf/motion/body/c64/g00ceildamage.nuanmb",
-            "fighter/wolf/motion/body/c64/g00missfoot.nuanmb",
-            "fighter/wolf/motion/body/c64/g00ottotto.nuanmb",
-            "fighter/wolf/motion/body/c64/g00ottottowait.nuanmb",
-            "fighter/wolf/motion/body/c64/g00pass.nuanmb",
-            "fighter/wolf/motion/body/c64/g00stopceil.nuanmb",
-            "fighter/wolf/motion/body/c64/g00stopwall.nuanmb",
-            "fighter/wolf/motion/body/c64/g00walldamage.nuanmb",
-            "fighter/wolf/motion/body/c64/g01cliffcatch.nuanmb",
-            "fighter/wolf/motion/body/c64/g01cliffwait.nuanmb",
-            "fighter/wolf/motion/body/c64/g02cliffattack.nuanmb",
-            "fighter/wolf/motion/body/c64/g02cliffclimb.nuanmb",
-            "fighter/wolf/motion/body/c64/g02cliffescape.nuanmb",
-            "fighter/wolf/motion/body/c64/g02cliffjump1.nuanmb",
-            "fighter/wolf/motion/body/c64/g02cliffjump2.nuanmb",
-            "fighter/wolf/motion/body/c64/g03slip.nuanmb",
-            "fighter/wolf/motion/body/c64/g03slipattack.nuanmb",
-            "fighter/wolf/motion/body/c64/g03slipdown.nuanmb",
-            "fighter/wolf/motion/body/c64/g03slipescapeb.nuanmb",
-            "fighter/wolf/motion/body/c64/g03slipescapef.nuanmb",
-            "fighter/wolf/motion/body/c64/g03slipstand.nuanmb",
-            "fighter/wolf/motion/body/c64/g03slipwait.nuanmb",
-            "fighter/wolf/motion/body/c64/h00lighteat.nuanmb",
-            "fighter/wolf/motion/body/c64/h00lightget.nuanmb",
-            "fighter/wolf/motion/body/c64/h00lightwalkeat.nuanmb",
-            "fighter/wolf/motion/body/c64/h00lightwalkget.nuanmb",
-            "fighter/wolf/motion/body/c64/h01lightthrowb.nuanmb",
-            "fighter/wolf/motion/body/c64/h01lightthrowdash.nuanmb",
-            "fighter/wolf/motion/body/c64/h01lightthrowdrop.nuanmb",
-            "fighter/wolf/motion/body/c64/h01lightthrowf.nuanmb",
-            "fighter/wolf/motion/body/c64/h01lightthrowhi.nuanmb",
-            "fighter/wolf/motion/body/c64/h01lightthrowlw.nuanmb",
-            "fighter/wolf/motion/body/c64/h02lightthrowairb.nuanmb",
-            "fighter/wolf/motion/body/c64/h02lightthrowairf.nuanmb",
-            "fighter/wolf/motion/body/c64/h02lightthrowairhi.nuanmb",
-            "fighter/wolf/motion/body/c64/h02lightthrowairlw.nuanmb",
-            "fighter/wolf/motion/body/c64/h03heavyget.nuanmb",
-            "fighter/wolf/motion/body/c64/h03heavythrowb.nuanmb",
-            "fighter/wolf/motion/body/c64/h03heavythrowf.nuanmb",
-            "fighter/wolf/motion/body/c64/h03heavythrowhi.nuanmb",
-            "fighter/wolf/motion/body/c64/h03heavythrowlw.nuanmb",
-            "fighter/wolf/motion/body/c64/h03heavywalk.nuanmb",
-            "fighter/wolf/motion/body/c64/h04swing1.nuanmb",
-            "fighter/wolf/motion/body/c64/h04swing3.nuanmb",
-            "fighter/wolf/motion/body/c64/h04swing4.nuanmb",
-            "fighter/wolf/motion/body/c64/h04swing4charge.nuanmb",
-            "fighter/wolf/motion/body/c64/h04swingdash.nuanmb",
-            "fighter/wolf/motion/body/c64/h05itemhammerair.nuanmb",
-            "fighter/wolf/motion/body/c64/h05itemhammermove.nuanmb",
-            "fighter/wolf/motion/body/c64/h05itemhammerwait.nuanmb",
-            "fighter/wolf/motion/body/c64/h06swing4bat.nuanmb",
-            "fighter/wolf/motion/body/c64/h07itemscrew.nuanmb",
-            "fighter/wolf/motion/body/c64/h07itemscrewfall.nuanmb",
-            "fighter/wolf/motion/body/c64/h08itemdragoonget.nuanmb",
-            "fighter/wolf/motion/body/c64/h08itemdragoonride.nuanmb",
-            "fighter/wolf/motion/body/c64/h10itemlegsjumpsquat.nuanmb",
-            "fighter/wolf/motion/body/c64/h10itemlegslanding.nuanmb",
-            "fighter/wolf/motion/body/c64/h10itemlegswalkb.nuanmb",
-            "fighter/wolf/motion/body/c64/h10itemlegswalkf.nuanmb",
-            "fighter/wolf/motion/body/c64/h11itemshoot.nuanmb",
-            "fighter/wolf/motion/body/c64/h11itemshootair.nuanmb",
-            "fighter/wolf/motion/body/c64/h11itemshootairloop.nuanmb",
-            "fighter/wolf/motion/body/c64/h11itemshootloop.nuanmb",
-            "fighter/wolf/motion/body/c64/h11itemshootloopupper.nuanmb",
-            "fighter/wolf/motion/body/c64/h11itemshootupper.nuanmb",
-            "fighter/wolf/motion/body/c64/h12itemscopeairend.nuanmb",
-            "fighter/wolf/motion/body/c64/h12itemscopeairfire.nuanmb",
-            "fighter/wolf/motion/body/c64/h12itemscopeairrapid.nuanmb",
-            "fighter/wolf/motion/body/c64/h12itemscopeairstart.nuanmb",
-            "fighter/wolf/motion/body/c64/h12itemscopeend.nuanmb",
-            "fighter/wolf/motion/body/c64/h12itemscopeendupper.nuanmb",
-            "fighter/wolf/motion/body/c64/h12itemscopefall.nuanmb",
-            "fighter/wolf/motion/body/c64/h12itemscopefire.nuanmb",
-            "fighter/wolf/motion/body/c64/h12itemscopefireupper.nuanmb",
-            "fighter/wolf/motion/body/c64/h12itemscoperapid.nuanmb",
-            "fighter/wolf/motion/body/c64/h12itemscoperapidupper.nuanmb",
-            "fighter/wolf/motion/body/c64/h12itemscopestart.nuanmb",
-            "fighter/wolf/motion/body/c64/h12itemscopestartupper.nuanmb",
-            "fighter/wolf/motion/body/c64/h12itemscopewait.nuanmb",
-            "fighter/wolf/motion/body/c64/h12itemscopewaitupper.nuanmb",
-            "fighter/wolf/motion/body/c64/h13itemassist.nuanmb",
-            "fighter/wolf/motion/body/c64/h14gekikarawait.nuanmb",
-            "fighter/wolf/motion/body/c64/h14gekikarawaitface.nuanmb",
-            "fighter/wolf/motion/body/c64/h15itemgrasspull.nuanmb",
-            "fighter/wolf/motion/body/c64/h16itemgenesisairend.nuanmb",
-            "fighter/wolf/motion/body/c64/h16itemgenesisairfire.nuanmb",
-            "fighter/wolf/motion/body/c64/h16itemgenesisairloop.nuanmb",
-            "fighter/wolf/motion/body/c64/h16itemgenesisend.nuanmb",
-            "fighter/wolf/motion/body/c64/h16itemgenesisfall.nuanmb",
-            "fighter/wolf/motion/body/c64/h16itemgenesisfire.nuanmb",
-            "fighter/wolf/motion/body/c64/h16itemgenesisloop.nuanmb",
-            "fighter/wolf/motion/body/c64/h16itemgenesisturn.nuanmb",
-            "fighter/wolf/motion/body/c64/h16itemgenesiswait.nuanmb",
-            "fighter/wolf/motion/body/c64/h16itemgenesiswaitupper.nuanmb",
-            "fighter/wolf/motion/body/c64/i00swim.nuanmb",
-            "fighter/wolf/motion/body/c64/i00swimend.nuanmb",
-            "fighter/wolf/motion/body/c64/i00swimf.nuanmb",
-            "fighter/wolf/motion/body/c64/i00swimrise.nuanmb",
-            "fighter/wolf/motion/body/c64/i00swimturn.nuanmb",
-            "fighter/wolf/motion/body/c64/i00swimup.nuanmb",
-            "fighter/wolf/motion/body/c64/i00swimupdamage.nuanmb",
-            "fighter/wolf/motion/body/c64/i01swimdrown.nuanmb",
-            "fighter/wolf/motion/body/c64/i01swimdrownout.nuanmb",
-            "fighter/wolf/motion/body/c64/j00entryl.nuanmb",
-            "fighter/wolf/motion/body/c64/j00entryr.nuanmb",
-            "fighter/wolf/motion/body/c64/j01appealhil.nuanmb",
-            "fighter/wolf/motion/body/c64/j01appealhir.nuanmb",
-            "fighter/wolf/motion/body/c64/j01appeallwl.nuanmb",
-            "fighter/wolf/motion/body/c64/j01appeallwr.nuanmb",
-            "fighter/wolf/motion/body/c64/j01appealsl.nuanmb",
-            "fighter/wolf/motion/body/c64/j01appealsr.nuanmb",
-            "fighter/wolf/motion/body/c64/j02lose.nuanmb",
-            "fighter/wolf/motion/body/c64/j02win1.nuanmb",
-            "fighter/wolf/motion/body/c64/j02win1wait.nuanmb",
-            "fighter/wolf/motion/body/c64/j02win1a.nuanmb",
-            "fighter/wolf/motion/body/c64/j02win1await.nuanmb",
-            "fighter/wolf/motion/body/c64/j02win1b.nuanmb",
-            "fighter/wolf/motion/body/c64/j02win1bwait.nuanmb",
-            "fighter/wolf/motion/body/c64/j02win2.nuanmb",
-            "fighter/wolf/motion/body/c64/j02win2wait.nuanmb",
-            "fighter/wolf/motion/body/c64/j02win2a.nuanmb",
-            "fighter/wolf/motion/body/c64/j02win2await.nuanmb",
-            "fighter/wolf/motion/body/c64/j02win2b.nuanmb",
-            "fighter/wolf/motion/body/c64/j02win2bwait.nuanmb",
-            "fighter/wolf/motion/body/c64/j02win3.nuanmb",
-            "fighter/wolf/motion/body/c64/j02win3wait.nuanmb",
-            "fighter/wolf/motion/body/c64/j02win3a.nuanmb",
-            "fighter/wolf/motion/body/c64/j02win3await.nuanmb",
-            "fighter/wolf/motion/body/c64/j02win3b.nuanmb",
-            "fighter/wolf/motion/body/c64/j02win3bwait.nuanmb",
-            "fighter/wolf/motion/body/c64/j03appealsendl.nuanmb",
-            "fighter/wolf/motion/body/c64/j03appealsendr.nuanmb",
-            "fighter/wolf/motion/body/c64/j03appealsl.nuanmb",
-            "fighter/wolf/motion/body/c64/j03appealsr.nuanmb",
-            "fighter/wolf/motion/body/c64/j03appealsstartl.nuanmb",
-            "fighter/wolf/motion/body/c64/j03appealsstartr.nuanmb",
-            "fighter/wolf/motion/body/c64/k00laddercatchairl.nuanmb",
-            "fighter/wolf/motion/body/c64/k00laddercatchairr.nuanmb",
-            "fighter/wolf/motion/body/c64/k00laddercatchendl.nuanmb",
-            "fighter/wolf/motion/body/c64/k00laddercatchendr.nuanmb",
-            "fighter/wolf/motion/body/c64/k00laddercatchl.nuanmb",
-            "fighter/wolf/motion/body/c64/k00laddercatchr.nuanmb",
-            "fighter/wolf/motion/body/c64/k00ladderdown.nuanmb",
-            "fighter/wolf/motion/body/c64/k00ladderup.nuanmb",
-            "fighter/wolf/motion/body/c64/k00ladderwait.nuanmb",
-            "fighter/wolf/motion/body/c64/l00share.nuanmb",
-            "fighter/wolf/motion/body/c64/l02share_cliff.nuanmb",
-            "fighter/wolf/motion/body/c64/l02share_finish.nuanmb",
-            "fighter/wolf/motion/body/c64/l02share_fistdown.nuanmb",
-            "fighter/wolf/motion/body/c64/l02share_sleep.nuanmb",
-            "fighter/wolf/motion/body/c64/flip.prc",
-            "fighter/wolf/motion/body/c64/ik.prc",
-            "fighter/wolf/motion/body/c64/motion_list.bin",
-            "fighter/wolf/motion/body/c64/scharge.prc",
-            "fighter/wolf/motion/body/c64/swing.prc",
-            "fighter/wolf/motion/body/c64/update.prc",
-            "fighter/wolf/motion/illusion/c64/motion_list.bin",
-            "fighter/wolf/motion/reticle/c64/motion_list.bin",
-            "fighter/wolf/motion/wolfen/c64/d04finallockon01.nuanmb",
-            "fighter/wolf/motion/wolfen/c64/d04finallockon02.nuanmb",
-            "fighter/wolf/motion/wolfen/c64/d04finallockon03.nuanmb",
-            "fighter/wolf/motion/wolfen/c64/d04visualscene.nuanmb",
-            "fighter/wolf/motion/wolfen/c64/d04visualscene01.nuanmb",
-            "fighter/wolf/motion/wolfen/c64/d04visualscene02.nuanmb",
-            "fighter/wolf/motion/wolfen/c64/d04visualscene03.nuanmb",
-            "fighter/wolf/motion/wolfen/c64/j00entryl.nuanmb",
-            "fighter/wolf/motion/wolfen/c64/j00entryr.nuanmb",
-            "fighter/wolf/motion/wolfen/c64/motion_list.bin",
-            "sound/bank/fighter/se_wolf_c64.nus3audio",
-            "sound/bank/fighter/se_wolf_c64.nus3bank",
-            "sound/bank/fighter/se_wolf_c64.tonelabel",
-            "sound/bank/fighter_voice/vc_wolf_c64.nus3audio",
-            "sound/bank/fighter_voice/vc_wolf_c64.nus3bank",
-            "sound/bank/fighter_voice/vc_wolf_c64.tonelabel",
-            "sound/bank/fighter_voice/vc_wolf_cheer_c64.nus3audio",
-            "sound/bank/fighter_voice/vc_wolf_cheer_c64.nus3bank",
-            "sound/bank/fighter_voice/vc_wolf_cheer_c64.tonelabel",
-            "fighter/wolf/model/body/c64/metal_sonic.marker",
-            "fighter/wolf/model/body/c64/msonic.marker",
-            "fighter/wolf/motion/body/c64/a01turn.nuanmb.001.nuanmb",
-            "fighter/wolf/motion/plasmapulse/c64/motion_list.bin",
-            "fighter/wolf/motion/plasmapulsefullcharge/c64/motion_list.bin"
+        "fighter/sonic/c21": [
+            "fighter/sonic/model/body/c21/dark_model.numatb",
+            "fighter/sonic/model/body/c21/def_sonic_001_col.nutexb",
+            "fighter/sonic/model/body/c21/def_sonic_001_nor.nutexb",
+            "fighter/sonic/model/body/c21/def_sonic_001_prm.nutexb",
+            "fighter/sonic/model/body/c21/def_sonic_006_col.nutexb",
+            "fighter/sonic/model/body/c21/def_sonic_006_nor.nutexb",
+            "fighter/sonic/model/body/c21/def_sonic_006_prm.nutexb",
+            "fighter/sonic/model/body/c21/def_sonicsphere_001_col.nutexb",
+            "fighter/sonic/model/body/c21/def_sonicsphere_001_nor.nutexb",
+            "fighter/sonic/model/body/c21/def_sonicsphere_001_prm.nutexb",
+            "fighter/sonic/model/body/c21/deyes_eye_sonic2_wd_col.nutexb",
+            "fighter/sonic/model/body/c21/deyes_eye_sonic_wd_col.nutexb",
+            "fighter/sonic/model/body/c21/deyes_sonic2_d_col.nutexb",
+            "fighter/sonic/model/body/c21/deyes_sonic_d_col.nutexb",
+            "fighter/sonic/model/body/c21/eye2_sonic_001_col.nutexb",
+            "fighter/sonic/model/body/c21/eyel_sonic_001_col.nutexb",
+            "fighter/sonic/model/body/c21/eyer_sonic_001_col.nutexb",
+            "fighter/sonic/model/body/c21/eyew_sonic_001_col.nutexb",
+            "fighter/sonic/model/body/c21/eyew_sonic_001_nor.nutexb",
+            "fighter/sonic/model/body/c21/eyew_sonic_001_prm.nutexb",
+            "fighter/sonic/model/body/c21/eyeyellow_sonic_001_col.nutexb",
+            "fighter/sonic/model/body/c21/leyes_sonic2_l_col.nutexb",
+            "fighter/sonic/model/body/c21/leyes_sonic_l_col.nutexb",
+            "fighter/sonic/model/body/c21/light_model.numatb",
+            "fighter/sonic/model/body/c21/metal_sonic_001_col.nutexb",
+            "fighter/sonic/model/body/c21/metal_sonic_001_nor.nutexb",
+            "fighter/sonic/model/body/c21/metal_sonic_001_prm.nutexb",
+            "fighter/sonic/model/body/c21/metamon_model.numatb",
+            "fighter/sonic/model/body/c21/model.nuanmb",
+            "fighter/sonic/model/body/c21/model.nuhlpb",
+            "fighter/sonic/model/body/c21/model.numatb",
+            "fighter/sonic/model/body/c21/model.numdlb",
+            "fighter/sonic/model/body/c21/model.numshb",
+            "fighter/sonic/model/body/c21/model.numshexb",
+            "fighter/sonic/model/body/c21/model.nusktb",
+            "fighter/sonic/model/body/c21/model.nusrcmdlb",
+            "fighter/sonic/model/body/c21/model.xmb",
+            "fighter/sonic/model/body/c21/skin_sonic_001_col.nutexb",
+            "fighter/sonic/model/body/c21/skin_sonic_001_nor.nutexb",
+            "fighter/sonic/model/body/c21/skin_sonic_001_prm.nutexb",
+            "fighter/sonic/model/body/c21/skin_sonic_002_col.nutexb",
+            "fighter/sonic/model/body/c21/skin_sonic_002_nor.nutexb",
+            "fighter/sonic/model/body/c21/skin_sonic_002_prm.nutexb",
+            "fighter/sonic/model/body/c21/skin_sonic_003_col.nutexb",
+            "fighter/sonic/model/body/c21/skin_sonic_003_nor.nutexb",
+            "fighter/sonic/model/body/c21/skin_sonic_003_prm.nutexb",
+            "fighter/sonic/model/body/c21/skin_sonic_mouthd_001_col.nutexb",
+            "fighter/sonic/model/body/c21/skin_sonic_mouthd_001_nor.nutexb",
+            "fighter/sonic/model/body/c21/skin_sonic_mouthd_001_prm.nutexb",
+            "fighter/sonic/model/body/c21/skin_sonic_mouthe_001_col.nutexb",
+            "fighter/sonic/model/body/c21/skin_sonic_mouthe_001_nor.nutexb",
+            "fighter/sonic/model/body/c21/skin_sonic_mouthe_001_prm.nutexb",
+            "fighter/sonic/model/gimmickjump/c21/dark_model.numatb",
+            "fighter/sonic/model/gimmickjump/c21/def_gimmickjump_00_col.nutexb",
+            "fighter/sonic/model/gimmickjump/c21/def_gimmickjump_00_nor.nutexb",
+            "fighter/sonic/model/gimmickjump/c21/def_gimmickjump_00_prm.nutexb",
+            "fighter/sonic/model/gimmickjump/c21/light_model.numatb",
+            "fighter/sonic/model/gimmickjump/c21/metamon_model.numatb",
+            "fighter/sonic/model/gimmickjump/c21/model.nuanmb",
+            "fighter/sonic/model/gimmickjump/c21/model.nuhlpb",
+            "fighter/sonic/model/gimmickjump/c21/model.numatb",
+            "fighter/sonic/model/gimmickjump/c21/model.numdlb",
+            "fighter/sonic/model/gimmickjump/c21/model.numshb",
+            "fighter/sonic/model/gimmickjump/c21/model.numshexb",
+            "fighter/sonic/model/gimmickjump/c21/model.nusktb",
+            "fighter/sonic/model/gimmickjump/c21/model.nusrcmdlb",
+            "fighter/sonic/model/gimmickjump/c21/model.xmb",
+            "fighter/sonic/model/supersonic/c21/dark_model.numatb",
+            "fighter/sonic/model/supersonic/c21/def_supersonic_001_col.nutexb",
+            "fighter/sonic/model/supersonic/c21/def_supersonic_001_emi.nutexb",
+            "fighter/sonic/model/supersonic/c21/def_supersonic_001_nor.nutexb",
+            "fighter/sonic/model/supersonic/c21/def_supersonic_001_prm.nutexb",
+            "fighter/sonic/model/supersonic/c21/eye2_supersonic_001_col.nutexb",
+            "fighter/sonic/model/supersonic/c21/eyel_supersonic_001_col.nutexb",
+            "fighter/sonic/model/supersonic/c21/eyer_supersonic_001_col.nutexb",
+            "fighter/sonic/model/supersonic/c21/eyew_supersonic_001_col.nutexb",
+            "fighter/sonic/model/supersonic/c21/eyew_supersonic_001_nor.nutexb",
+            "fighter/sonic/model/supersonic/c21/eyew_supersonic_001_prm.nutexb",
+            "fighter/sonic/model/supersonic/c21/light_model.numatb",
+            "fighter/sonic/model/supersonic/c21/metal_supersonic_001_col.nutexb",
+            "fighter/sonic/model/supersonic/c21/metal_supersonic_001_nor.nutexb",
+            "fighter/sonic/model/supersonic/c21/metal_supersonic_001_prm.nutexb",
+            "fighter/sonic/model/supersonic/c21/metamon_model.numatb",
+            "fighter/sonic/model/supersonic/c21/model.nuanmb",
+            "fighter/sonic/model/supersonic/c21/model.nuhlpb",
+            "fighter/sonic/model/supersonic/c21/model.numatb",
+            "fighter/sonic/model/supersonic/c21/model.numdlb",
+            "fighter/sonic/model/supersonic/c21/model.numshb",
+            "fighter/sonic/model/supersonic/c21/model.numshexb",
+            "fighter/sonic/model/supersonic/c21/model.nusktb",
+            "fighter/sonic/model/supersonic/c21/model.nusrcmdlb",
+            "fighter/sonic/model/supersonic/c21/model.xmb",
+            "fighter/sonic/model/supersonic/c21/skin_supersonic_003_col.nutexb",
+            "fighter/sonic/model/supersonic/c21/skin_supersonic_003_nor.nutexb",
+            "fighter/sonic/model/supersonic/c21/skin_supersonic_003_prm.nutexb",
+            "fighter/sonic/model/supersonic/c21/skin_supersonic_mouthe_001_col.nutexb",
+            "fighter/sonic/model/supersonic/c21/skin_supersonic_mouthe_001_nor.nutexb",
+            "fighter/sonic/model/supersonic/c21/skin_supersonic_mouthe_001_prm.nutexb",
+            "fighter/sonic/motion/body/c21/a00defaulteyelid.nuanmb",
+            "fighter/sonic/motion/body/c21/a00itemhandgrip.nuanmb",
+            "fighter/sonic/motion/body/c21/a00itemhandhave.nuanmb",
+            "fighter/sonic/motion/body/c21/a00itemhandpickup.nuanmb",
+            "fighter/sonic/motion/body/c21/a00itemhandsmash.nuanmb",
+            "fighter/sonic/motion/body/c21/a00wait1.nuanmb",
+            "fighter/sonic/motion/body/c21/a00wait2.nuanmb",
+            "fighter/sonic/motion/body/c21/a00wait3.nuanmb",
+            "fighter/sonic/motion/body/c21/a00waititem.nuanmb",
+            "fighter/sonic/motion/body/c21/a01turn.nuanmb",
+            "fighter/sonic/motion/body/c21/a01walkbrakel.nuanmb",
+            "fighter/sonic/motion/body/c21/a01walkbraker.nuanmb",
+            "fighter/sonic/motion/body/c21/a01walkfast.nuanmb",
+            "fighter/sonic/motion/body/c21/a01walkmiddle.nuanmb",
+            "fighter/sonic/motion/body/c21/a01walkslow.nuanmb",
+            "fighter/sonic/motion/body/c21/a02dash.nuanmb",
+            "fighter/sonic/motion/body/c21/a02run.nuanmb",
+            "fighter/sonic/motion/body/c21/a02runbrakel.nuanmb",
+            "fighter/sonic/motion/body/c21/a02runbraker.nuanmb",
+            "fighter/sonic/motion/body/c21/a02turndash.nuanmb",
+            "fighter/sonic/motion/body/c21/a02turnrun.nuanmb",
+            "fighter/sonic/motion/body/c21/a02turnrunbrake.nuanmb",
+            "fighter/sonic/motion/body/c21/a03jumpaerialb.nuanmb",
+            "fighter/sonic/motion/body/c21/a03jumpaerialf.nuanmb",
+            "fighter/sonic/motion/body/c21/a03jumpb.nuanmb",
+            "fighter/sonic/motion/body/c21/a03jumpf.nuanmb",
+            "fighter/sonic/motion/body/c21/a03jumpsquat.nuanmb",
+            "fighter/sonic/motion/body/c21/a04damagefall.nuanmb",
+            "fighter/sonic/motion/body/c21/a04fall.nuanmb",
+            "fighter/sonic/motion/body/c21/a04fallaerial.nuanmb",
+            "fighter/sonic/motion/body/c21/a04fallaerialb.nuanmb",
+            "fighter/sonic/motion/body/c21/a04fallaerialf.nuanmb",
+            "fighter/sonic/motion/body/c21/a04fallb.nuanmb",
+            "fighter/sonic/motion/body/c21/a04fallf.nuanmb",
+            "fighter/sonic/motion/body/c21/a04fallspecial.nuanmb",
+            "fighter/sonic/motion/body/c21/a04fallspecialb.nuanmb",
+            "fighter/sonic/motion/body/c21/a04fallspecialf.nuanmb",
+            "fighter/sonic/motion/body/c21/a04landingfallspecial.nuanmb",
+            "fighter/sonic/motion/body/c21/a04runfalll.nuanmb",
+            "fighter/sonic/motion/body/c21/a04runfallr.nuanmb",
+            "fighter/sonic/motion/body/c21/a04walkfalll.nuanmb",
+            "fighter/sonic/motion/body/c21/a04walkfallr.nuanmb",
+            "fighter/sonic/motion/body/c21/a05landingheavy.nuanmb",
+            "fighter/sonic/motion/body/c21/a05landinglight.nuanmb",
+            "fighter/sonic/motion/body/c21/a05squat.nuanmb",
+            "fighter/sonic/motion/body/c21/a05squatrv.nuanmb",
+            "fighter/sonic/motion/body/c21/a05squatwait.nuanmb",
+            "fighter/sonic/motion/body/c21/a05squatwaititem.nuanmb",
+            "fighter/sonic/motion/body/c21/a06stepairpose.nuanmb",
+            "fighter/sonic/motion/body/c21/a06stepback.nuanmb",
+            "fighter/sonic/motion/body/c21/a06stepfall.nuanmb",
+            "fighter/sonic/motion/body/c21/a06stepjump.nuanmb",
+            "fighter/sonic/motion/body/c21/a06steppose.nuanmb",
+            "fighter/sonic/motion/body/c21/b00guard.nuanmb",
+            "fighter/sonic/motion/body/c21/b00guardoff.nuanmb",
+            "fighter/sonic/motion/body/c21/b00guardon.nuanmb",
+            "fighter/sonic/motion/body/c21/b00justshieldoff.nuanmb",
+            "fighter/sonic/motion/body/c21/b01guarddamage.nuanmb",
+            "fighter/sonic/motion/body/c21/b02escapeair.nuanmb",
+            "fighter/sonic/motion/body/c21/b02escapeb.nuanmb",
+            "fighter/sonic/motion/body/c21/b02escapef.nuanmb",
+            "fighter/sonic/motion/body/c21/b02escapen.nuanmb",
+            "fighter/sonic/motion/body/c21/b02rebound.nuanmb",
+            "fighter/sonic/motion/body/c21/c00attack11.nuanmb",
+            "fighter/sonic/motion/body/c21/c00attack12.nuanmb",
+            "fighter/sonic/motion/body/c21/c00attack13.nuanmb",
+            "fighter/sonic/motion/body/c21/c00attackdash.nuanmb",
+            "fighter/sonic/motion/body/c21/c01attacks3hi.nuanmb",
+            "fighter/sonic/motion/body/c21/c01attacks3lw.nuanmb",
+            "fighter/sonic/motion/body/c21/c01attacks3s.nuanmb",
+            "fighter/sonic/motion/body/c21/c02attackhi3.nuanmb",
+            "fighter/sonic/motion/body/c21/c02attacklw3.nuanmb",
+            "fighter/sonic/motion/body/c21/c03attacks4charge.nuanmb",
+            "fighter/sonic/motion/body/c21/c03attacks4hi.nuanmb",
+            "fighter/sonic/motion/body/c21/c03attacks4lw.nuanmb",
+            "fighter/sonic/motion/body/c21/c03attacks4s.nuanmb",
+            "fighter/sonic/motion/body/c21/c04attackhi4.nuanmb",
+            "fighter/sonic/motion/body/c21/c04attackhi4charge.nuanmb",
+            "fighter/sonic/motion/body/c21/c04attacklw4.nuanmb",
+            "fighter/sonic/motion/body/c21/c04attacklw4charge.nuanmb",
+            "fighter/sonic/motion/body/c21/c05attackairb.nuanmb",
+            "fighter/sonic/motion/body/c21/c05attackairf.nuanmb",
+            "fighter/sonic/motion/body/c21/c05attackairhi.nuanmb",
+            "fighter/sonic/motion/body/c21/c05attackairlw.nuanmb",
+            "fighter/sonic/motion/body/c21/c05attackairn.nuanmb",
+            "fighter/sonic/motion/body/c21/c05landingairb.nuanmb",
+            "fighter/sonic/motion/body/c21/c05landingairf.nuanmb",
+            "fighter/sonic/motion/body/c21/c05landingairhi.nuanmb",
+            "fighter/sonic/motion/body/c21/c05landingairlw.nuanmb",
+            "fighter/sonic/motion/body/c21/c05landingairn.nuanmb",
+            "fighter/sonic/motion/body/c21/d00specialairnstart.nuanmb",
+            "fighter/sonic/motion/body/c21/d00specialncancel.nuanmb",
+            "fighter/sonic/motion/body/c21/d00specialnhit.nuanmb",
+            "fighter/sonic/motion/body/c21/d00specialnlanding.nuanmb",
+            "fighter/sonic/motion/body/c21/d00specialnrebound.nuanmb",
+            "fighter/sonic/motion/body/c21/d00specialnspin.nuanmb",
+            "fighter/sonic/motion/body/c21/d00specialnstart.nuanmb",
+            "fighter/sonic/motion/body/c21/d01specialairsend.nuanmb",
+            "fighter/sonic/motion/body/c21/d01specialairsendloop.nuanmb",
+            "fighter/sonic/motion/body/c21/d01specialairsendstart.nuanmb",
+            "fighter/sonic/motion/body/c21/d01specialsdashhi.nuanmb",
+            "fighter/sonic/motion/body/c21/d01specialsdashlw.nuanmb",
+            "fighter/sonic/motion/body/c21/d01specialsend.nuanmb",
+            "fighter/sonic/motion/body/c21/d01specialsendloop.nuanmb",
+            "fighter/sonic/motion/body/c21/d01specialsendstart.nuanmb",
+            "fighter/sonic/motion/body/c21/d01specialshold.nuanmb",
+            "fighter/sonic/motion/body/c21/d01specialsspin.nuanmb",
+            "fighter/sonic/motion/body/c21/d01specialsstart.nuanmb",
+            "fighter/sonic/motion/body/c21/d01specialsturn.nuanmb",
+            "fighter/sonic/motion/body/c21/d02specialhi.nuanmb",
+            "fighter/sonic/motion/body/c21/d02specialhisquat.nuanmb",
+            "fighter/sonic/motion/body/c21/d03specialairlwend.nuanmb",
+            "fighter/sonic/motion/body/c21/d03specialairlwhold.nuanmb",
+            "fighter/sonic/motion/body/c21/d03specialairlwstart.nuanmb",
+            "fighter/sonic/motion/body/c21/d03speciallwend.nuanmb",
+            "fighter/sonic/motion/body/c21/d03speciallwhold.nuanmb",
+            "fighter/sonic/motion/body/c21/d03speciallwstart.nuanmb",
+            "fighter/sonic/motion/body/c21/d04finalairend.nuanmb",
+            "fighter/sonic/motion/body/c21/d04finalairstart.nuanmb",
+            "fighter/sonic/motion/body/c21/d04finalend.nuanmb",
+            "fighter/sonic/motion/body/c21/d04finalstart.nuanmb",
+            "fighter/sonic/motion/body/c21/e00catch.nuanmb",
+            "fighter/sonic/motion/body/c21/e00catchattack.nuanmb",
+            "fighter/sonic/motion/body/c21/e00catchcut.nuanmb",
+            "fighter/sonic/motion/body/c21/e00catchdash.nuanmb",
+            "fighter/sonic/motion/body/c21/e00catchpull.nuanmb",
+            "fighter/sonic/motion/body/c21/e00catchturn.nuanmb",
+            "fighter/sonic/motion/body/c21/e00catchwait.nuanmb",
+            "fighter/sonic/motion/body/c21/e01throwb.nuanmb",
+            "fighter/sonic/motion/body/c21/e01throwf.nuanmb",
+            "fighter/sonic/motion/body/c21/e01throwhi.nuanmb",
+            "fighter/sonic/motion/body/c21/e01throwlw.nuanmb",
+            "fighter/sonic/motion/body/c21/e01thrownb.nuanmb",
+            "fighter/sonic/motion/body/c21/e01thrownbigb.nuanmb",
+            "fighter/sonic/motion/body/c21/e01thrownbigf.nuanmb",
+            "fighter/sonic/motion/body/c21/e01thrownbighi.nuanmb",
+            "fighter/sonic/motion/body/c21/e01thrownbiglw.nuanmb",
+            "fighter/sonic/motion/body/c21/e01throwndxb.nuanmb",
+            "fighter/sonic/motion/body/c21/e01throwndxf.nuanmb",
+            "fighter/sonic/motion/body/c21/e01throwndxhi.nuanmb",
+            "fighter/sonic/motion/body/c21/e01throwndxlw.nuanmb",
+            "fighter/sonic/motion/body/c21/e01thrownf.nuanmb",
+            "fighter/sonic/motion/body/c21/e01throwngirlb.nuanmb",
+            "fighter/sonic/motion/body/c21/e01throwngirlf.nuanmb",
+            "fighter/sonic/motion/body/c21/e01throwngirlhi.nuanmb",
+            "fighter/sonic/motion/body/c21/e01throwngirllw.nuanmb",
+            "fighter/sonic/motion/body/c21/e01thrownhi.nuanmb",
+            "fighter/sonic/motion/body/c21/e01thrownlw.nuanmb",
+            "fighter/sonic/motion/body/c21/e02capturedamagehi.nuanmb",
+            "fighter/sonic/motion/body/c21/e02capturepulledhi.nuanmb",
+            "fighter/sonic/motion/body/c21/e02capturewaithi.nuanmb",
+            "fighter/sonic/motion/body/c21/e03capturecut.nuanmb",
+            "fighter/sonic/motion/body/c21/e03capturedamagelw.nuanmb",
+            "fighter/sonic/motion/body/c21/e03capturejump.nuanmb",
+            "fighter/sonic/motion/body/c21/e03capturepulledlw.nuanmb",
+            "fighter/sonic/motion/body/c21/e03capturewaitlw.nuanmb",
+            "fighter/sonic/motion/body/c21/f00damagehi1.nuanmb",
+            "fighter/sonic/motion/body/c21/f00damagehi2.nuanmb",
+            "fighter/sonic/motion/body/c21/f00damagehi3.nuanmb",
+            "fighter/sonic/motion/body/c21/f00damagelw1.nuanmb",
+            "fighter/sonic/motion/body/c21/f00damagelw2.nuanmb",
+            "fighter/sonic/motion/body/c21/f00damagelw3.nuanmb",
+            "fighter/sonic/motion/body/c21/f00damagen1.nuanmb",
+            "fighter/sonic/motion/body/c21/f00damagen2.nuanmb",
+            "fighter/sonic/motion/body/c21/f00damagen3.nuanmb",
+            "fighter/sonic/motion/body/c21/f01damageair1.nuanmb",
+            "fighter/sonic/motion/body/c21/f01damageair2.nuanmb",
+            "fighter/sonic/motion/body/c21/f01damageair3.nuanmb",
+            "fighter/sonic/motion/body/c21/f01damageflyhi.nuanmb",
+            "fighter/sonic/motion/body/c21/f01damageflylw.nuanmb",
+            "fighter/sonic/motion/body/c21/f01damageflymeteor.nuanmb",
+            "fighter/sonic/motion/body/c21/f01damageflyn.nuanmb",
+            "fighter/sonic/motion/body/c21/f01damageflyroll.nuanmb",
+            "fighter/sonic/motion/body/c21/f01damageflyrollend.nuanmb",
+            "fighter/sonic/motion/body/c21/f01damageflytop.nuanmb",
+            "fighter/sonic/motion/body/c21/f02damageelec.nuanmb",
+            "fighter/sonic/motion/body/c21/f03downattacku.nuanmb",
+            "fighter/sonic/motion/body/c21/f03downbacku.nuanmb",
+            "fighter/sonic/motion/body/c21/f03downboundu.nuanmb",
+            "fighter/sonic/motion/body/c21/f03downdamageu.nuanmb",
+            "fighter/sonic/motion/body/c21/f03downdamageu3.nuanmb",
+            "fighter/sonic/motion/body/c21/f03downeatu.nuanmb",
+            "fighter/sonic/motion/body/c21/f03downforwardu.nuanmb",
+            "fighter/sonic/motion/body/c21/f03downspotu.nuanmb",
+            "fighter/sonic/motion/body/c21/f03downstandu.nuanmb",
+            "fighter/sonic/motion/body/c21/f03downwaitu.nuanmb",
+            "fighter/sonic/motion/body/c21/f04downattackd.nuanmb",
+            "fighter/sonic/motion/body/c21/f04downbackd.nuanmb",
+            "fighter/sonic/motion/body/c21/f04downboundd.nuanmb",
+            "fighter/sonic/motion/body/c21/f04downdamaged.nuanmb",
+            "fighter/sonic/motion/body/c21/f04downdamaged3.nuanmb",
+            "fighter/sonic/motion/body/c21/f04downeatd.nuanmb",
+            "fighter/sonic/motion/body/c21/f04downforwardd.nuanmb",
+            "fighter/sonic/motion/body/c21/f04downstandd.nuanmb",
+            "fighter/sonic/motion/body/c21/f04downwaitd.nuanmb",
+            "fighter/sonic/motion/body/c21/f05passive.nuanmb",
+            "fighter/sonic/motion/body/c21/f05passiveceil.nuanmb",
+            "fighter/sonic/motion/body/c21/f05passivestandb.nuanmb",
+            "fighter/sonic/motion/body/c21/f05passivestandf.nuanmb",
+            "fighter/sonic/motion/body/c21/f05passivewall.nuanmb",
+            "fighter/sonic/motion/body/c21/f05passivewalljump.nuanmb",
+            "fighter/sonic/motion/body/c21/f06furafura.nuanmb",
+            "fighter/sonic/motion/body/c21/f06furafuraend.nuanmb",
+            "fighter/sonic/motion/body/c21/f06furafurastartd.nuanmb",
+            "fighter/sonic/motion/body/c21/f06furafurastartu.nuanmb",
+            "fighter/sonic/motion/body/c21/f07sleepend.nuanmb",
+            "fighter/sonic/motion/body/c21/f07sleeploop.nuanmb",
+            "fighter/sonic/motion/body/c21/f07sleepstart.nuanmb",
+            "fighter/sonic/motion/body/c21/f08swallowed.nuanmb",
+            "fighter/sonic/motion/body/c21/f09camerahit.nuanmb",
+            "fighter/sonic/motion/body/c21/g00ceildamage.nuanmb",
+            "fighter/sonic/motion/body/c21/g00missfoot.nuanmb",
+            "fighter/sonic/motion/body/c21/g00ottotto.nuanmb",
+            "fighter/sonic/motion/body/c21/g00ottottowait.nuanmb",
+            "fighter/sonic/motion/body/c21/g00pass.nuanmb",
+            "fighter/sonic/motion/body/c21/g00stopceil.nuanmb",
+            "fighter/sonic/motion/body/c21/g00stopwall.nuanmb",
+            "fighter/sonic/motion/body/c21/g00walldamage.nuanmb",
+            "fighter/sonic/motion/body/c21/g01cliffcatch.nuanmb",
+            "fighter/sonic/motion/body/c21/g01cliffwait.nuanmb",
+            "fighter/sonic/motion/body/c21/g02cliffattack.nuanmb",
+            "fighter/sonic/motion/body/c21/g02cliffclimb.nuanmb",
+            "fighter/sonic/motion/body/c21/g02cliffescape.nuanmb",
+            "fighter/sonic/motion/body/c21/g02cliffjump1.nuanmb",
+            "fighter/sonic/motion/body/c21/g02cliffjump2.nuanmb",
+            "fighter/sonic/motion/body/c21/g03slip.nuanmb",
+            "fighter/sonic/motion/body/c21/g03slipattack.nuanmb",
+            "fighter/sonic/motion/body/c21/g03slipdown.nuanmb",
+            "fighter/sonic/motion/body/c21/g03slipescapeb.nuanmb",
+            "fighter/sonic/motion/body/c21/g03slipescapef.nuanmb",
+            "fighter/sonic/motion/body/c21/g03slipstand.nuanmb",
+            "fighter/sonic/motion/body/c21/g03slipwait.nuanmb",
+            "fighter/sonic/motion/body/c21/h00lighteat.nuanmb",
+            "fighter/sonic/motion/body/c21/h00lightget.nuanmb",
+            "fighter/sonic/motion/body/c21/h00lightwalkeat.nuanmb",
+            "fighter/sonic/motion/body/c21/h00lightwalkget.nuanmb",
+            "fighter/sonic/motion/body/c21/h01lightthrowb.nuanmb",
+            "fighter/sonic/motion/body/c21/h01lightthrowdash.nuanmb",
+            "fighter/sonic/motion/body/c21/h01lightthrowdrop.nuanmb",
+            "fighter/sonic/motion/body/c21/h01lightthrowf.nuanmb",
+            "fighter/sonic/motion/body/c21/h01lightthrowhi.nuanmb",
+            "fighter/sonic/motion/body/c21/h01lightthrowlw.nuanmb",
+            "fighter/sonic/motion/body/c21/h02lightthrowairb.nuanmb",
+            "fighter/sonic/motion/body/c21/h02lightthrowairf.nuanmb",
+            "fighter/sonic/motion/body/c21/h02lightthrowairhi.nuanmb",
+            "fighter/sonic/motion/body/c21/h02lightthrowairlw.nuanmb",
+            "fighter/sonic/motion/body/c21/h03heavyget.nuanmb",
+            "fighter/sonic/motion/body/c21/h03heavythrowb.nuanmb",
+            "fighter/sonic/motion/body/c21/h03heavythrowf.nuanmb",
+            "fighter/sonic/motion/body/c21/h03heavythrowhi.nuanmb",
+            "fighter/sonic/motion/body/c21/h03heavythrowlw.nuanmb",
+            "fighter/sonic/motion/body/c21/h03heavywalk.nuanmb",
+            "fighter/sonic/motion/body/c21/h04swing1.nuanmb",
+            "fighter/sonic/motion/body/c21/h04swing3.nuanmb",
+            "fighter/sonic/motion/body/c21/h04swing4.nuanmb",
+            "fighter/sonic/motion/body/c21/h04swing4charge.nuanmb",
+            "fighter/sonic/motion/body/c21/h04swingdash.nuanmb",
+            "fighter/sonic/motion/body/c21/h05itemhammerair.nuanmb",
+            "fighter/sonic/motion/body/c21/h05itemhammermove.nuanmb",
+            "fighter/sonic/motion/body/c21/h05itemhammerwait.nuanmb",
+            "fighter/sonic/motion/body/c21/h06swing4bat.nuanmb",
+            "fighter/sonic/motion/body/c21/h07itemscrew.nuanmb",
+            "fighter/sonic/motion/body/c21/h07itemscrewfall.nuanmb",
+            "fighter/sonic/motion/body/c21/h08itemdragoonget.nuanmb",
+            "fighter/sonic/motion/body/c21/h08itemdragoonride.nuanmb",
+            "fighter/sonic/motion/body/c21/h10itemlegsjumpsquat.nuanmb",
+            "fighter/sonic/motion/body/c21/h10itemlegslanding.nuanmb",
+            "fighter/sonic/motion/body/c21/h10itemlegswalkb.nuanmb",
+            "fighter/sonic/motion/body/c21/h10itemlegswalkf.nuanmb",
+            "fighter/sonic/motion/body/c21/h11itemshoot.nuanmb",
+            "fighter/sonic/motion/body/c21/h11itemshootair.nuanmb",
+            "fighter/sonic/motion/body/c21/h11itemshootairloop.nuanmb",
+            "fighter/sonic/motion/body/c21/h11itemshootloop.nuanmb",
+            "fighter/sonic/motion/body/c21/h11itemshootloopupper.nuanmb",
+            "fighter/sonic/motion/body/c21/h11itemshootupper.nuanmb",
+            "fighter/sonic/motion/body/c21/h12itemscopeairend.nuanmb",
+            "fighter/sonic/motion/body/c21/h12itemscopeairfire.nuanmb",
+            "fighter/sonic/motion/body/c21/h12itemscopeairrapid.nuanmb",
+            "fighter/sonic/motion/body/c21/h12itemscopeairstart.nuanmb",
+            "fighter/sonic/motion/body/c21/h12itemscopeend.nuanmb",
+            "fighter/sonic/motion/body/c21/h12itemscopeendupper.nuanmb",
+            "fighter/sonic/motion/body/c21/h12itemscopefall.nuanmb",
+            "fighter/sonic/motion/body/c21/h12itemscopefire.nuanmb",
+            "fighter/sonic/motion/body/c21/h12itemscopefireupper.nuanmb",
+            "fighter/sonic/motion/body/c21/h12itemscoperapid.nuanmb",
+            "fighter/sonic/motion/body/c21/h12itemscoperapidupper.nuanmb",
+            "fighter/sonic/motion/body/c21/h12itemscopestart.nuanmb",
+            "fighter/sonic/motion/body/c21/h12itemscopestartupper.nuanmb",
+            "fighter/sonic/motion/body/c21/h12itemscopewait.nuanmb",
+            "fighter/sonic/motion/body/c21/h12itemscopewaitupper.nuanmb",
+            "fighter/sonic/motion/body/c21/h13itemassist.nuanmb",
+            "fighter/sonic/motion/body/c21/h14gekikarawait.nuanmb",
+            "fighter/sonic/motion/body/c21/h14gekikarawaitface.nuanmb",
+            "fighter/sonic/motion/body/c21/h15itemgrasspull.nuanmb",
+            "fighter/sonic/motion/body/c21/h16itemgenesisairend.nuanmb",
+            "fighter/sonic/motion/body/c21/h16itemgenesisairfire.nuanmb",
+            "fighter/sonic/motion/body/c21/h16itemgenesisairloop.nuanmb",
+            "fighter/sonic/motion/body/c21/h16itemgenesisend.nuanmb",
+            "fighter/sonic/motion/body/c21/h16itemgenesisfall.nuanmb",
+            "fighter/sonic/motion/body/c21/h16itemgenesisfire.nuanmb",
+            "fighter/sonic/motion/body/c21/h16itemgenesisloop.nuanmb",
+            "fighter/sonic/motion/body/c21/h16itemgenesisturn.nuanmb",
+            "fighter/sonic/motion/body/c21/h16itemgenesiswait.nuanmb",
+            "fighter/sonic/motion/body/c21/h16itemgenesiswaitupper.nuanmb",
+            "fighter/sonic/motion/body/c21/i00swim.nuanmb",
+            "fighter/sonic/motion/body/c21/i00swimrise.nuanmb",
+            "fighter/sonic/motion/body/c21/i00swimturn.nuanmb",
+            "fighter/sonic/motion/body/c21/i00swimup.nuanmb",
+            "fighter/sonic/motion/body/c21/i00swimupdamage.nuanmb",
+            "fighter/sonic/motion/body/c21/i01swimdrown.nuanmb",
+            "fighter/sonic/motion/body/c21/i01swimdrownout.nuanmb",
+            "fighter/sonic/motion/body/c21/j00entryr.nuanmb",
+            "fighter/sonic/motion/body/c21/j01appealhir.nuanmb",
+            "fighter/sonic/motion/body/c21/j01appeallwr.nuanmb",
+            "fighter/sonic/motion/body/c21/j01appealsr.nuanmb",
+            "fighter/sonic/motion/body/c21/j02lose.nuanmb",
+            "fighter/sonic/motion/body/c21/j02win1.nuanmb",
+            "fighter/sonic/motion/body/c21/j02win1wait.nuanmb",
+            "fighter/sonic/motion/body/c21/j02win2.nuanmb",
+            "fighter/sonic/motion/body/c21/j02win2wait.nuanmb",
+            "fighter/sonic/motion/body/c21/j02win3.nuanmb",
+            "fighter/sonic/motion/body/c21/j02win3wait.nuanmb",
+            "fighter/sonic/motion/body/c21/k00laddercatchairr.nuanmb",
+            "fighter/sonic/motion/body/c21/k00laddercatchendr.nuanmb",
+            "fighter/sonic/motion/body/c21/k00laddercatchr.nuanmb",
+            "fighter/sonic/motion/body/c21/k00ladderdown.nuanmb",
+            "fighter/sonic/motion/body/c21/k00ladderup.nuanmb",
+            "fighter/sonic/motion/body/c21/k00ladderwait.nuanmb",
+            "fighter/sonic/motion/body/c21/l00share.nuanmb",
+            "fighter/sonic/motion/body/c21/l02share_cliff.nuanmb",
+            "fighter/sonic/motion/body/c21/l02share_finish.nuanmb",
+            "fighter/sonic/motion/body/c21/l02share_fistdown.nuanmb",
+            "fighter/sonic/motion/body/c21/l02share_sleep.nuanmb",
+            "fighter/sonic/motion/body/c21/flip.prc",
+            "fighter/sonic/motion/body/c21/ik.prc",
+            "fighter/sonic/motion/body/c21/motion_list.bin",
+            "fighter/sonic/motion/body/c21/scharge.prc",
+            "fighter/sonic/motion/body/c21/swing.prc",
+            "fighter/sonic/motion/body/c21/swingblend.prc",
+            "fighter/sonic/motion/body/c21/update.prc",
+            "fighter/sonic/motion/gimmickjump/c21/spring.nuanmb",
+            "fighter/sonic/motion/gimmickjump/c21/springsquat.nuanmb",
+            "fighter/sonic/motion/gimmickjump/c21/flip.prc",
+            "fighter/sonic/motion/gimmickjump/c21/motion_list.bin",
+            "fighter/sonic/motion/homingtarget/c21/motion_list.bin",
+            "fighter/sonic/motion/supersonic/c21/d04finalairend.nuanmb",
+            "fighter/sonic/motion/supersonic/c21/d04finalairstart.nuanmb",
+            "fighter/sonic/motion/supersonic/c21/d04finalcamera.nuanmb",
+            "fighter/sonic/motion/supersonic/c21/d04finalend.nuanmb",
+            "fighter/sonic/motion/supersonic/c21/d04finalmove.nuanmb",
+            "fighter/sonic/motion/supersonic/c21/d04finalmoveend.nuanmb",
+            "fighter/sonic/motion/supersonic/c21/d04finalmovestart.nuanmb",
+            "fighter/sonic/motion/supersonic/c21/d04finalrise.nuanmb",
+            "fighter/sonic/motion/supersonic/c21/d04finalstart.nuanmb",
+            "fighter/sonic/motion/supersonic/c21/flip.prc",
+            "fighter/sonic/motion/supersonic/c21/motion_list.bin",
+            "sound/bank/fighter/se_sonic_c21.nus3audio",
+            "sound/bank/fighter/se_sonic_c21.nus3bank",
+            "sound/bank/fighter/se_sonic_c21.tonelabel",
+            "sound/bank/fighter_voice/vc_sonic_c21.nus3audio",
+            "sound/bank/fighter_voice/vc_sonic_c21.nus3bank",
+            "sound/bank/fighter_voice/vc_sonic_c21.tonelabel",
+            "sound/bank/fighter_voice/vc_sonic_cheer_c21.nus3audio",
+            "sound/bank/fighter_voice/vc_sonic_cheer_c21.nus3bank",
+            "sound/bank/fighter_voice/vc_sonic_cheer_c21.tonelabel",
+            "fighter/sonic/model/body/c21/sonicmetal.marker"
         ],
-        "fighter/wolf/movie/c64": [],
-        "fighter/wolf/result/c64": [],
-        "fighter/wolf/camera/c64": [
-            "camera/fighter/wolf/c64/d04finalairlockon.nuanmb",
-            "camera/fighter/wolf/c64/d04finalairlockon02.nuanmb",
-            "camera/fighter/wolf/c64/d04finallockon.nuanmb",
-            "camera/fighter/wolf/c64/d04finallockon02.nuanmb",
-            "camera/fighter/wolf/c64/d04finalvisualscene.nuanmb",
-            "camera/fighter/wolf/c64/j02win1.nuanmb",
-            "camera/fighter/wolf/c64/j02win2.nuanmb",
-            "camera/fighter/wolf/c64/j02win3.nuanmb"
+        "fighter/sonic/movie/c21": [],
+        "fighter/sonic/camera/c21": [
+            "camera/fighter/sonic/c21/d04finalstart.nuanmb",
+            "camera/fighter/sonic/c21/j02win1.nuanmb",
+            "camera/fighter/sonic/c21/j02win2.nuanmb",
+            "camera/fighter/sonic/c21/j02win3.nuanmb"
         ],
-        "fighter/wolf/kirbycopy/c64": [
-            "fighter/kirby/model/copy_wolf_cap/c64/dark_model.numatb",
-            "fighter/kirby/model/copy_wolf_cap/c64/kirby_wolf_001_col.nutexb",
-            "fighter/kirby/model/copy_wolf_cap/c64/kirby_wolf_001_nor.nutexb",
-            "fighter/kirby/model/copy_wolf_cap/c64/kirby_wolf_001_prm.nutexb",
-            "fighter/kirby/model/copy_wolf_cap/c64/light_model.numatb",
-            "fighter/kirby/model/copy_wolf_cap/c64/metamon_model.numatb",
-            "fighter/kirby/model/copy_wolf_cap/c64/model.nuhlpb",
-            "fighter/kirby/model/copy_wolf_cap/c64/model.numatb",
-            "fighter/kirby/model/copy_wolf_cap/c64/model.numdlb",
-            "fighter/kirby/model/copy_wolf_cap/c64/model.numshb",
-            "fighter/kirby/model/copy_wolf_cap/c64/model.numshexb",
-            "fighter/kirby/model/copy_wolf_cap/c64/model.nusktb",
-            "fighter/kirby/model/copy_wolf_cap/c64/model.nusrcmdlb",
-            "fighter/kirby/model/copy_wolf_cap/c64/model.xmb"
+        "fighter/sonic/kirbycopy/c21": [
+            "fighter/kirby/model/copy_sonic_cap/c21/dark_model.numatb",
+            "fighter/kirby/model/copy_sonic_cap/c21/def_sonic_001_col.nutexb",
+            "fighter/kirby/model/copy_sonic_cap/c21/def_sonic_001_nor.nutexb",
+            "fighter/kirby/model/copy_sonic_cap/c21/def_sonic_001_prm.nutexb",
+            "fighter/kirby/model/copy_sonic_cap/c21/light_model.numatb",
+            "fighter/kirby/model/copy_sonic_cap/c21/metamon_model.numatb",
+            "fighter/kirby/model/copy_sonic_cap/c21/model.nuanmb",
+            "fighter/kirby/model/copy_sonic_cap/c21/model.nuhlpb",
+            "fighter/kirby/model/copy_sonic_cap/c21/model.numatb",
+            "fighter/kirby/model/copy_sonic_cap/c21/model.numdlb",
+            "fighter/kirby/model/copy_sonic_cap/c21/model.numshb",
+            "fighter/kirby/model/copy_sonic_cap/c21/model.numshexb",
+            "fighter/kirby/model/copy_sonic_cap/c21/model.nusktb",
+            "fighter/kirby/model/copy_sonic_cap/c21/model.nusrcmdlb",
+            "fighter/kirby/model/copy_sonic_cap/c21/model.xmb",
+            "fighter/kirby/model/copy_sonic_sphere/c21/dark_model.numatb",
+            "fighter/kirby/model/copy_sonic_sphere/c21/def_sonicsphere_001_col.nutexb",
+            "fighter/kirby/model/copy_sonic_sphere/c21/def_sonicsphere_001_nor.nutexb",
+            "fighter/kirby/model/copy_sonic_sphere/c21/def_sonicsphere_001_prm.nutexb",
+            "fighter/kirby/model/copy_sonic_sphere/c21/light_model.numatb",
+            "fighter/kirby/model/copy_sonic_sphere/c21/metamon_model.numatb",
+            "fighter/kirby/model/copy_sonic_sphere/c21/model.nuanmb",
+            "fighter/kirby/model/copy_sonic_sphere/c21/model.nuhlpb",
+            "fighter/kirby/model/copy_sonic_sphere/c21/model.numatb",
+            "fighter/kirby/model/copy_sonic_sphere/c21/model.numdlb",
+            "fighter/kirby/model/copy_sonic_sphere/c21/model.numshb",
+            "fighter/kirby/model/copy_sonic_sphere/c21/model.numshexb",
+            "fighter/kirby/model/copy_sonic_sphere/c21/model.nusktb",
+            "fighter/kirby/model/copy_sonic_sphere/c21/model.nusrcmdlb",
+            "fighter/kirby/model/copy_sonic_sphere/c21/model.xmb"
         ],
-        "fighter/wolf/cmn": [
-            "effect/fighter/wolf/transplant/falco/ef_falco.eff",
-            "effect/fighter/wolf/transplant/pikachu/ef_pikachu.eff",
-            "effect/fighter/wolf/transplant/zelda/ef_zelda.eff"
+        "fighter/sonic/result/c21": [
+            "fighter/sonic/model/chaosemerald/c21/dark_model.numatb",
+            "fighter/sonic/model/chaosemerald/c21/light_model.numatb",
+            "fighter/sonic/model/chaosemerald/c21/metamon_model.numatb",
+            "fighter/sonic/model/chaosemerald/c21/model.nuanmb",
+            "fighter/sonic/model/chaosemerald/c21/model.nuhlpb",
+            "fighter/sonic/model/chaosemerald/c21/model.numatb",
+            "fighter/sonic/model/chaosemerald/c21/model.numdlb",
+            "fighter/sonic/model/chaosemerald/c21/model.numshb",
+            "fighter/sonic/model/chaosemerald/c21/model.nusktb",
+            "fighter/sonic/model/chaosemerald/c21/model.nusrcmdlb",
+            "fighter/sonic/model/chaosemerald/c21/model.xmb",
+            "fighter/sonic/model/chaosemerald/c21/supersonic_blueemerald_00_col.nutexb",
+            "fighter/sonic/model/chaosemerald/c21/supersonic_cyanemerald_00_col.nutexb",
+            "fighter/sonic/model/chaosemerald/c21/supersonic_emerald_all_00_nor.nutexb",
+            "fighter/sonic/model/chaosemerald/c21/supersonic_greenemerald_00_col.nutexb",
+            "fighter/sonic/model/chaosemerald/c21/supersonic_jewelred_00_col.nutexb",
+            "fighter/sonic/model/chaosemerald/c21/supersonic_magentaemerald_00_col.nutexb",
+            "fighter/sonic/model/chaosemerald/c21/supersonic_whiteemerald_00_col.nutexb",
+            "fighter/sonic/model/chaosemerald/c21/supersonic_yellowemerald_00_col.nutexb",
+            "fighter/sonic/motion/chaosemerald/c21/j02win2.nuanmb",
+            "fighter/sonic/motion/chaosemerald/c21/j02win2wait.nuanmb",
+            "fighter/sonic/motion/chaosemerald/c21/flip.prc",
+            "fighter/sonic/motion/chaosemerald/c21/motion_list.bin"
         ]
     }
 }
